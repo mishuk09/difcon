@@ -1,0 +1,968 @@
+<style>/* Main dropdown menu */
+	.wsmegamenu {
+		position: relative;
+	}
+	
+	.wsmegamenu .dropdown {
+		position: relative;
+	}
+	
+	.wsmegamenu .dropdown > a {
+		position: relative;
+		padding-right: 20px;
+	}
+	
+	.wsmegamenu .dropdown-one {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		background-color: #f9f9f9;
+		min-width: 200px;
+		z-index: 1000;
+		box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	}
+	
+	.wsmegamenu .dropdown:hover > .dropdown-one {
+		display: block;
+	}
+	
+	.wsmegamenu .dropdown-one ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.wsmegamenu .dropdown-one li {
+		border-bottom: 1px solid #ddd;
+	}
+	
+	.wsmegamenu .dropdown-one li a {
+		display: block;
+		padding: 8px 16px;
+		color: #000;
+		text-decoration: none;
+	}
+	
+	.wsmegamenu .dropdown-one li a:hover {
+		background-color: #ddd;
+	}
+	</style>
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="description" content="DIFCON"/>
+		<meta name="keywords" content="DIFCON, MMU">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  		<!-- SITE TITLE -->
+		<title>ICTIM </title>
+
+		<!-- FAVICON AND TOUCH ICONS -->
+		<link rel="icon" type="image/png" sizes="32x32" href="difconimage24/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="difconimage24/favicon-16x16.png">
+
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900" rel="stylesheet">
+
+		<!-- BOOTSTRAP CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- FONT ICONS -->
+		<link href="https://use.fontawesome.com/releases/v5.11.0/css/all.css" rel="stylesheet" crossorigin="anonymous">
+		<link href="css/flaticon.css" rel="stylesheet">
+
+		<!-- PLUGINS STYLESHEET -->
+		<link href="css/menu.css" rel="stylesheet">
+		<link id="effect" href="css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
+		<link href="css/magnific-popup.css" rel="stylesheet">
+		<link href="css/owl.carousel.min.css" rel="stylesheet">
+		<link href="css/owl.theme.default.min.css" rel="stylesheet">
+
+		<!-- ON SCROLL ANIMATION -->
+		<link href="css/animate.css" rel="stylesheet">
+
+		<!-- TEMPLATE CSS -->
+		<!-- <link href="css/brick-theme.css" rel="stylesheet">     -->
+	    <!-- <link href="css/dimgreen-theme.css" rel="stylesheet">  -->
+	    <!-- <link href="css/green-theme.css" rel="stylesheet">     -->
+	    <!-- <link href="css/indigo-theme.css" rel="stylesheet">    -->
+	    <!-- <link href="css/orangered-theme.css" rel="stylesheet"> -->
+	    <!-- <link href="css/pink-theme.css" rel="stylesheet">      -->
+	    <!-- <link href="css/red-theme.css" rel="stylesheet">       -->
+	    <link href="css/royalblue-theme.css" rel="stylesheet">
+	    <!-- <link href="css/skyblue-theme.css" rel="stylesheet"> -->
+	    <!-- <link href="css/violet-theme.css" rel="stylesheet">    -->
+
+		<!-- RESPONSIVE CSS -->
+		<link href="css/responsive.css" rel="stylesheet">
+
+		<!-- My Custom CSS -->
+		<link href="css/mycss.css" rel="stylesheet">
+	</head>
+
+
+	<body>
+		<!-- PRELOADER SPINNER
+		============================================= -->
+		<!-- <div id="loader-wrapper">
+			<div id="loading">
+				<div class="cssload-loader">
+					<div class="cssload-ball cssload-ball-1"></div>
+					<div class="cssload-ball cssload-ball-2"></div>
+					<div class="cssload-ball cssload-ball-3"></div>
+					<div class="cssload-ball cssload-ball-4"></div>
+				</div>
+			</div>
+		</div> -->
+
+
+
+
+		<!-- PAGE CONTENT
+		============================================= -->
+		<div id="page" class="page">
+
+
+
+
+			<!-- HEADER
+			============================================= -->
+			<header id="header" class="header white-menu navbar-dark">
+				<div class="header-wrapper">
+
+
+					<!-- MOBILE HEADER -->
+				    <div class="wsmobileheader clearfix">
+				    	<span class="smllogo"><img src="difconimage24\Test Web-01.png"  alt="mobile-logo"/></span>
+				    	<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+				 	</div>
+
+
+				 	<!-- NAVIGATION MENU -->
+				  	<div class="wsmainfull menu clearfix">
+	    				<div class="wsmainwp clearfix">
+
+
+	    					<!-- LOGO IMAGE -->
+	    					<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 310 x 72 pixels) -->
+	    					<div class="desktoplogo"><a href="#about" class="logo-black"><img src="difconimage24\Test Web-01.png" alt="header-logo"></a></div>
+	    					<div class="desktoplogo"><a href="#about" class="logo-white"><img src="difconimage24\Test Web-01.png" alt="header-logo"></a></div>
+
+
+	    					<!-- MAIN MENU -->
+							<nav class="wsmenu clearfix">
+	        					<ul class="wsmenu-list">
+
+									<li aria-haspopup="true"><a href="#"> Home <span class="wsarrow"></span></a>
+										<div class="wsmegamenu clearfix halfmenu">
+											<div class="container-fluid">
+												<div class="row">
+													<ul class="col-lg-12 link-list">
+														<li aria-haspopup="true"><a href="#aboutictim">About ICTIM </a></li>
+                                                        <li aria-haspopup="true"><a href="#tracksictim"> Tracks</a></li>
+                                                        <li aria-haspopup="true"><a href="#proceedingsictim"> Publications </a></li>
+														<li aria-haspopup="true"><a href="#committeesictim"> Committee </a></li>
+									         <!--        <li aria-haspopup="true"><a href="#venueictim"> Author's Info </a></li>     -->
+	                                        
+														<li><a href="#keynotesictim"> Keynote Speakers </a></li>
+																				
+																		
+																
+
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>				
+
+									<li aria-haspopup="true">
+										<a href="#">Co-Located Conference. <span class="wsarrow"></span></a>
+										<div class="wsmegamenu clearfix halfmenu">
+											<div class="container-fluid">
+												<div class="row">
+													<ul class="col-lg-12 link-list">
+									
+														<!-- Home Section -->
+														<li class="dropdown">
+															<a href="#">Home <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="index.html#aboutdifcon">About DIFCON</a></li>
+																	<li><a href="index.html#keynotespeakerdifcon">Keynote Speakers</a></li>
+																	<li><a href="index.html#committeedifcon">Committee</a></li>
+																	<li><a href="index.html#venuedifcon">Contact Us</a></li>
+																</ul>
+															</div>
+														</li>
+									
+														<!-- CITIC -->
+														<li class="dropdown">
+															<a href="#">CITIC <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="citic.html#aboutcitic">About CITIC</a></li>
+																	<li><a href="citic.html#trackscitic">Conference Tracks</a></li>
+																	<li><a href="citic.html#proceedingscitic">Publications</a></li>
+																	<li><a href="citic.html#keynotescitic">Speakers</a></li>
+																	
+																	<li><a href="citic.html#committeecitic">Committees</a></li>
+																	<!-- <li><a href="citic.html#venuecitic">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+									
+														<!-- MECON -->
+														<li class="dropdown">
+															<a href="#">MECON <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="mecon.html#aboutmecon">About MECON</a></li>
+																	<li><a href="mecon.html#tracksmecon">Conference Tracks</a></li>
+																	<li><a href="mecon.html#proceedingsmecon">Publications</a></li>
+																	<li><a href="mecon.html#keynotesmecon">Speakers</a></li>
+																	
+																	<li><a href="mecon.html#committeemecon">Committees</a></li>
+																	<!-- <li><a href="mecon.html#venuemecon">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+									
+														
+									
+														<!-- ICCM -->
+														<li class="dropdown">
+															<a href="#">ICCM <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="iccm.html#abouticcm">About ICCM</a></li>
+																	<li><a href="iccm.html#tracksiccm">Conference Tracks</a></li>
+																	<li><a href="iccm.html#proceedingsiccm">Publications</a></li>
+																	<li><a href="iccm.html#keynotesiccm">Speakers</a></li>
+																	
+																	<li><a href="iccm.html#committeeiccm">Committees</a></li>
+																	<!-- <li><a href="iccm.html#venueiccm">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+									
+														<!-- CLESS -->
+														<li class="dropdown">
+															<a href="#">CLESS <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="cless.html#aboutcless">About CLESS</a></li>
+																	<li><a href="cless.html#trackscless">Conference Tracks</a></li>
+																	<li><a href="cless.html#proceedingscless">Publications</a></li>
+																	<li><a href="cless.html#keynotescless"> Speakers</a></li>
+																	
+																	<li><a href="cless.html#committeecless">Committees</a></li>
+																	<!-- <li><a href="cless.html#venuecless">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+									
+														<!-- ICLD -->
+														<li class="dropdown">
+															<a href="#">ICLD <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="icld.html#abouticld">About ICLD</a></li>
+																	<li><a href="icld.html#tracksicld">Conference Tracks</a></li>
+																	<li><a href="icld.html#proceedingsicld">Publications</a></li>
+																	<li><a href="icld.html#keynotesicld">Speakers</a></li>
+																	
+																	<li><a href="icld.html#committeeicld">Committees</a></li>
+																	<!-- <li><a href="icld.html#venueicld">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+												
+
+										<!-- <li class="dropdown">
+                                        <a href="#">Presentation Poster <span class="wsarrow"></span></a>
+                                         <div class="dropdown-one">
+                                            <ul>
+                                                <li><a href="Presentation Poster.html#PresentationPoster">Poster</a></li>
+                                               
+                                            </ul>
+                                        </div>
+                                      </li> -->
+
+
+
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li><a href="publication.html"> Publication & Date</a></li>
+
+										<li><a href="Registration.html">Registration</a></li>
+										<li><a href="sponsorship.html"> Sponsorship</a></li>
+<li aria-haspopup="true">
+<a href="#">Archive<span class="wsarrow"></span></a>
+<div class="wsmegamenu clearfix halfmenu">
+<div class="container-fluid">
+<div class="row">
+  <ul class="col-lg-12 link-list">
+	
+	<li>
+		<a href="https://difcon.mmu.edu.my/2025"
+		  >DIFCON 2025</a
+		>
+	  </li>
+	
+	<li>
+		<a href="https://difcon.mmu.edu.my/2024"
+		  >DIFCON 2024</a
+		>
+	  </li>
+	
+	
+	<li>
+	  <a href="https://difcon.mmu.edu.my/2023"
+		>DIFCON 2023</a
+	  >
+	</li>
+	<li>
+	  <a href="https://difcon.mmu.edu.my/2022"
+		>DIFCON 2022</a
+	  >
+	</li>
+	<li>
+	  <a href="https://drive.google.com/file/d/1NdaLGHi7zNh_mbSx0CIlxpolS910YA0l/view?usp=drive_link">DIFCON 2021</a>
+	</li>
+									
+	        					</ul>
+	        				</nav>	<!-- END MAIN MENU -->
+
+	    				</div>
+	    			</div>	<!-- END NAVIGATION MENU -->
+
+
+				</div>     <!-- End header-wrapper -->
+			</header>	<!-- END HEADER -->
+
+
+
+
+		<!-- HERO-6
+			============================================= 
+			<section id="hero-6" class="hero-section division">
+				<div class="container">
+				  <!-- HERO CONTENT 
+				  <div class="row d-flex align-items-center">
+					<img
+					  src="difconimage24\Latest Logo Difcon.jpeg"
+					  alt="difcon-logo"
+					  style="max-width: 100%; height: auto; opacity: 0.8"
+					/>
+					<div class="row" id="keynotescitic">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-20 pt-10 text-center">
+								<!-- Title 	
+								<h3 class="pt-20 h3-md">21 - 23 JULY 2025, Multimedia University      Cyberjaya Malaysia</h3>
+								<!-- Text 
+								<p class="p-lg">
+								</p>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <!-- END HERO CONTENT 
+				</div>
+				<!-- End container 
+			  </section>
+
+
+
+			<!-- CONTENT-3
+			============================================= -->
+			<section class="content-3 wide-60 content-section division">
+				<div class="container">
+
+					<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+						<img class="img-fluid" src="difconimage24\2025 ICTIM-logo.png" alt="content-image" style="height:300pt"> 
+	
+					</div>
+	
+					<div class="section-title mb-20 pt-10 text-center">
+						<!-- Title 	-->
+						<h1 class="pt-20 h3-md">5 - 7 MAY 2026, Cyberjaya Malaysia</h1>
+						<!-- Text -->
+						<p class="p-lg">
+						</p>
+					</div>
+					<!-- TOP CONTENT -->
+					<section class="content-3 wide-60 content-section division">
+						<div class="container">
+		
+		
+							<!-- TOP CONTENT -->
+							<div id="c3-top" class="cbox-3 pb-50">
+								<div class="row d-flex align-items-top m-row">
+		
+		
+									<!-- TEXT BLOCK -->
+									<div class="col-md-6 col-lg-6 m-bottom">
+		
+										 <div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+		
+											<!-- Title -->
+											<h3 class="h3-sm pt-20" id="aboutictim">ABOUT  <div class="w-100"></div></h3>
+											
+											<h6 class="h6-sm"> THEMES: COMING SOON
+											</h6>
+		
+											<!-- <img src="difconimage24/ICTIM-logo.jpg" alt="difcon-logo" style="max-width: 100%; height: auto; opacity: 0.8; padding-bottom: 15px;">
+		 -->
+											<p class="grey-color text-justify">
+												The 6th International Conference on Technology and Innovation Management 2026 (ICTIM 2026) is where innovation and sustainability converge to shape a brighter future. This prestigious event will be hosted by the Faculty of Business (FOB) at Multimedia University. This conference stands as a premier gathering, uniting a diverse audience of academic researchers, industry leaders, and policymakers. Together, we will delve into the profound implications of our digital era, exploring the latest trends and advancements in technology, innovation management, and business, all through the lens of sustainability. At ICTIM 2026, the core objectives are to facilitate dynamic knowledge exchange, foster valuable networking opportunities, provide insights into policy considerations, and examine the profound societal impact of technology and innovation management. This conference invites you to be part of a vibrant community of forward-thinkers, eager to explore the frontiers of innovation, and to actively shape a sustainable tomorrow.
+											</p>
+											<h4 class="h4-sm mb-2 pt-20" id="proceedingsictim">PUBLICATION </h4>
+		
+											<!-- Text List -->
+											<ul class="txt-list grey-color">
+												
+												<!-- <h5 class="h3-sm" >COMING SOON</h5> -->
+												
+												<p class="grey-color text-justify">
+												 	<li class="list-item">
+																			<i class="fas fa-genderless"></i>
+																			<p>
+																			Journal of Industrial and Production Engineering (ISSN: 2168-1015) – Scopus
+																			</p>
+																		</li>
+																		<li class="list-item">
+																			<i class="fas fa-genderless"></i>
+																			<p>
+																			Compendium by PaperASIA (ISSN: 0218-4540) - Scopus
+																			</p>
+																		</li>
+																		<li class="list-item">
+																			<i class="fas fa-genderless"></i>
+																			<p>
+																			Malaysian Online Journal of Educational Management (e-ISSN: 2289-4489) - Scopus														
+																		</p>
+																		</li> 
+																		<li class="list-item">
+																			<i class="fas fa-genderless"></i>
+																			<p>
+																			Malaysian Journal of Consumer and Family Economics (ISSN :1511 2802) – Guest Issue - Scopus												
+																		</p>
+																		</li>
+																		<li class="list-item">
+																			<i class="fas fa-genderless"></i>
+																			<p>
+																			International Journal of Industrial Management (ISSN: 2289-9286) - MyCite													
+																		</p>
+																		</li>
+																		<li class="list-item">
+																			<i class="fas fa-genderless"></i>
+																			<p>
+																			International Journal of Management, Finance and Accounting (eISSN: 2735-1009) – MyCite												
+																		</p>
+																		</li>
+																		<li class="list-item">
+																			<i class="fas fa-genderless"></i>
+																			<p>
+																			Issues and Perspectives in Business and Social Sciences (eISSN: 2785-9266) - MyCite											
+																		</p>
+																		</li> 
+																		
+												<div class="text-center justify-content-center justify-content-lg-start">
+													<div>
+														<a download href="files/Full Paper Template.docx" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Template</a>
+														<a download href="files/submission_guideline.docx" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Guideline</a>
+											
+													</div>
+												</div>  
+		
+												  <p class="grey-color text-justify">
+													<br>All papers must be original and not simultaneously submitted to another journal or conference. A maximum of 20 page(s) manuscript is to be prepared according to the following template. 
+												</p> 
+											</ul>
+		
+											
+		
+											 <div class="col-lg-12 justify-content-center justify-content-lg-start">
+												<div>
+													<a href="authorinfo.html#importantdates" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Author Information & Registration! </a>
+												</div>
+											</div>
+										</div>
+		
+		
+		
+									</div>	<!-- END TEXT BLOCK -->
+		
+		
+		
+		
+									<!-- TEXT BLOCK -->
+									<div class="col-md-6 col-lg-6 m-bottom">
+		
+											<div class="txt-block left-column pc-35 mb-40 wow fadeInRight  m-bottom mt-40" data-wow-delay="0.4s">
+		
+										<!-- Small Title -->
+										<h4 class="h4-sm pt-20" id="tracksictim">CONFERENCE TRACKS</h4>
+		
+										<!-- Text List -->
+										<ul class="txt-list grey-color">
+																<!--<li class="list-item">
+																	<i class="fas fa-genderless"></i>-->
+																	<p > The topics of interest are listed below but are not limited to: 
+																	</p>
+																	<!--<p class="grey-color text-justify">-->
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Corporate Social Responsibility (CSR) and Innovation</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Environment, Social & Governance (ESG)</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Digital Transformation and Innovation</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Green Entrepreneurship and Startup</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Human Capital & Organisational Behaviour</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Sustainable Marketing and Consumer Behaviour</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Financial Technologies</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Business Analytics</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Design Thinking</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Operation Management and Sustainable Supply Chain Innovation</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Social Innovation</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Sustainable Logistics</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Total Quality Management</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Sustainable Innovation</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Healthcare & Well-being Innovation</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Green Product Innovation</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Circular Economy Strategies</p></li>
+																		<li class="list-item"><i class="fas fa-genderless"></i><p class="font-weight-bold">Tourism and Hospitality Innovation</p></li>
+																		
+																		
+																		<br />
+																		<p>All business and management areas related to sustainability and innovation</p>
+																	<!--</p>
+																</li>
+		
+																<li class="list-item">
+																	<i class="fas fa-genderless"></i>
+																	<p class="font-weight-bold"> IMPACT OF INNOVATION ON SOCIETY AND NATION BUILDING
+																	</p>
+																	<p class="grey-color text-justify">
+																		Mission-oriented innovation, 
+																		Impact of innovation on society and environment, 
+																		Consumer-centric innovation, 
+																		Disruptive innovation
+																		Innovation value creation, 
+																		Social innovation, 
+																		Human-centered design in innovations, innovation and entrepreneurship ecosystem, 
+																		Innovation and ESG (Environment, Social & Governance)
+																	</p>
+																</li>-->
+		
+										</ul>	
+										<!-- End Text List -->
+		
+										<!-- <a download href="files/programbook-ictim.pdf" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">
+																		ICTIM Program Book
+											</a> -->
+		
+										<!-- <h4 class="h4-sm pt-20" id="journals">JOURNALS</h4> -->
+		
+										<!-- Text List -->
+										<!-- <ul class="txt-list text-justify grey-color"> -->
+																<!-- <li class="list-item">
+																	<i class="fas fa-genderless"></i>
+																	<p class="font-weight-bold">  International Journal of Technology (IJech) [pISSN:20869614]
+																	</p>
+																</li> -->
+																<!-- <li class="list-item">
+																	<i class="fas fa-genderless"></i>
+																	<p class="font-weight-bold"> Journal of System and Management Sciences (JSMS) [ISSN:18166075]
+																	</p>
+																</li> -->
+																<!-- <li class="list-item">
+																	<i class="fas fa-genderless"></i>
+																	<p class="font-weight-bold">  Journal of Logistics, Informatics and Service Science (JLISS) [ISSN:24092665]
+																	</p>
+																</li> -->
+		
+																<!-- <li class="list-item">
+																	<i class="fas fa-genderless"></i>
+																	<p class="font-weight-bold">  MMU Press International Journal of Management, Finance and Accounting (IJOMFA) [eISSN:27351009]
+																	</p>
+																</li> -->
+										<!-- </ul> -->
+										<!-- <p class="mt-3 grey-color font-italic text-justify"> * Selected papers will be recommended for publication in the listed journals and subjected to the respective journal requirements.</p> -->
+										<!-- <p class="mt-3 grey-color font-italic text-justify"> * Selected papers will be recommended for publication and subjected to the respective journal requirements.</p> -->
+		
+		
+									</div>
+								</div> <!-- end text block-->
+		
+								</div>	  <!-- End row -->
+							</div>	<!-- END TOP CONTENT -->
+		
+		
+						</div>     <!-- End container -->
+					</section>	<!-- END CONTENT-3 -->
+		
+
+
+
+
+
+			<!-- CONTENT-3 / KEYNOTE 
+			============================================= -->
+			<section id="content-3" class="content-3 wide-60 content-section division pt-20">
+				<div class="container">
+
+					 
+					<div class="row" id="keynotesictim">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-50 pt-10 text-center">
+								 
+								<h3 class="pt-20 h3-md">KEYNOTE SPEAKERS</h3>
+								   
+								<p class="p-lg">
+								</p>
+							</div>
+						</div>
+					</div>
+
+
+					 
+				<div id="c3-bottom" class="cbox-3 pt-70">
+					<div class="row d-flex align-items-center">
+
+
+					 
+						<div class="col-md-5 col-lg-6 m-top">
+								<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									<img class="img-fluid" src="difconimage24/abdul rahim.png" alt="content-image">
+								</div>
+							</div> 
+
+
+						 
+						<div class="col-md-7 col-lg-6">
+							<div class="txt-block right-column pc-35 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+
+								<h3 class="h3-sm" > Associate Professor Dr Abdul Rahim Ridzuan </h3>
+
+								<h5 class="h3-sm"> Professor </h5>
+								
+								 <h5 class="h5-xs sm-title"> Universiti Teknologi MARA (UiTM) </h5>
+									<p class="grey-color text-justify">
+											Assoc. Prof. Dr. Abdul Rahim Ridzuan is a Senior Fellow at the Institute of Big Data Analytics and Artificial Intelligence (IBDAAI), Universiti Teknologi MARA (UiTM), Malaysia. With 16 years of academic service, he specializes in international, energy, and environmental economics, with strong expertise in time series modelling and sustainable development.
+
+
+Dr. Abdul Rahim has published over 230 scholarly works, including 45 in Web of Science and 93 in Scopus, and has secured more than RM4.4 million (total 55 grants) in national and international research grants. He has served extensively as a journal editor, reviewer, consultant, keynote speaker, and external assessor worldwide.
+
+
+Recognized globally, he holds multiple visiting and adjunct professorships across Malaysia, Indonesia, Kazakhstan, Nigeria, and beyond. His contributions to research and policy development have earned him numerous awards, including the Scopus Research Star Award 2025 by MOHE and Elsevier.
+
+									</p>
+
+							</div>
+						</div> 
+
+
+					</div>  
+				</div>  
+
+
+				</div>      
+			</section>	 
+
+
+			<!-- CONTENT-3 / committees 
+			============================================= 
+			<section class="content-3 wide-60 bg-lightgrey content-section division">
+				<div class="container">
+
+					<!-- SECTION TITLE 
+					<div class="row" id="committeesictim">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-50 pt-10 text-center">
+								<h3 class="pt-20 h3-md">COMMITTEES</h3>
+								<p class="p-lg">
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- TOP CONTENT 
+					<div id="c3-top" class="cbox-3 pb-50">
+						<div class="row d-flex align-items-top m-row">
+
+
+							<!-- TEXT BLOCK -->
+							<div class="col-md-12 col-lg-12 m-bottom">
+								 <div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+									<!-- Title -->
+									<h4 class="h4-sm">ORGANIZING COMMITTEE<div class="w-100"></div></h4>
+
+									<p class="grey-color">
+										Chair: Asst. Prof. Dr. Yeo Sook Fern <br>
+										Co-Chair: Asst. Prof. Dr. Lim Kah Boon<br>
+										Secretray: Ms Anushia Chelvarayan<br>
+										Publicity Chair: Ms Norshikin Binti Shadan <br>
+										Technical Chair: Dr. Cheah Chew Sze<br>
+										
+									</p>
+
+								</div>
+							</div>	<!-- END TEXT BLOCK 
+
+							<!-- TEXT BLOCK 
+							<div class="col-md-12 col-lg-12 m-bottom">
+								 <div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+									<!-- Title 
+									<h4 class="h4-sm">TECHNICAL PROGRAMME COMMITTEE  <div class="w-100"></div></h4>
+
+									<p class="grey-color">
+										Professor. Dr. Steven Tam (Fort Hays State University, United States)<br>
+										Professor Dr. Jawad Rasheed (Istanbul Sabahattin Zaim University, Turkey)<br>
+										Associate Professor Dr. Tan Cheng Ling (Universiti Sains Malaysia, Malaysia)<br>
+										Associate Professor Dr. Irene Leong Yoke Chu (UiTM, Malaysia)<br>
+										Associate Professor Dr. Cigdem Gencel (Medipol University, Turkey)<br>
+										Associate Professor Dr. Imran Mahmud (Daffodil International University, Bangladesh)<br>
+										Associate Professor Dr. Keoy Kay Hooi (UCSI, Malaysia)<br>
+										Assistant Professor Ts Dr. Neesha A/P Jothi ((UCSI, Malaysia)<br>
+										Dr. Long Kim (Walailak University, Thailand)<br>
+										Dr. Songpan Janthong  (Walailak University, Thailand)<br>
+										Dr. Chan Kar Hoong <br>
+										Assistant Professor Dr. Ng Tuan Hock (Multimedia University, Malaysia)<br>
+										Assistant Professor Dr. Yuen Yee Yen (Multimedia University, Malaysia)<br>
+										Mr Vincent Chan (Multimedia University, Malaysia)
+									</p>
+
+								</div>
+							</div>	<!-- END TEXT BLOCK 
+
+
+						</div>	  <!-- End row 
+					</div>	<!-- END TOP CONTENT 
+
+				</div>     <!-- End container 
+			</section>	<!-- END CONTENT-3 / COMITTEES-->
+
+
+
+
+			<!-- GREY BORDER
+			============================================= 
+			<div class="gb-wrapper"><div class="container"><div class="row"><div class="col-md-12 grey-border"></div></div></div></div>
+
+
+		<!-- FOOTER-1 
+			============================================= 
+		<footer id="footer-1" class="footer division">
+			<div class="container">
+
+				
+									
+									<div class="col-md-12 col-lg-12">
+											<div>
+
+											 <div class="txt-block left-column pc-35 mb-10 wow fadeInRight" data-wow-delay="0.4s">
+
+												<!-- Title 
+												<h5 class="h3-sm pt-20"> Fees <div class="w-100"></div></h5>
+
+												 <h5 class="h3-sm pt-20">TIMELINES <div class="w-100"></div>	</h5> -->
+
+												<!-- Code by w3codegenerator.com 
+													<div class="table-responsive">
+													 <table class="table table-light table-bordered table-striped table-borderless">
+													   <tbody style="text-align: left;">
+													      <tr>
+													         <th scope="row" style="width: 264px;">Normal </th>
+													         <td> USD500 </td>
+															 <td></td>
+													      </tr>
+													      <tr>
+													         <th scope="row" style="width: 264px;"> Student </th>
+													         <td> USD480 </td>
+															 <td></td>
+													      </tr>
+														  <tr>
+													         <th scope="row" style="width: 264px;"> Early bird (1 June 2024) </th>
+															 <td> USD450 </td>
+															 <td> </td>
+													      </tr>
+													   </tbody>
+													</table>
+													</div>
+											</div>
+										</div>
+									</div>
+									</div>
+									</div>
+
+					
+			  						<ul class="txt-list grey-color">
+													
+										<!-- <h5 class="h3-sm" >COMING SOON</h5> -->
+													
+													<!-- <p class="grey-color text-justify">
+														Abstract submission 
+													</p>	 
+													
+													<div class="text-center justify-content-center justify-content-lg-start">
+														<div>
+															<a href="https://forms.office.com/r/f8rQhUg2wx" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Abstract Submission</a>
+															<a href="https://edas.info/newPaper.php?c=31886" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Full Paper Submission</a>
+															<a download href="files/ictim_temp.docx" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">
+																Paper Template
+															</a>
+															<a href="https://forms.office.com/r/uYBQciU9Gm" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Registration Link</a>
+														<br /><br />
+														<a href="https://www.mmu-cnergy.com/difcon2024" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">EarlyBird_DIFCON24</a>
+														
+														</div>
+														
+													</div>
+													<p style="text-align: center;padding-right: 0px;padding-left: 0px;"> **Early bird coupon: valid until 6th June 2024 ONLY! (Only 1 coupon can be used per transaction)
+
+													</ul>
+													
+							<h5 class="h3-sm pt-20">Venue <div class="w-100"></div></h5h>
+							<p class="fas fa-map-marker-alt"> Virtual </p>
+							
+						</div>
+					</div>
+				</div>
+
+			 -->
+			<!-- FOOTER-1
+			============================================= -->
+			<footer id="footer-1" class="footer division">
+				<div class="container">
+
+					<!-- SECTION TITLE -->
+					<div class="row" id="contactus">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-50 pt-10 text-center">
+								<h3 class="pt-20 h3-md">CONTACT US</h3>
+								<p class="p-lg">
+									<!-- Email -->
+									<p class="foo-email"><a href="mailto:difcon@mmu.edu.my">difcon@mmu.edu.my</a></p>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- FOOTER CONTENT -->
+					<div class="row">
+
+
+						<div class="col-lg-12 col-xl-12 text-center">
+							<div>
+									<!-- <a href="https://info.flagcounter.com/CL0R"><img src="https://s01.flagcounter.com/countxl/CL0R/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a> -->
+									<a href="https://info.flagcounter.com/n6zP"><img src="https://s11.flagcounter.com/countxl/n6zP/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+							</div>
+						</div>
+					</div>	 <!-- END FOOTER CONTENT -->
+
+
+					<!-- BOTTOM FOOTER -->
+					<div class="bottom-footer grey-color">
+						<div class="row d-flex align-items-center">
+
+
+							<!-- FOOTER COPYRIGHT -->
+							<div class="col-md-6 mt-2">
+								<div class="footer-copyright">
+									<p>&copy; 2024 Universiti Telekom Sdn. Bhd. All Rights Reserved</p>
+								</div>
+							</div>
+
+
+
+						</div>  <!-- End row -->
+					</div>	<!-- END BOTTOM FOOTER -->
+
+
+				</div>	   <!-- End container -->
+			</footer>	<!-- END FOOTER-1 -->
+
+
+
+
+		</div>	<!-- END PAGE CONTENT -->
+
+
+
+
+
+
+		<!-- EXTERNAL SCRIPTS
+		============================================= -->
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/jquery.easing.js"></script>
+		<script src="js/jquery.appear.js"></script>
+		<script src="js/jquery.scrollto.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/contact-form.js"></script>
+		<script src="js/register-form.js"></script>
+		<script src="js/request-form.js"></script>
+		<script src="js/comment-form.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/wow.js"></script>
+
+		<!-- Custom Script -->
+		<script src="js/custom.js"></script>
+
+
+		<script>
+			new WOW().init();
+		</script>
+
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+		<!-- [if lt IE 9]>
+			<script src="js/html5shiv.js" type="text/javascript"></script>
+			<script src="js/respond.min.js" type="text/javascript"></script>
+		<![endif] -->
+
+		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
+		<!--
+		<script>
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-XXXXX-X']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		-->
+
+
+	</body>
+
+
+
+</html>

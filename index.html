@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+<!--[if lt IE 7]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="DIFCON" />
+    <meta name="keywords" content="DIFCON, MMU" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SITE TITLE -->
+    <title>DIFCON - DIGITAL FUTURES INTERNATIONAL CONGRESS</title>
+
+
+
+
+    <style>/* Main dropdown menu */
+      
+      .sbox-2 {
+        min-height: 300px; /* Adjust the height as needed */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px; /* Optional: Add padding for better spacing */
+        box-sizing: border-box;
+      }
+    
+      .sbox-2 h6 {
+        margin-top: 15px;
+      }
+    
+      .sbox-2 p {
+        margin: 10px 0 0 0;
+        text-align: center;
+      }
+      
+      
+      
+      
+      .wsmegamenu {
+          position: relative;
+      }
+      
+      .wsmegamenu .dropdown {
+          position: relative;
+      }
+      
+      .wsmegamenu .dropdown > a {
+          position: relative;
+          padding-right: 20px;
+      }
+      
+      .wsmegamenu .dropdown-one {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          background-color: #f9f9f9;
+          min-width: 200px;
+          z-index: 1000;
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      
+      .wsmegamenu .dropdown:hover > .dropdown-one {
+          display: block;
+      }
+      
+      .wsmegamenu .dropdown-one ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+      
+      .wsmegamenu .dropdown-one li {
+          border-bottom: 1px solid #ddd;
+      }
+      
+      .wsmegamenu .dropdown-one li a {
+          display: block;
+          padding: 8px 16px;
+          color: #000;
+          text-decoration: none;
+      }
+      
+      .wsmegamenu .dropdown-one li a:hover {
+          background-color: #ddd;
+      }
+
+      .center-text {
+        text-align: center;
+      }
+      .content-3 {
+        padding: 60px;
+      }
+      /* 1) Make the desktop logo + menu live on one flex line */
+.wsmainwp {
+  display: flex !important;
+  align-items: center;
+  /* no justify-content here — we'll push nav to the right with margin-left: auto */
+}
+
+/* 2) Ensure the nav pushes itself to the right */
+.wsmainwp nav.wsmenu {
+  margin-left: auto !important;
+}
+
+/* 3) Lay out the <ul> as flex, remove any floats */
+.wsmenu-list {
+  display: flex !important;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.wsmenu-list > li {
+  float: none !important;
+  margin: 0 20px;      /* space between menu items */
+}
+
+/* 4) Tidy up the <a> padding so the line stays tight */
+.wsmenu-list > li > a {
+  display: inline-block;
+  padding: 10px 0;     /* just vertical padding */
+}
+/* 1) Make sure the <ul> never wraps its items */
+.wsmenu-list {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+}
+
+/* 2) Prevent the <a> text from breaking */
+.wsmenu-list > li > a {
+  white-space: nowrap;
+}
+
+/* 3) Tweak spacing so everything still fits */
+.wsmenu-list > li {
+  margin: 0 10px;     /* reduce side-margin as needed */
+}
+
+/* 4) (Optional) If your menu is too wide, reduce font-size slightly */
+.wsmenu-list > li > a {
+  font-size: 0.95rem; /* tweak this value to fit your layout */
+}
+.btn-warning {
+  background-color: #ffc107 !important;
+  border-color:     #ffc107 !important;
+  color:            #212529 !important;
+}
+
+
+      
+    </style>
+
+    <!-- FAVICON AND TOUCH ICONS -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="difconimage/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="difconimage/favicon-16x16.png"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- FONT ICONS -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.11.0/css/all.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link href="css/flaticon.css" rel="stylesheet" />
+
+    <!-- PLUGINS STYLESHEET -->
+    <link href="css/menu.css" rel="stylesheet" />
+    <link
+      id="effect"
+      href="css/dropdown-effects/fade-down.css"
+      media="all"
+      rel="stylesheet"
+    />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" />
+
+    <!-- ON SCROLL ANIMATION -->
+    <link href="css/animate.css" rel="stylesheet" />
+
+    <!-- TEMPLATE CSS -->
+    <!-- <link href="css/brick-theme.css" rel="stylesheet">     -->
+    <!-- <link href="css/dimgreen-theme.css" rel="stylesheet">  -->
+    <!-- <link href="css/green-theme.css" rel="stylesheet">     -->
+    <!-- <link href="css/indigo-theme.css" rel="stylesheet">    -->
+    <!-- <link href="css/orangered-theme.css" rel="stylesheet"> -->
+    <!-- <link href="css/pink-theme.css" rel="stylesheet">      -->
+    <!-- <link href="css/red-theme.css" rel="stylesheet">       -->
+    <link href="css/royalblue-theme.css" rel="stylesheet" />
+    <!-- <link href="css/skyblue-theme.css" rel="stylesheet"> -->
+    <!-- <link href="css/violet-theme.css" rel="stylesheet">    -->
+
+    <!-- RESPONSIVE CSS -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <!-- My Custom CSS -->
+    <link href="css/mycss.css" rel="stylesheet" />
+    <link href="css/slideshow.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- PRELOADER SPINNER
+		============================================= -->
+    <!-- <div id="loader-wrapper">
+      <div id="loading">
+        <div class="cssload-loader">
+          <div class="cssload-ball cssload-ball-1"></div>
+          <div class="cssload-ball cssload-ball-2"></div>
+          <div class="cssload-ball cssload-ball-3"></div>
+          <div class="cssload-ball cssload-ball-4"></div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- PAGE CONTENT
+		============================================= -->
+    <div id="page" class="page">
+      <!-- HEADER
+			============================================= -->
+      <header id="header" class="header white-menu navbar-dark">
+        <div class="header-wrapper">
+          <!-- MOBILE HEADER -->
+          <div class="wsmobileheader clearfix">
+            <span class="smllogo"
+              ><img src="difconimage24\main-logo.png" alt="mobile-logo"
+            /></span>
+            <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+          </div>
+
+          <!-- NAVIGATION MENU -->
+          <div class="wsmainfull menu clearfix">
+            <div class="wsmainwp clearfix">
+              <!-- LOGO IMAGE -->
+              <!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 310 x 72 pixels) -->
+              <div class="desktoplogo">
+                <a href="#about" class="logo-black"
+                  ><img src="difconimage24/Test Web.png" alt="header-logo"
+                /></a>
+              </div>
+              <div class="desktoplogo">
+                <a href="#about" class="logo-white"
+                  ><img src="difconimage24/Test Web.png" alt="header-logo"
+                /></a>
+              </div>
+
+              <!-- MAIN MENU -->
+              <!-- MAIN MENU -->
+              <nav class="wsmenu clearfix">
+                <ul class="wsmenu-list">
+                  <!-- <li class="nl-simple" aria-haspopup="true"><a href="#cfp">Call for Paper </a></li> -->
+                  <!-- <li><a href="#committees"> Committees</a></li> -->
+
+                  <li aria-haspopup="true"><a href="#">Home<span class="wsarrow"></span></a>
+													<div class="wsmegamenu clearfix halfmenu">
+																<div class="container-fluid">
+																	<div class="row">
+																		<ul class="col-lg-12 link-list">
+																				<li><a href="#aboutdifcon">About DIFCON 2024</a></li>
+																				<li><a href="#keynotespeakerdifcon">Keynote Speakers</a></li>
+																				<li><a href="#committeedifcon">Committee</a></li>
+																				<li><a href="#contactus">Contact Us</a></li>
+																		</ul>
+																	</div>
+																</div>
+													</div>
+									</li>
+
+                  <li aria-haspopup="true">
+                    <a href="#">Co-Located Conferences <span class="wsarrow"></span></a>
+                    <div class="wsmegamenu clearfix halfmenu">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <ul class="col-lg-12 link-list">
+                
+                                    <!-- CITIC Dropdown -->
+                                    <li class="dropdown">
+                                        <a href="#">CITIC <span class="wsarrow"></span></a>
+                                        <div class="dropdown-one">
+                                            <ul>
+                                                <li><a href="citic.html#aboutcitic">About CITIC</a></li>
+                                                <li><a href="citic.html#trackscitic">Conference Tracks</a></li>
+                                                <li><a href="citic.html#proceedingscitic">Publications</a></li>
+                                                <li><a href="citic.html#keynotescitic">Keynote Speakers</a></li>
+                                                <li><a href="citic.html#invitedcitic">Invited Speakers</a></li>
+                                                <li><a href="citic.html#committeecitic">Committees</a></li>
+                                                <li><a href="citic.html#venuecitic">Author's Information</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                
+                                    <!-- MECON Dropdown -->
+                                    <li class="dropdown">
+                                        <a href="#">MECON <span class="wsarrow"></span></a>
+                                        <div class="dropdown-one">
+                                            <ul>
+                                                <li><a href="mecon.html#aboutmecon">About MECON</a></li>
+                                                <li><a href="mecon.html#tracksmecon">Conference Tracks</a></li>
+                                                <li><a href="mecon.html#proceedingsmecon">Publications</a></li>
+                                                <li><a href="mecon.html#keynotesmecon">Keynote Speakers</a></li>
+                                                <li><a href="mecon.html#invitedmecon">Invited Speakers</a></li>
+                                                <li><a href="mecon.html#committeemecon">Committees</a></li>
+                                                <li><a href="mecon.html#venuemecon">Author's Information</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                
+                                    <!-- ICTIM Dropdown -->
+                                    <li class="dropdown">
+                                        <a href="#">ICTIM <span class="wsarrow"></span></a>
+                                        <div class="dropdown-one">
+                                            <ul>
+                                                <li><a href="ictim.html#aboutictim">About ICTIM</a></li>
+                                                <li><a href="ictim.html#tracksictim">Conference Tracks</a></li>
+                                                <li><a href="ictim.html#proceedingsictim">Publications</a></li>
+                                                <li><a href="ictim.html#keynotesictim">Keynote Speakers</a></li>
+                                                <li><a href="ictim.html#invitedictim">Invited Speakers</a></li>
+                                                <li><a href="ictim.html#committeeictim">Committees</a></li>
+                                                <li><a href="ictim.html#venueictim">Author's Information</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                
+                                    <!-- ICCM Dropdown -->
+                                    <li class="dropdown">
+                                        <a href="#">ICCM <span class="wsarrow"></span></a>
+                                        <div class="dropdown-one">
+                                            <ul>
+                                                <li><a href="iccm.html#abouticcm">About ICCM</a></li>
+                                                <li><a href="iccm.html#tracksiccm">Conference Tracks</a></li>
+                                                <li><a href="iccm.html#proceedingsiccm">Publications</a></li>
+                                                <li><a href="iccm.html#keynotesiccm">Keynote Speakers</a></li>
+                                                <li><a href="iccm.html#invitediccm">Invited Speakers</a></li>
+                                                <li><a href="iccm.html#committeeiccm">Committees</a></li>
+                                                <li><a href="iccm.html#venueiccm">Author's Information</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                
+                                    <!-- CLESS Dropdown -->
+                                    <li class="dropdown">
+                                        <a href="#">CLESS <span class="wsarrow"></span></a>
+                                        <div class="dropdown-one">
+                                            <ul>
+                                                <li><a href="cless.html#aboutcless">About CLESS</a></li>
+                                                <li><a href="cless.html#trackscless">Conference Tracks</a></li>
+                                                <li><a href="cless.html#proceedingscless">Publications</a></li>
+                                                <li><a href="cless.html#keynotescless">Keynote Speakers</a></li>
+                                                <li><a href="cless.html#invitedcless">Invited Speakers</a></li>
+                                                <li><a href="cless.html#committeescless">Committees</a></li>
+                                                <li><a href="cless.html#venuecless">Author's Information</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                
+                                    <!-- ICLD Dropdown -->
+                                    <li class="dropdown">
+                                        <a href="#">ICLD <span class="wsarrow"></span></a>
+                                        <div class="dropdown-one">
+                                            <ul>
+                                                <li><a href="icld.html#abouticld">About ICLD</a></li>
+                                                <li><a href="icld.html#tracksicld">Conference Tracks</a></li>
+                                                <li><a href="icld.html#proceedingsicld">Publications</a></li>
+                                                <li><a href="icld.html#keynotesicld">Keynote Speakers</a></li>
+                                                <li><a href="icld.html#invitedicld">Invited Speakers</a></li>
+                                                <li><a href="icld.html#committeeicld">Committees</a></li>
+                                                <li><a href="icld.html#venueicld">Author's Information</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                   <!-- <li class="dropdown">
+                                        <a href="#">Presentation Poster <span class="wsarrow"></span></a>
+                                         <div class="dropdown-one">
+                                            <ul>
+                                                <li><a href="Presentation Poster.html#PresentationPoster">Poster</a></li>
+                                               
+                                            </ul>
+                                        </div>
+                                      </li> -->
+
+            
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                  </li> 
+                  <li><a href="publication.html"> Publication & Date</a></li>
+                  <li><a href="Registration.html">Registration</a></li>
+                  <li><a href="sponsorship.html"> Sponsorship</a></li>
+                       
+                  <li aria-haspopup="true">
+                    <a href="#">Archive<span class="wsarrow"></span></a>
+                    <div class="wsmegamenu clearfix halfmenu">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <ul class="col-lg-12 link-list">
+                            <li>
+	                        	<a href="https://difcon.mmu.edu.my/2025" >DIFCON 2025</a >
+	                         </li>
+                            <li>
+                              <a href="https://difcon.mmu.edu.my/2024"
+                                >DIFCON 2024</a
+                              >
+                            </li>
+                             
+                            <li>
+                              <a href="https://difcon.mmu.edu.my/2023"
+                                >DIFCON 2023</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://difcon.mmu.edu.my/2022"
+                                >DIFCON 2022</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://drive.google.com/file/d/1NdaLGHi7zNh_mbSx0CIlxpolS910YA0l/view?usp=drive_link">DIFCON 2021</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+              <!-- END MAIN MENU -->
+            </div>
+          </div>
+          <!-- END NAVIGATION MENU -->
+        </div>
+        <!-- End header-wrapper -->
+      </header>
+      <!-- END HEADER -->
+
+      <!-- <section id="schedule" class="page-hero-section bg-lightgrey pt-3 pb-3 mb-1" style="background-color:#34be76">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+							<div class="hero-txt text-center schedule">
+								<a href="https://drive.google.com/file/d/1sw-bV9TdwJ0uNB445J5cETHrf9AAvKvb/view?usp=sharing"  target="_blank"
+								class="mt-2 btn align-items-center line-height-1 btn-5 text-3 letter-spacing-n1 blink_me download-lg">
+									Download DIFCON Program Schedule
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+
+      <!-- HERO-6
+			============================================= -->
+
+      <section id="hero-6" class="hero-section division">
+				<div class="container">
+				  <!-- HERO CONTENT -->
+				  <div class="row d-flex align-items-center">
+					<img
+					  src="difconimage24\DIFCON_finale (3).png"
+					  alt="difcon-logo"
+					  style="max-width: 100%; height: auto; opacity: 0.8"
+					/>
+
+          </div>
+					<div class="row" id="keynotescitic">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-20 pt-10 text-center">
+								<!-- Title 	-->
+								<h3 class="pt-20 h3-md">5 - 7 MAY 2026, Cyberjaya Malaysia</h3>
+								<!-- Text -->
+								<p class="p-lg">
+								</p>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <!-- END HERO CONTENT -->
+				</div>
+				<!-- End container -->
+			  </section>
+      <!-- END HERO-6 -->
+
+      <!-- HERO-6
+			============================================= -->
+      
+    <!-- <section
+  id="content-3"
+  class="content-3 wide-60 bg-lightgrey content-section division pt-20"
+>
+  <div class="container">
+
+    <div class="row mt-5">
+      <div class="col-12 text-center">
+        <h3 class="h3-lg">Participant Resources</h3>
+        <p class="p-lg">Click any link below to download the slides in PPTX format.</p>
+      </div>
+    </div>
+    <div class="row text-center">
+       MECON Slides 
+      <div class="col-sm-6 col-md-4 mb-4">
+        <a href="files\MECON Slides Presentation (1).pptx" download
+           class="btn btn-warning w-100">
+          MECON Slides (PPTX)
+        </a>
+      </div>
+        CITIC Slides 
+      <div class="col-sm-6 col-md-4 mb-4">
+        <a href="files\CITIC Slides Presentation (1).pptx" download
+           class="btn btn-warning w-100">
+          CITIC Slides (PPTX)
+        </a>
+      </div>
+      CLESS Slides 
+      <div class="col-sm-6 col-md-4 mb-4">
+        <a href="files\CLESS Slides Presentation (1).pptx" download
+           class="btn btn-warning w-100">
+          CLESS Slides (PPTX)
+        </a>
+      </div>
+      ICTIM Slides 
+      <div class="col-sm-6 col-md-4 mb-4">
+        <a href="files\ICTIM Slides Presentation (1).pptx" download
+           class="btn btn-warning w-100">
+          ICTIM Slides (PPTX)
+        </a>
+      </div>
+       ICCM Slides 
+      <div class="col-sm-6 col-md-4 mb-4">
+        <a href="files\ICCM Slides Presentations (1).pptx" download
+           class="btn btn-warning w-100">
+          ICCM Slides (PPTX)
+        </a>
+      </div>
+       ICLD Slides 
+      <div class="col-sm-6 col-md-4 mb-4">
+        <a href="files\ICLD Slides Presentation (1).pptx" download
+           class="btn btn-warning w-100">
+          ICLD Slides (PPTX)
+        </a>
+      </div>
+    </div>
+      END PPTX RESOURCES 
+
+  </div>
+  End container 
+</section> -->
+
+
+      <!-- END HERO-6 -->  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <section
+        id="content-3"
+        class="content-3 wide-60 bg-lightgey content-section division pt-20"
+      >
+        <div class="container">
+          <!-- HERO CONTENT -->
+          <div class="row d-flex align-items-center">
+            <!-- HERO TEXT -->
+
+            <div id="aboutdifcon" class="col-xl-10 offset-xl-1">
+              <div class="hero-6-txt text-center">
+                <!-- Title -->
+                <br><br>
+                <h3 class="h3-lg">About DIFCON 2026</h3>
+
+                <p class="grey-color text-justify mt-20">
+                  
+                  
+                 Welcome to the Digital Futures International Congress 2026 (DIFCON 2026), the 6th edition of Multimedia University's annual academic congress. DIFCON 2026 is a premier event featuring six co-located conferences, 7th Multimedia University Engineering Conference 2026 (MECON2026), 6th International Conference on Computing, Information Technology and Intelligent Computing 2026 (CITIC2026), 6th International Conference of Creative Multimedia 2026 (ICCM2026), 7th International Conference on Communication, Language, Education and Social Sciences 2026 (CLESS2026), 6th International Conference on Law and Digitalisation 2025 (ICLD2026) and 6th International Conference on Technology and Innovation Management 2026 (ICTIM2026).Scheduled on May 5-7, 2026, DIFCON2026 organization supports and is aligned with the 2030 Sustainable Development Goals. It is continued to be conducted in hybrid mode, providing participants the flexibility to join the conference either on-site or virtually. </p>
+				
+				<!-- <a download href="files/programbook-difcon.pdf" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1"> -->
+																
+									</a>
+				
+              </div>
+            </div>
+            <!-- END HERO TEXT -->
+          </div>
+          <!-- END HERO CONTENT -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- END HERO-6 -->
+
+      <!-- CONTENT-3
+			============================================= -->
+      <section id="cfp" class="content-3 wide-60 bg-lightgrey content-section division">
+        <div class="container">
+          <!-- TOP CONTENT -->
+          <div id="c3-top" class="cbox-3 pb-50">
+            <div class="row d-flex align-items-top m-row">
+              <!-- TEXT BLOCK -->
+              <div class="col-md-12 col-lg-12 m-bottom">
+                <div>
+                  <div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+                    <!-- Title -->
+                    <h3 class="h3-sm pt-20 text-center">
+                      CO-LOCATED CONFERENCES
+                      <div class="w-100"></div>
+                    </h3>
+                  </div>
+      
+                  <!-- SERVICES-2 WRAPPER -->
+                  <div class="col-md-12 col-lg-12 sbox-2-wrapper text-center h-100">
+                    <div class="row h-100 justify-content-center align-items-top">
+                      <!-- SERVICE BOX: CITIC -->
+                      <div class="col-sm-2 col-lg-2" onclick="location.href='citic.html';" style="cursor: pointer;">
+                        <div class="sbox-2 wow fadeInUp" data-wow-delay="0.8s">
+                          <div class="box-line"></div>
+                          <div class="sbox-2-ico">
+                            <i aria-hidden="true" class="fas fa-server fa-3x"></i>
+                          </div>
+                          <h6 class="h6-lg">CITIC</h6>
+                          <p class="grey-color">
+                            International Conference on Computer, Information Technology and Intelligent Computing
+                          </p>
+                        </div>
+                      </div>
+      
+                      <!-- SERVICE BOX: MECON -->
+                      <div class="col-sm-2 col-lg-2" onclick="location.href='mecon.html';" style="cursor: pointer;">
+                        <div class="sbox-2 wow fadeInUp" data-wow-delay="0.4s">
+                          <div class="box-line"></div>
+                          <div class="sbox-2-ico">
+                            <i aria-hidden="true" class="fas fa-space-shuttle fa-3x"></i>
+                          </div>
+                          <h6 class="h6-lg">MECON</h6>
+                          <p class="grey-color">
+                            Multimedia University Engineering Conference
+                          </p>
+                        </div>
+                      </div>
+      
+                      <!-- SERVICE BOX: ICTIM -->
+                      <div class="col-sm-2 col-lg-2" onclick="location.href='ictim.html';" style="cursor: pointer;">
+                        <div class="sbox-2 wow fadeInUp" data-wow-delay="1.4s">
+                          <div class="box-line"></div>
+                          <div class="sbox-2-ico">
+                            <i aria-hidden="true" class="fas fa-laptop fa-3x"></i>
+                          </div>
+                          <h6 class="h6-lg">ICTIM</h6>
+                          <p class="grey-color">
+                            International Conference on Technology and Innovation Management
+                          </p>
+                        </div>
+                      </div>
+      
+                      <!-- SERVICE BOX: ICCM -->
+                      <div class="col-sm-2 col-lg-2" onclick="location.href='iccm.html';" style="cursor: pointer;">
+                        <div class="sbox-2 wow fadeInUp" data-wow-delay="1.4s">
+                          <div class="box-line"></div>
+                          <div class="sbox-2-ico">
+                            <i aria-hidden="true" class="fas fa-paint-brush fa-3x"></i>
+                          </div>
+                          <h6 class="h6-lg">ICCM</h6>
+                          <p class="grey-color">
+                            International Conference on Creative Multimedia
+                          </p>
+                        </div>
+                      </div>
+      
+                      <!-- SERVICE BOX: CLESS -->
+                      <div class="col-sm-2 col-lg-2" onclick="location.href='cless.html';" style="cursor: pointer;">
+                        <div class="sbox-2 wow fadeInUp" data-wow-delay="0.6s">
+                          <div class="box-line"></div>
+                          <div class="sbox-2-ico">
+                            <i aria-hidden="true" class="fas fa-language fa-3x"></i>
+                          </div>
+                          <h6 class="h6-lg">CLESS</h6>
+                          <p class="grey-color">
+                            International Conference on Communication, Language, Education and Social Sciences
+                          </p>
+                        </div>
+                      </div>
+
+                      <section>
+                        
+
+
+
+
+
+
+                      </section>
+      
+                      <!-- SERVICE BOX: ICLD -->
+                      <div class="col-sm-2 col-lg-2" onclick="location.href='icld.html';" style="cursor: pointer;">
+                        <div class="sbox-2 wow fadeInUp" data-wow-delay="1s">
+                          <div class="box-line"></div>
+                          <div class="sbox-2-ico">
+                            <i aria-hidden="true" class="fas fa-balance-scale fa-3x"></i>
+                          </div>
+                          <h6 class="h6-lg">ICLD</h6>
+                          <p class="grey-color">
+                            International Conference on Law and Digitalisation
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End row -->
+                  </div>
+                  <!-- END SERVICES-2 WRAPPER -->
+                </div>
+              </div>
+              <!-- END TEXT BLOCK -->
+            </div>
+            <!-- End row -->
+          </div>
+          <!-- END TOP CONTENT -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- END CONTENT-3 -->
+	  
+	  
+	  
+	        <!-- CONTENT-3 / KEYNOTE
+			============================================= -->
+
+<!-- CONTENT-3 / KEYNOTE
+			============================================= -->
+      <section id="content-3" class="content-3 wide-60 bg-white content-section division pt-20">
+        <div class="container">
+           
+          <div class="row" id="keynotespeakerdifcon">
+            <div class="col-lg-10 offset-lg-1">
+              <div class="section-title mb-50 pt-10 text-center">
+                
+                <h3 class="pt-20 h3-md">KEYNOTE SPEAKERS</h3>
+                 
+                <p class="p-lg"></p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div id="c3-bottom" class="pt-70 cbox-3">
+            <div class="row d-flex align-items-center"> 
+              <div class="col-md-5 col-lg-6 m-top">
+                <div
+                  class="img-block right-column pc-25 mb-40 wow fadeInLeft"
+                  data-wow-delay="0.4s"
+                >
+                  <img
+                    class="img-fluid"
+                    src="difconimage24/Dr. ABD. RAHIM ABU TALIB.png"
+                    alt="content-image" width="400" height="200"
+                  />
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-6">
+                <div 
+                  class="txt-block right-column pc-35 mb-40 wow fadeInLeft"
+                  data-wow-delay="0.4s"
+                >
+                  <h3 class="h3-sm">Professor Ir. Dr. ABD. RAHIM ABU TALIB</h3>
+                 
+                  <p class="grey-color text-justify">
+                    Professor Abd Rahim Abu Talib is a distinguished scholar and leader in Aerospace Engineering, widely recognized
+                    for his contributions to research, education, and industry. He earned his PhD in Engineering Science from the
+                    University of Oxford (2003), and a B.Eng (Hons) in Aeronautical Engineering from the University of Salford (1998).
+                    Currently serving as the Deputy Vice Chancellor (Academic and International) at Universiti Putra Malaysia (UPM),
+                    Professor Abd Rahim previously held several key positions, including Director of Quality Assurance, Head of
+                    Department of Aerospace Engineering, and Deputy Dean at the Faculty of Engineering. He also served as Deputy
+                    Chair of the Council of Quality Assurance for Public Universities (MPQ-UA).
+                    With extensive industrial experience, he was seconded to the Aerospace Malaysia Innovation Centre (AMIC),
+                    MiGHT Meteor Advanced Manufacturing (MMAM), and the Malaysian Industry-Government Group for High
+                    Technology (MIGHT).
+                    Professor Abd Rahim is President of the Southeast Asia Network on Aerospace Engineering (SANAE), Deputy
+                    President and Fellow of MySET, and a Top Research Scientist Malaysia from the Academy Science Malaysia,
+                    2024. A registered Professional Engineer and ASEAN Chartered Professional Engineer, he has authored over 130
+                    journal papers and, in 2025, is listed among the world’s top 2% scientists by Elsevier and Stanford University. </p>
+                </div>
+              </div>
+            </div>
+              
+          </div>
+          <!-- <div id="c3-bottom" class="pt-70 cbox-3">
+            <div class="row d-flex align-items-center"> 
+              <div class="col-md-5 col-lg-6 m-top">
+                <div
+                  class="img-block right-column pc-25 mb-40 wow fadeInLeft"
+                  data-wow-delay="0.4s"
+                >
+                  <img
+                    class="img-fluid"
+                    src="difconimage24/Prof Dzul Final.png"
+                    alt="content-image" width="400" height="200"
+                  />
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-6">
+                <div 
+                  class="txt-block right-column pc-35 mb-40 wow fadeInLeft"
+                  data-wow-delay="0.4s"
+                >
+                  <h3 class="h3-sm">Y. Bhg. Prof. Emer. Tan Sri Dato' Dzulkifli Abdul Razak</h3>
+                 
+                  <p class="grey-color text-justify">
+                    Tan Sri Dzulkifli Abdul Razak, known as Dzul, is an emeritus
+                    professor, educationist and scientist who has served as the 6th
+                    Rector of the International Islamic University Malaysia (IIUM) from
+                    1 August 2018 to 31 August 2024, and former Vice-Chancellor of
+                    Universiti Sains Malaysia (2000–2011). He previously served as
+                    President of the International Association of Universities (IAU), a
+                    UNESCO-affiliated organization, and was the Convenor of the
+                    RCE on Education for Sustainable Development. He is a Fellow of
+                    the Academy of Sciences Malaysia (FASc), the World Academy of
+                    Art and Science (FWAAS), and the World Academy of Islamic
+                    Management (FWAIM). He is also an adjunct professor at
+                    UNIMAS. In 2017, he became the first Asian recipient of the
+                    prestigious Gilbert Medal and also received the Asia HRD
+                    Contribution to Society Award. Actively involved in multiple
+                    charity organizations, Dzul chairs LeapEd Services Sdn Bhd, a
+                    social enterprise focused on education. His scholarly
+                    contributions include books on leadership and education, such
+                    as Nurturing a Balanced Person and Fourth Industrial Revolution –
+                    The Leadership Dilemma. </p>
+                </div>
+              </div>
+            </div>
+              
+          </div> -->
+            <!-- keynote2   -->
+
+
+
+
+
+
+
+          <!-- <div id="c3-top" class="cbox-3 pb-50">
+            <div class="row d-flex align-items-center m-row">
+              <div class="col-md-7 col-lg-6 m-bottom">
+                <div
+                  class="txt-block left-column pc-35 mb-40 wow fadeInRight"
+                  data-wow-delay="0.4s"
+                >
+                  <h3 class="h3-sm">Prof. Dr. Ainurul Rosli</h3>
+                  <h5 class="h5-xs sm-title">
+                    Professor of Enterprise and Entrepreneurship
+                  </h5>
+                  <p class="grey-color text-justify">
+                    Professor Rosli is a specialist  in social value and
+                    outcome-based strategic management tailored for senior
+                    executives and Board Directors. She specialises in guiding
+                    purposeful organizations to integrate social value into corporate
+                    strategies, aligning business performance with societal impact 
+                    and long-term sustainability. As Chair of the Impact and Practice 
+                    Group at the Institute for Small Business and Entrepreneurship (ISBE)
+                    , UK, she advocates for transformative leadership and governance practices.
+                    An Accredited Trainer for UNDP SDG Impact Standards for Enterprises, Professor 
+                    Rosli has extensive experience in delivering Leading and Managing Impact 
+                    workshops for senior executives and Boards, focusing on measurable outcomes and 
+                    impact and sustainability performance-driven governance; enabling senior executives 
+                    and Boards to steer purposeful organizations with strategies that balance corporate
+                    success and societal value creation. Her work empower organizations to make informed 
+                    decisions that align with their values, driving purposeful growth and impact to achieve the 
+                    SDGs. Her professional portfolio includes advising prominent corporate clients, government
+                    bodies, and international organizations, including the Ministry of Higher Education 
+                    Malaysia, the Chartered Association of Business Schools (CABS), and the Big Innovation 
+                    Centre (BIC). She has also led initiatives such as the £30 million UK Government-funded 
+                    Small Business Support Program "Help to Grow Management", serving as Chair of the Curriculum Committee for Innovation, and shaped national digital transformation strategies through her work on UKRI-funded projects.Professor Rosli is a Knowledge Mobiliser at the UK Parliament POST Knowledge Exchange Unit, where she bridges research and policy. She co-founded Social Value Malaysia, a regional network of Social Value International that champions impact evaluation and management. She also played a key role alongside GSG Impact in developing the Malaysia Impact Alliance (MyImpact), an independent, non-profit organization, chaired by Khazanah Nasional aiming to contribute to the growth and development of the impact investment ecosystem in Malaysia. Prior to her academic career, Ainurul established the Research Management Office at Telekom Research & Development (TMR&D) and worked as a freelance strategy consultant with AIMR International and London Research International.
+                  </p>
+                   <h5 class="h5-xs sm-title">
+                    Title: Art, Digital technology and Sustainability
+                  </h5> 
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-6 m-top">
+                <div
+                  class="img-block right-column pc-25 mb-40 wow fadeInLeft"
+                  data-wow-delay="0.4s"
+                >
+                  <img
+                    class="img-fluid"
+                    src="difconimage24/dicon_ProfDrAinurulRosli.jpg"
+                    alt="content-image" width="400" height="200"
+                  />
+                </div>
+              </div>
+            </div>
+          </div> -->
+          
+
+          
+          <!-- <div id="c3-bottom" class="pt-70 cbox-3">
+            <div class="row d-flex align-items-center">
+              
+              <div class="col-md-5 col-lg-6 m-top">
+                <div
+                  class="img-block right-column pc-25 mb-40 wow fadeInLeft"
+                  data-wow-delay="0.4s"
+                >
+                  <img
+                    class="img-fluid"
+                    src="difconimage24\PROF.-MADYA-TS.-DR.-WAN-ZAKIAH-WAN-ISMAIL.jpg"
+                    alt="content-image" width="400" height="200"
+                  />
+                </div>
+              </div>
+
+              
+              <div class="col-md-7 col-lg-6">
+                <div 
+                  class="txt-block right-column pc-35 mb-40 wow fadeInLeft"
+                  data-wow-delay="0.4s"
+                >
+                  <h3 class="h3-sm">Assoc. Prof. Dr. Wan Zakiah Wan Ismail</h3>
+                  <h5 class="h5-xs sm-title">
+                    Associate Professor at Faculty of Engineering and 
+                    Built Environment(FKAB),Universiti Sains Islam Malaysia (USIM)
+                  </h5>
+                  <p class="grey-color text-justify">
+                    Wan Zakiah Wan Ismail is an Associate Professor in Faculty of Engineering and Built Environment (FKAB), Universiti Sains Islam Malaysia (USIM) from 2017 until now. She was a tutor and lecturer in Multimedia University, Melaka Campus from 2005-2012. She has published more than 50 peer-review journals and conference proceedings and 10 book chapters and 1 book in her field. She is a member of Optical Society of America (OSA), member of Institute of Electrical and Electronics Engineers (IEEE) and a Technology specialist (Ts), professional member of Malaysia’s Board of Technologist (MBOT). She took undergraduate study in Multimedia University, Malaysia and pursued her Master and PhD in Melbourne University and Macquarie University. She was the recipient of Prime Minister’s Australia Endeavour award and Universiti Sains Islam Malaysia (USIM) fellowship in 2012. Her PhD study focuses on optical devices specialized in laser engineering. Her expertise includes optics and electronic sensing, image processing, biosensing and material science.
+                  </p>
+                </div>
+              </div>
+              
+            </div>
+           
+          </div> -->
+       
+         <!-- <div id="c3-top" class="cbox-3 pb-50 pt-70">
+          <div class="row d-flex align-items-center m-row">
+            
+            <div class="col-md-7 col-lg-6 m-bottom">
+              <div
+                class="txt-block left-column pc-35 mb-40 wow fadeInRight"
+                data-wow-delay="0.4s"
+              >
+                <h3 class="h3-sm">Assoc. Prof. Dr. Astrid Kusumowidagdo</h3>
+                <h5 class="h5-xs sm-title">
+                  Associate Professor in Interior Architecture,Universitas Ciputra, Surabaya Indonesia
+                </h5>
+                <p class="grey-color text-justify">
+                  Astrid Kusumowidagdo, is an Associate Professor in Interior Architecture, one of the program stream of Architecture Department, Universitas Ciputra, Surabaya Indonesia. Currently, she is the Dean of Ciputra University’s School of Creative Industry, a Cumulus Member Institution. She is also assigned to be the coordinator of Strategic Research of Sense of Place in, Ciputra University Surabaya.  Her research focus is in Commercial Space Design and Behaviour in Indigenous, Modern and Virtual Environment; Entrepreneurship, Lifestyle and Creative Industry. She is a member of the Indonesian Association of Built Environment Researchers (IPLBI), Ikatan Peneliti lingkungan Binaan Indonesia); Indonesian Interior Designer Association (HDII- Member of IFI),    and International Association People- Environment Studies (IAPS).
+                </p>
+              </div>
+            </div>
+            
+
+            
+            <div class="col-md-5 col-lg-6 m-top">
+              <div
+                class="img-block right-column pc-25 mb-40 wow fadeInLeft"
+                data-wow-delay="0.4s"
+              >
+                <img
+                  class="img-fluid"
+                  src="difconimage24\astrid.JPG"
+                  alt="content-image"
+                  width="400" height="200"
+                />
+              </div>
+            </div>
+          </div>
+        </div> -->
+        
+
+
+<!--         
+        <div id="c3-bottom" class="pt-70 cbox-3">
+          <div class="row d-flex align-items-center">
+           
+            <div class="col-md-5 col-lg-6 m-top">
+              <div
+                class="img-block right-column pc-25 mb-40 wow fadeInLeft"
+                data-wow-delay="0.4s"
+              >
+                <img
+                  class="img-fluid"
+                  src="difconimage24\Prof Elsadig Keynote difon.jpeg"
+                  alt="content-image"
+                  width="400" height="200"
+                />
+              </div>
+            </div>
+
+            
+            <div class="col-md-7 col-lg-6">
+              <div 
+                class="txt-block right-column pc-35 mb-40 wow fadeInLeft"
+                data-wow-delay="0.4s"
+              >
+                <h3 class="h3-sm">Prof. Dr. Elsadig Musa</h3>
+                <h5 class="h5-xs sm-title">
+                  Professor of Economics and Technology Management at Faculty of Business, Multimedia University (MMU)
+                </h5>
+                <p class="grey-color text-justify">
+                  Prof. Dr. Elsadig Musa Ahmed is a Professor of Economics and Technology Management at Faculty Of Business,
+                   Multimedia University (MMU). Recognized as one of the top 2% global scientists by Stanford University for 2024, he has supervised numerous PhD, DBA, Masters, and MBA students and currently supervises several PhD candidates. He serves on the MMU Senate, Research and Ethics Board, Postgraduates Board, University Research Projects Review, and Students’ Disciplinary Committees. His research interests include productivity analysis, the knowledge-based economy, green productivity, and bio-economy. He authored the book Green Productivity: Applications in Malaysia’s Manufacturing and has published over 100 papers in international refereed journals. 
+                </p>
+              </div>
+            </div>
+          
+          </div>
+          
+        </div> -->
+         
+         <!-- <div id="c3-top" class="cbox-3 pb-50 pt-70">
+          <div class="row d-flex align-items-center m-row">
+           
+            <div class="col-md-7 col-lg-6 m-bottom">
+              <div
+                class="txt-block left-column pc-35 mb-40 wow fadeInRight"
+                data-wow-delay="0.4s"
+              >
+                <h3 class="h3-sm">Dr. Riky A. Siswanto</h3>
+                <h5 class="h5-xs sm-title">
+                  Lecturer, TELKOM UNIVERSITY
+                </h5>
+                <p class="grey-color text-justify">
+                  Dr. Riky Siswanto is an academic and graphic designer specializing in visual identity design, with a
+                  focus on branding for local businesses and SMEs. His work explores dynamic visual identity—
+                  flexible, evolving brand systems—as well as social graphic design that engages with communities
+                  and cultural contexts. Current research areas include controlled randomness, brand recognition,
+                  generative design, and user interaction. With a strong academic background and active
+                  involvement in research and community projects, he bridge theory and practice to help brands
+                  build adaptable, socially grounded visual identities. </p>
+              </div>
+            </div>
+           
+            <div class="col-md-5 col-lg-6 m-top">
+              <div
+                class="img-block right-column pc-25 mb-40 wow fadeInLeft"
+                data-wow-delay="0.4s"
+              >
+                <img
+                  class="img-fluid"
+                  src="difconimage24\Dr riky.PNG"
+                  alt="content-image"
+                  width="400" height="200"
+                />
+              </div>
+            </div>
+          </div>
+         
+        </div> -->
+       
+
+
+
+
+<!-- 
+        <div id="c3-top" class="cbox-3 pb-50 pt-70">
+          <div class="row d-flex align-items-center m-row">
+            <div class="col-md-7 col-lg-6 m-bottom">
+              <div
+                class="txt-block left-column pc-35 mb-40 wow fadeInRight"
+                data-wow-delay="0.4s"
+              >
+                <h3 class="h3-sm">Assoc. Prof. Dr. Astrid Kusumowidagdo</h3>
+                <h5 class="h5-xs sm-title">
+                  Associate Professor in Interior Architecture,Universitas Ciputra, Surabaya Indonesia
+                </h5>
+                <p class="grey-color text-justify">
+                  Astrid Kusumowidagdo, is an Associate Professor in Interior Architecture, one of the program stream of Architecture Department, Universitas Ciputra, Surabaya Indonesia. Currently, she is the Dean of Ciputra University’s School of Creative Industry, a Cumulus Member Institution. She is also assigned to be the coordinator of Strategic Research of Sense of Place in, Ciputra University Surabaya.  Her research focus is in Commercial Space Design and Behaviour in Indigenous, Modern and Virtual Environment; Entrepreneurship, Lifestyle and Creative Industry. She is a member of the Indonesian Association of Built Environment Researchers (IPLBI), Ikatan Peneliti lingkungan Binaan Indonesia); Indonesian Interior Designer Association (HDII- Member of IFI),    and International Association People- Environment Studies (IAPS).
+                </p>
+              </div>
+            </div> 
+            <div class="col-md-5 col-lg-6 m-top">
+              <div
+                class="img-block right-column pc-25 mb-40 wow fadeInLeft"
+                data-wow-delay="0.4s"
+              >
+                <img
+                  class="img-fluid"
+                  src="difconimage24\astrid.JPG"
+                  alt="content-image"
+                  width="400" height="200"
+                />
+              </div>
+            </div>
+          </div>
+        </div> -->
+        
+              
+		   
+		  
+        </div>
+   
+      </section>
+
+
+
+
+
+
+
+
+
+       
+       <section id="content-3" class="content-3 wide-60 bg-lightgrey content-section division pt-20">
+        <div class="container">
+        <!--   SECTION TITLE  -->
+          <div class="row" id="keynotespeakerdifcon">
+            <div class="col-lg-10 offset-lg-1">
+              <div class="section-title mb-50 pt-10 text-center">
+               <!--  Title 	-->
+               <h3 class="pt-20 h3-md">CO-ORGANIZERS</h3>
+               <!--  Text -->
+                <p class="p-lg"></p>
+              </div>
+            </div>
+          </div>
+		<!-- Example using Bootstrap’s grid system -->
+    <!-- Example using Bootstrap’s grid system -->
+<div class="container">
+  
+  <!-- Four logos grid -->
+  <div class="row text-center mb-4">
+   
+    <!-- Image 1 -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <img src="/difconimage24/ciputra.png" alt="Logo 1" class="img-fluid" style="max-height: 150px;">
+    </div>
+
+    <!-- Image 2 -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <img src="/difconimage24/egs.jpg" alt="Logo 2" class="img-fluid" style="max-height: 150px;">
+    </div>
+
+    <!-- Image 3 -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <img src="/difconimage24/siglo.png" alt="Logo 3" class="img-fluid" style="max-height: 150px;">
+    </div>
+
+    <!-- Image 4 -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <img src="/difconimage24/telkom.jpeg" alt="Logo 4" class="img-fluid" style="max-height: 150px;">
+    </div>
+
+  </div>
+
+</div>
+ 
+      
+      </div>
+    </div>
+    
+
+		  
+        </div>
+        <!-- End container -->
+      </section>
+	  
+	        <!-- CONTENT-3 Co-Organisers -->
+          
+          
+
+<!--
+          <section id="cfp" class="content-3 wide-60 content-section division">
+            <div class="container">
+              <!-- TOP CONTENT 
+              <div id="c3-top" class="cbox-3 pb-50">
+                <div class="row d-flex align-items-top m-row">
+                  <!-- TEXT BLOCK 
+                  <div class="col-md-12 col-lg-12 m-bottom">
+                    <div>
+                      <div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+                        <!-- Centered Title 
+                        <h3 class="h3-sm pt-20 center-text" style="text-align: center;">
+                          SUPPORTING INSTITUTIONS
+                          <div class="w-100"></div>
+                        </h3>
+                      </div>
+          
+                      <!--
+                       
+                      <div class="img-block right-column pc-25 mb-40 wow fadeInLeft text-center" data-wow-delay="0.4s">
+                        <img class="img-fluid mx-2" src="difconimage24/cordova.png" alt="Cordova Logo" style="height:110pt;">
+                        <img class="img-fluid mx-2" src="difconimage24/upb.jfif" alt="UPB Logo" style="height:110pt;">
+                      </div>
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End container 
+          </section>
+          
+      <!-- END CONTENT-3 -->
+	   
+    
+
+
+      
+
+      <!-- CONTENT-3 / committees -->
+      <section id="content-3" class="content-3 wide-60 bg-white content-section division ">
+        <div class="container">
+        
+          <div class="row" id="committeedifcon">
+            <div class="col-lg-10 offset-lg-1">
+              <div class="section-title mb-50 pt-10 text-center">
+                <h3 class="pt-20 h3-md">DIFCON CONGRESS COMMITTEE</h3>
+                <p class="p-lg"></p>
+              </div>
+            </div>
+          </div>
+
+       
+           <div id="c3-top" class="cbox-3 pb-50">
+ <div class="row d-flex align-items-top m-row">
+  <div class="col-12">
+    <div
+      class="txt-block left-column pc-35 mb-40 wow fadeInRight"
+      data-wow-delay="0.4s"
+    >
+      <h4 class="mb-25">Organizing Committee</h4>
+
+      <ul class="committee-list">
+        <li>
+          <strong>Advisor:</strong>
+          YBhg. Prof. Dato’ Dr. Mazliham Mohd Su’ud
+        </li>
+
+        <li>
+          <strong>Chair:</strong>
+          Prof. Dr. Mohamad Yusoff Bin Alias  
+          <span>Multimedia University</span>
+        </li>
+
+        <li>
+          <strong>Vice Chair:</strong>
+          Prof. Dr. Kamarulzaman Ab. Aziz  
+          <span>Multimedia University</span>
+        </li>
+
+        <li>
+          <strong>Chair:</strong>
+          Asst. Prof. Dr. Yeo Sook Fern
+        </li>
+
+        <li>
+          <strong>Co-Chair:</strong>
+          Asst. Prof. Dr. Lim Kah Boon
+        </li>
+
+        <li>
+          <strong>Secretary:</strong>
+          Assoc. Prof. Dr. Nor Azlina Binti Ab Aziz  
+          <span>Multimedia University</span>
+        </li>
+
+        <li>
+          <strong>Secretary:</strong>
+          Ms Anushia Chelvarayan
+        </li>
+
+        <li>
+          <strong>Program Chair:</strong>
+          Mr. Tan Gek Siang  
+          <span>Multimedia University</span>
+        </li>
+
+        <li>
+          <strong>Technical & Programme Chair:</strong>
+          Dr. Cheah Chew Sze
+        </li>
+
+        <li>
+          <strong>Review Process Chair:</strong>
+          Dr. Lim Ying San
+        </li>
+
+        <li>
+          <strong>Treasurer:</strong>
+          Ms. Norzarina Binti Md Yatim  
+          <span>Multimedia University</span>
+        </li>
+
+        <li>
+          <strong>International Chair:</strong>
+          Prof. Dr. Sara A. Abdoh  
+          <span>Benha University, Egypt</span>
+        </li>
+
+        <li>
+          <strong>Publicity Chair:</strong>
+          Ms Norshikin Binti Shadan
+        </li>
+
+        <li>
+          <strong>Publicity & Social Media:</strong>
+          Ms. Nadziratul Zur’Atikah Binti Nazian  
+          <span>Multimedia University</span>
+        </li>
+
+        <li>
+          <strong>Website & Technical:</strong>
+          Mr. Muhammad Izzat Faiz Bin Mohd Derafi , Md Mahin Uddin   &amp; Mahadi Hasan Mishuk
+          <span>Multimedia University</span>
+        </li>
+
+        <li>
+          <strong>Publications Chair:</strong>
+          Dr. Lim Ying Zhee
+        </li>
+      </ul>
+
+      <hr class="my-25" />
+
+      <h5 class="mb-15">Organizing Members</h5>
+      <ul class="committee-sublist">
+        <li>Mr. Muhammad Nadzree Bin Mohd Yamin – Multimedia University</li>
+        <li>Kapt. Dr. Anith Khairunnisa Ghazali – Multimedia University</li>
+      </ul>
+
+      <hr class="my-25" />
+
+      <h4 class="mb-25">Technical Programme Committee</h4>
+
+      <ul class="committee-sublist">
+        <li>Prof. Dr. Ming Lang Tseng – Asia University, Taiwan</li>
+        <li>Prof. Dr. Anthony Shun Fung Chiu – De La Salle University, Philippines</li>
+        <li>Prof. Dr. Tan Kim Hua – Nottingham University, United Kingdom</li>
+        <li>Prof. Dr. Ming Lim – University of Glasgow, United Kingdom</li>
+        <li>Prof. Dr. Freddy Marín-González – Universidad de la Costa, Colombia</li>
+        <li>Prof. Dr. Kuo-Jui Wu – Hainan University, China</li>
+        <li>Prof. Dr. Sevenpri Candra – Bina Nusantara University, Indonesia</li>
+        <li>Prof. Eric Tsui Yue-hong – Hong Kong Polytechnic University, Hong Kong</li>
+        <li>Prof. Dr. Steven Tam – Fort Hays State University, United States</li>
+        <li>Prof. Dr. Jawad Rasheed – Istanbul Sabahattin Zaim University, Turkey</li>
+        <li>Prof. Dr. Mincong Tang – Beijing Jiaotong University, China</li>
+        <li>Prof. Dr. Evan Lau Poh Hock – Universiti Malaysia Sarawak, Malaysia</li>
+
+        <li>Assoc. Prof. Dr. Tan Cheng Ling – Universiti Sains Malaysia, Malaysia</li>
+        <li>Assoc. Prof. Dr. Irene Leong Yoke Chu – UiTM, Malaysia</li>
+        <li>Assoc. Prof. Dr. Francis Chuah Chin Wei – Universiti Utara Malaysia, Malaysia</li>
+        <li>Assoc. Prof. Dr. Imran Mahmud – Daffodil International University, Bangladesh</li>
+        <li>Assoc. Prof. Dr. Keoy Kay Hooi – UCSI, Malaysia</li>
+        <li>Assoc. Prof. Ts. Dr. Lilian A/P Anthonsamy – Multimedia University, Malaysia</li>
+
+        <li>Asst. Prof. Dr. Leong Choi Meng – Swinburne University of Technology, Malaysia</li>
+        <li>Asst. Prof. Dr. Long Kim – Walailak University, Thailand</li>
+        <li>Asst. Prof. Dr. Eva Lim Wei Lee – UCSI, Malaysia</li>
+        <li>Asst. Prof. Dr. Ng Tuan Hock – Multimedia University, Malaysia</li>
+
+        <li>Dr. Zurina Mohdidin – Universiti Sains Malaysia, Malaysia</li>
+        <li>Dr. Anita Silvianita – Telkom University, Indonesia</li>
+        <li>Dr. Songpan Janthong – Walailak University, Thailand</li>
+        <li>Dr. Chan Kar Hoong – Temasek Polytechnic, Singapore</li>
+        <li>Dr. Chin Phiak Nie – Universiti Sains Malaysia, Malaysia</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div>
+
+          <!-- END TOP CONTENT -->
+        <!-- </div> -->
+        <!-- End container 
+      </section>
+      <!-- END CONTENT-3 / COMITTEES
+	   -->
+	  <!-- <section id="content-3" class="content-3 wide-60 bg-lightgrey content-section division pt-20">
+				<div class="container">
+
+					<!-- SECTION TITLE 
+					<div class="row" id="committees">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-50 pt-10 text-center">
+								<h3 class="pt-20 h3-md">VIDEO</h3>
+								<p class="p-lg">
+								</p>
+							</div>
+						</div>
+					</div>
+				 -->
+
+				<!-- START CONTENT 
+					<div class="video-container">
+						<div class="video">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/GVL_V4aLzuU?si=R561Bh0g-M8otVi9" title="ABC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</div>
+						<div class="video">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/BbgqoWg98-c?si=BGsJhH7BUrGlCYfD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</div>	 						
+						<!-- End row 
+					</div>	<!-- END CONTENT 
+					<div class="video-container">	  
+						<div class="video">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/QF2VF6jvlwU?si=hgDrwBJIOxsY-6kl" title="ABC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</div>
+						<div class="video">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/HYpUO5WU0Jo?si=L9uISUBrKeET1rKe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</div>
+						
+						<!-- End row 
+					</div>
+					<div class="video-container">	
+						<div class="video">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Oo1MOISWq2c?si=XXUf6EpobRvDb4Rl" title="ABC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</div>
+						<div class="video">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Pe6Zt4jXzwU?si=JuN7SwuHUpfA9MpP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</div>	
+						
+						End row
+					</div>
+					
+
+
+				</div>     <!-- End container -->
+			</section>	<!-- END GALLERY CONTENT-->
+	  -->
+	  
+
+      <!-- GREY BORDER
+			============================================= -->
+      <!-- <div class="gb-wrapper">
+        <div class="container">
+          <div class="row"><div class="col-md-12 grey-border"></div></div>
+        </div>
+      </div> -->
+
+      <!-- FOOTER-1
+			============================================= -->
+      <!-- <footer id="footer-1" class="footer division">
+        <div class="container">   -->
+
+      <!-- SECTION TITLE 
+					<div class="row" id="venuedifcon">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-50 pt-10 text-center">
+								<h3 class="pt-20 h3-md">Venue</h3>
+								<p class="p-lg">
+									<!-- Email 
+									<p class="fas fa-map-marker-alt"> Multimedia University,Cyberjaya,Selangor, Malaysia </p>
+								</p>
+							</div>
+						</div>
+					</div>
+
+          <!-- FOOTER CONTENT -->
+          <div class="row">
+            <!-- FOOTER INFO -->
+            <div class="col-lg-12 col-xl-12 text-center">
+              <div class="footer-info mb-40">
+                <!-- Footer Logo -->
+
+
+                <!-- <img
+                  src="difconimage24/logo.png"
+                  alt="footer-logo"
+                  class="ml-3 center-block"
+                /> -->
+                <!-- <img
+                  src="difconimage24/difcon-logo24.jpeg"
+                  alt="difcon-logo"
+                  class="center-block"
+                  style="width: 200px; height: auto"
+                /> -->
+				<img
+                  src="difconimage24/cnergy.png"
+                  alt="difcon-logo"
+                  class="center-block"
+                  style="width: 200px; height: auto"
+                />
+				
+
+                <!-- Text -->
+                <!-- SECTION TITLE -->
+                <div class="row" id="contactus">
+                  <div class="col-lg-10 offset-lg-1">
+                    <div class="section-title mb-50 pt-10 text-center">
+                      <h3 class="pt-20 h3-md">CONTACT US</h3>
+                      <p class="p-lg">
+                        <!-- Email -->
+                        <p class="foo-email"><a href="mailto:difcon@mmu.edu.my">difcon@mmu.edu.my</a></p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                  <!-- Phone -->
+                  <!-- <p class="grey-color">P: (60) 3-8312 5991 / 5989 / 5279</p> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 col-xl-12 text-center">
+              <div>
+                <!-- <a href="https://info.flagcounter.com/CL0R"><img src="https://s01.flagcounter.com/countxl/CL0R/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a> -->
+                <a href="https://info.flagcounter.com/n6zP"
+                  ><img
+                    src="https://s11.flagcounter.com/countxl/n6zP/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/"
+                    alt="Flag Counter"
+                    border="0"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <!-- END FOOTER CONTENT -->
+
+          <!-- BOTTOM FOOTER -->
+          <div class="bottom-footer grey-color">
+            <div class="row d-flex align-items-center">
+              <!-- FOOTER COPYRIGHT -->
+              <div class="col-md-6 mt-2">
+                <div class="footer-copyright">
+                  <p>
+                    &copy; 2024 Universiti Telekom Sdn. Bhd. All Rights Reserved
+                  </p>
+                </div>
+              </div>
+
+              <!-- BOTTOM FOOTER LINKS -->
+              <!-- <div class="col-md-6">
+                <ul
+                  class="bottom-footer-list text-right clearfix social-icons social-icons-transparent social-icons-icon-dark social-icons-lg"
+                >
+                  <li class="social-icons-facebook">
+                    <a
+                      href="https://www.facebook.com/Digital-Futures-International-Congress-100369699264856"
+                      target="_blank"
+                      title="Facebook"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+            <!-- End row -->
+          </div>
+          <!-- END BOTTOM FOOTER -->
+        </div>
+        <!-- End container -->
+      </footer>
+      <!-- END FOOTER-1 -->
+    </div>
+    <!-- END PAGE CONTENT -->
+
+    <!-- EXTERNAL SCRIPTS
+		============================================= -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.scrollto.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/register-form.js"></script>
+    <script src="js/request-form.js"></script>
+    <script src="js/comment-form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/wow.js"></script>
+
+    <!-- Custom Script -->
+    <script src="js/custom.js"></script>
+    <script src="js/slideshow.js"></script>
+
+    <script>
+      new WOW().init();
+    </script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!-- [if lt IE 9]>
+			<script src="js/html5shiv.js" type="text/javascript"></script>
+			<script src="js/respond.min.js" type="text/javascript"></script>
+		<![endif] -->
+
+    <!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
+    <!--
+		<script>
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-XXXXX-X']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		--></body>
+</html>

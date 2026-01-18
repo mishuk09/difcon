@@ -1,0 +1,1203 @@
+<style>/* Main dropdown menu */
+	.wsmegamenu {
+		position: relative;
+	}
+	
+	.wsmegamenu .dropdown {
+		position: relative;
+	}
+	
+	.wsmegamenu .dropdown > a {
+		position: relative;
+		padding-right: 20px;
+	}
+	
+	.wsmegamenu .dropdown-one {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		background-color: #f9f9f9;
+		min-width: 200px;
+		z-index: 1000;
+		box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	}
+	
+	.wsmegamenu .dropdown:hover > .dropdown-one {
+		display: block;
+	}
+	
+	.wsmegamenu .dropdown-one ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.wsmegamenu .dropdown-one li {
+		border-bottom: 1px solid #ddd;
+	}
+	
+	.wsmegamenu .dropdown-one li a {
+		display: block;
+		padding: 8px 16px;
+		color: #000;
+		text-decoration: none;
+	}
+	
+	.wsmegamenu .dropdown-one li a:hover {
+		background-color: #ddd;
+	}
+	</style>
+
+
+
+
+<!DOCTYPE 
+
+html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+
+
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="description" content="DIFCON"/>
+		<meta name="keywords" content="DIFCON, MMU">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  		<!-- SITE TITLE -->
+		<title>CITIC </title>
+
+		<!-- FAVICON AND TOUCH ICONS -->
+		<link rel="icon" type="image/png" sizes="32x32" href="difconimage24/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="difconimage24/favicon-16x16.png">
+
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900" rel="stylesheet">
+
+		<!-- BOOTSTRAP CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- FONT ICONS -->
+		<link href="https://use.fontawesome.com/releases/v5.11.0/css/all.css" rel="stylesheet" crossorigin="anonymous">
+		<link href="css/flaticon.css" rel="stylesheet">
+
+		<!-- PLUGINS STYLESHEET -->
+		<link href="css/menu.css" rel="stylesheet">
+		<link id="effect" href="css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
+		<link href="css/magnific-popup.css" rel="stylesheet">
+		<link href="css/owl.carousel.min.css" rel="stylesheet">
+		<link href="css/owl.theme.default.min.css" rel="stylesheet">
+
+		<!-- ON SCROLL ANIMATION -->
+		<link href="css/animate.css" rel="stylesheet">
+
+		<!-- TEMPLATE CSS -->
+		<!-- <link href="css/brick-theme.css" rel="stylesheet">     -->
+	    <!-- <link href="css/dimgreen-theme.css" rel="stylesheet">  -->
+	    <!-- <link href="css/green-theme.css" rel="stylesheet">     -->
+	    <!-- <link href="css/indigo-theme.css" rel="stylesheet">    -->
+	    <!-- <link href="css/orangered-theme.css" rel="stylesheet"> -->
+	    <!-- <link href="css/pink-theme.css" rel="stylesheet">      -->
+	    <!-- <link href="css/red-theme.css" rel="stylesheet">       -->
+	    <link href="css/royalblue-theme.css" rel="stylesheet">
+	    <!-- <link href="css/skyblue-theme.css" rel="stylesheet"> -->
+	    <!-- <link href="css/violet-theme.css" rel="stylesheet">    -->
+
+		<!-- RESPONSIVE CSS -->
+		<link href="css/responsive.css" rel="stylesheet">
+
+		<!-- My Custom CSS -->
+		<link href="css/mycss.css" rel="stylesheet">
+	</head>
+
+
+	<body>
+		<!-- PRELOADER SPINNER
+		============================================= -->
+		<div id="loader-wrapper">
+			<div id="loading">
+				<div class="cssload-loader">
+					<div class="cssload-ball cssload-ball-1"></div>
+					<div class="cssload-ball cssload-ball-2"></div>
+					<div class="cssload-ball cssload-ball-3"></div>
+					<div class="cssload-ball cssload-ball-4"></div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!-- PAGE CONTENT
+		============================================= -->
+		<div id="page" class="page">
+
+
+
+
+			<!-- HEADER
+			============================================= -->
+			<header id="header" class="header white-menu navbar-dark">
+				<div class="header-wrapper">
+
+
+					<!-- MOBILE HEADER -->
+				    <div class="wsmobileheader clearfix">
+				    	<span class="smllogo"><img src="difconimage24\Test Web-01.png"  alt="mobile-logo"/></span>
+				    	<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+				 	</div>
+
+
+				 	<!-- NAVIGATION MENU -->
+				  	<div class="wsmainfull menu clearfix">
+	    				<div class="wsmainwp clearfix">
+
+
+	    					<!-- LOGO IMAGE -->
+	    					<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 310 x 72 pixels) -->
+	    					<div class="desktoplogo"><a href="#about" class="logo-black"><img src="difconimage24\Test Web-01.png" alt="header-logo"></a></div>
+	    					<div class="desktoplogo"><a href="#about" class="logo-white"><img src="difconimage24\Test Web-01.png" alt="header-logo"></a></div>
+
+
+	    					<!-- MAIN MENU -->
+	      					<nav class="wsmenu clearfix">
+	        					<ul class="wsmenu-list">
+									<li aria-haspopup="true"><a href="#"> Home <span class="wsarrow"></span></a>
+										<div class="wsmegamenu clearfix halfmenu">
+											<div class="container-fluid">
+												<div class="row">
+													<ul class="col-lg-12 link-list">
+														<li aria-haspopup="true"><a href="#aboutcitic">About CITIC </a></li>
+                                                        <li aria-haspopup="true"><a href="#trackscitic"> Tracks</a></li>
+                                                        <li aria-haspopup="true"><a href="#proceedingscitic"> Publications </a></li>
+														<li aria-haspopup="true"><a href="#committeecitic"> Committee </a></li>
+									                  
+														<li aria-haspopup="true"><a href="#invitedcitic"> Speakers </a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>				
+									<li aria-haspopup="true">
+										<a href="#">Co-Located Conferences <span class="wsarrow"></span></a>
+										<div class="wsmegamenu clearfix halfmenu">
+											<div class="container-fluid">
+												<div class="row">
+													<ul class="col-lg-12 link-list">
+									
+														<!-- Home Section -->
+														<li class="dropdown">
+															<a href="#">Home <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="index.html#aboutdifcon">About DIFCON</a></li>
+																	<li><a href="index.html#keynotespeakerdifcon">Keynote Speakers</a></li>
+																	<li><a href="index.html#committeedifcon">Committee</a></li>
+																	<li><a href="index.html#venuedifcon">Contact Us</a></li>
+																</ul>
+															</div>
+														</li>
+									
+														
+									
+														<!-- MECON -->
+														<li class="dropdown">
+															<a href="#">MECON <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="mecon.html#aboutmecon">About MECON</a></li>
+																	<li><a href="mecon.html#tracksmecon">Conference Tracks</a></li>
+																	<li><a href="mecon.html#proceedingsmecon">Publications</a></li>
+																	<li><a href="mecon.html#keynotesmecon">Speakers</a></li>
+																	
+																	<li><a href="mecon.html#committeemecon">Committees</a></li>
+																	<!-- <li><a href="mecon.html#venuemecon">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+									
+														<!-- ICTIM -->
+														<li class="dropdown">
+															<a href="#">ICTIM <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="ictim.html#aboutictim">About ICTIM</a></li>
+																	<li><a href="ictim.html#tracksictim">Conference Tracks</a></li>
+																	<li><a href="ictim.html#proceedingsictim">Publications</a></li>
+																	<li><a href="ictim.html#keynotesictim">Speakers</a></li>
+																	
+																	<li><a href="ictim.html#committeeictim">Committees</a></li>
+																	<!-- <li><a href="ictim.html#venueictim">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+									
+														<!-- ICCM -->
+														<li class="dropdown">
+															<a href="#">ICCM <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="iccm.html#abouticcm">About ICCM</a></li>
+																	<li><a href="iccm.html#tracksiccm">Conference Tracks</a></li>
+																	<li><a href="iccm.html#proceedingsiccm">Publications</a></li>
+																	<li><a href="iccm.html#keynotesiccm">Speakers</a></li>
+																	
+																	<li><a href="iccm.html#committeeiccm">Committees</a></li>
+																	<!-- <li><a href="iccm.html#venueiccm">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+									
+														<!-- CLESS -->
+														<li class="dropdown">
+															<a href="#">CLESS <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="cless.html#aboutcless">About CLESS</a></li>
+																	<li><a href="cless.html#trackscless">Conference Tracks</a></li>
+																	<li><a href="cless.html#proceedingscless">Publications</a></li>
+																	<li><a href="cless.html#keynotescless">Speakers</a></li>
+																	
+																	<li><a href="cless.html#committeecless">Committees</a></li>
+																	<!-- <li><a href="cless.html#venuecless">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+									
+														<!-- ICLD -->
+														<li class="dropdown">
+															<a href="#">ICLD <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="icld.html#abouticld">About ICLD</a></li>
+																	<li><a href="icld.html#tracksicld">Conference Tracks</a></li>
+																	<li><a href="icld.html#proceedingsicld">Publications</a></li>
+																	<li><a href="icld.html#keynotesicld">Speakers</a></li>
+																	
+																	<li><a href="icld.html#committeeicld">Committees</a></li>
+																	<!-- <li><a href="icld.html#venueicld">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+
+ 										<!-- <li class="dropdown">
+                                        <a href="#">Presentation Poster <span class="wsarrow"></span></a>
+                                         <div class="dropdown-one">
+                                            <ul>
+                                                <li><a href="Presentation Poster.html#PresentationPoster">Poster</a></li>
+                                               
+                                            </ul>
+                                        </div>
+                                      </li> -->
+
+
+
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li><a href="publication.html"> Publication & Date</a></li>
+
+										<li aria-haspopup="true"><a href="#">Registration <span class="wsarrow"></span></a>
+											<div class="wsmegamenu clearfix halfmenu">
+														<div class="container-fluid">
+															<div class="row">
+																<ul class="col-lg-12 link-list">
+																		<!-- <li><a href="index.html">HOME (DIFCON)</a></li> -->
+																			<li><a href="Registration.html">Registration</a></li>
+																		<li><a href="Participant Resources.html">Participant Resources</a></li>
+																</ul>
+															</div>
+														</div>
+											</div>
+										</li><li><a href="sponsorship.html"> Sponsorship</a></li>
+
+<li aria-haspopup="true">
+<a href="#">Archive<span class="wsarrow"></span></a>
+<div class="wsmegamenu clearfix halfmenu">
+<div class="container-fluid">
+<div class="row">
+  <ul class="col-lg-12 link-list">
+	<li>
+		<a href="https://difcon.mmu.edu.my/2025"
+		  >DIFCON 2025</a
+		>
+	  </li>
+	
+	<li>
+		<a href="https://difcon.mmu.edu.my/2024"
+		  >DIFCON 2024</a
+		>
+	  </li>
+	
+	<li>
+	  <a href="https://difcon.mmu.edu.my/2023"
+		>DIFCON 2023</a
+	  >
+	</li>
+	<li>
+	  <a href="https://difcon.mmu.edu.my/2022"
+		>DIFCON 2022</a
+	  >
+	</li>
+	<li>
+	  <a href="https://drive.google.com/file/d/1NdaLGHi7zNh_mbSx0CIlxpolS910YA0l/view?usp=drive_link">DIFCON 2021</a>
+	</li>
+							
+					
+									
+	        					</ul>
+	        				</nav>	<!-- END MAIN MENU -->
+
+
+
+	    				</div>
+	    			</div>	<!-- END NAVIGATION MENU -->
+
+
+				</div>     <!-- End header-wrapper -->
+			</header>	<!-- END HEADER -->
+
+
+
+
+			<!-- HERO-6
+			============================================= -->
+			<section id="hero-6" class="hero-section division">
+				<div class="container">
+				  <!-- HERO CONTENT -->
+				  <div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+					<img class="img-fluid" src="difconimage24\2025 CITIC-logo.png" alt="content-image" style="height:300pt"> 
+
+				</div>
+
+				<div class="section-title mb-20 pt-10 text-center">
+					<!-- Title 	-->
+					<h1 class="pt-20 h3-md">5 - 7 MAY 2026, Cyberjaya Malaysia</h1>
+					<!-- Text -->
+					<p class="p-lg">
+					</p>
+				</div>
+				  <!-- END HERO CONTENT -->
+				</div>
+				<!-- End container -->
+			  </section>
+
+			  
+						
+
+
+			<!-- CONTENT-3 
+		 ============================================= -->
+			<section class="content-3 wide-60 content-section division">
+				<div class="container">
+
+					<!-- TOP CONTENT -->
+					<div id="c3-top" class="cbox-3 pb-50">
+						<div class="row d-flex align-items-top m-row">
+
+
+							<!-- TEXT BLOCK -->
+							<div class="col-md-6 col-lg-6 m-bottom">
+
+								 <div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+									<!-- Title -->
+									<h3 class="h3-sm pt-20" id="aboutcitic">ABOUT <div class="w-100"></div></h3>
+
+									<h6 class="h6-sm"> THEME: Computing Solutions for Sustainable Growth </h6> 
+
+									
+									<p class="grey-color text-justify">
+										The 6th International Conference on Computer, Information Technology and Intelligent Computing (CITIC 2026) will be held on 5-7 May 2026 in hybrid mode. This conference is being co-organized by Faculty of Computing & Informatics (FCI) and Faculty of Information Science Technology (FIST), Multimedia University. CITIC 2026 aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Frontiers in Computer, Information Technology and Intelligent Computing. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Computer, Information Technology and Intelligent Computing.	</p>
+									
+									
+
+
+
+
+									<!-- <h4 class="h4-sm mb-2 pt-20" id="proceedingscitic">Call for Papers </h4>
+                                      
+
+<p class="grey-color text-justify">
+										The 5th International Conference on Computer, Information Technology and Intelligent Computing (CITIC 2025) will be held on 21-23 July 2025 hybrid mode. This conference is being co-organized by Faculty of Computing & Informatics (FCI) and Faculty of Information Science Technology (FIST), Multimedia University.  
+
+CITIC 2025 aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Frontiers in Computer, Information Technology and Intelligent Computing. It also provides a premier interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Computer, Information Technology and Intelligent Computing.
+									</p> -->
+
+									<h4 class="h4-sm mb-2 pt-20" id="proceedingscitic">PUBLICATION </h4>
+
+									<!-- Text List -->
+									<ul class="txt-list grey-color">
+										<p class="grey-color text-justify">
+											All papers will be published in a Special Volume of the esteemed AIP Conference Proceedings, which is indexed in several leading databases such as Web of Science and Scopus. However, how quickly selected proceedings are available in an abstracting and indexing service is up to the provider; AIP Publishing has no influence on this timeframe.  </p> 
+															<li class="list-item"> 
+																
+																<i class="fas fa-genderless"></i>
+																<p> •	International Journal on Informatics Visualization (JOIV) ISSN : 2549-9610 / 2549-9904 (Scopus Q3) 
+																</p>
+															</li>
+															
+															 <li class="list-item">
+																<i class="fas fa-genderless"></i>
+																<p> •	International Journal on Advanced Science, Engineering and Information Technology (IJASEIT) ISSN : 2088-5334 (Scopus Q3)</p>
+															</li>
+															
+															<li class="list-item">
+																<i class="fas fa-genderless"></i>
+																<p> •	MMU Press Journal of Engineering Technology and Applied Physics (JETAP) ISSN: 2682-8383 (MyJurnal/MyCite/DOAJ/EBSCOHost) 
+																</p>
+															</li>
+															<li class="list-item">
+																<i class="fas fa-genderless"></i>
+																<p> •	MMU Press Journal of Informatics and Web Engineering (JIWE) ISSN: 2821-370X (MyJurnal/MyCite/DOAJ/EBSCOHost)</p>
+															</li>
+															<li class="list-item">
+																<i class="fas fa-genderless"></i>
+																<p> MMU Press Journal of Engineering Technology and Applied Physics (JETAP) ISSN: 2682-8383 (MyJurnal/MyCite/DOAJ)
+																</p>
+															</li> 
+															<li class="list-item">
+																<i class="fas fa-genderless"></i>
+																<p> •	MMU Press International Journal on Robotics, Automation and Sciences (IJORAS) ISSN: 2682-860X (MyJurnal/EBSCOHost)
+																</p>
+															</li>
+															
+															
+										<div class="text-center justify-content-center justify-content-lg-start">
+											<div>
+												<a download href="files\AIPCP Article Template_Sept1_2023.docx" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Template Word</a>
+												<a download href="files\AIPCP Article Template_Sept1_2023.pdf" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Template PDF</a> 
+											</div>
+										</div>
+										<!-- <div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s"> 
+											<a href="https://semarakilmu.com.my/main/journal/?mgc_52=53/scopus">
+											  <img class="img-fluid" src="difconimage24/semarak-ilmu-header-logo.png" alt="content-image" style="height:110pt">
+											</a>
+										  </div> -->
+
+										 <p class="grey-color text-justify">
+											<br>Selected papers will be invited to be extended and submitted to the following participating journals, provided that the extended version contains at least 80% new content: 
+										</p> 
+									</ul>
+									
+									<!-- <div class="col-lg-12 col-xl-12 text-center">
+										<img src="difconimage/springer.jpg" alt="springer-logo" class="center-block" style="width: 250px; height: auto">
+										<img src="difconimage/atlantis.jpg" alt="atlantis-logo"  class="center-block" style="width: 250px; height: auto">
+									</div> 
+
+									 <div class="col-lg-12 justify-content-center justify-content-lg-start">
+										<div>
+											<a href="authorinfo.html#importantdates" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Author Information & Registration! </a>
+										</div>
+									</div> -->
+								</div>
+
+
+
+							</div>	<!-- END TEXT BLOCK -->
+
+
+
+
+							<!-- TEXT BLOCK  -->
+							<div class="col-md-6 col-lg-6 m-bottom">
+
+									<div class="txt-block left-column pc-35 mb-40 wow fadeInRight  m-bottom mt-40" data-wow-delay="0.4s">
+
+
+										<ul class="txt-list black-color">  
+											
+
+										 <h4 class="h4-sm pt-20" id="trackscitic">Submission Instruction</h4>
+
+
+										<p class="grey-color text-justify">
+											When preparing your manuscript (maximum 6 pages) for AIP Conference Proceedings, please abide by the following guidelines (https://pubs.aip.org/aip/acp/pages/preppapers): 	
+										</p>
+
+										<li class="list-item">
+																
+											<i class="fas fa-genderless"></i>
+											<p> Download your template package for Word or LaTex.  
+											</p>
+										</li>
+										
+										<li class="list-item">
+											<i class="fas fa-genderless"></i>
+											<p> Do not add page numbers or headers/footers. 
+											</p>
+										</li>
+										
+										<li class="list-item">
+											<i class="fas fa-genderless"></i>
+											<p>Do not alter the margins of our templates. 
+											</p>
+										</li>
+										<li class="list-item">
+											<i class="fas fa-genderless"></i>
+											<p> Paper size is 8.5 x 11. 
+											</p>
+										</li>
+										<li class="list-item">
+											<i class="fas fa-genderless"></i>
+											<p> The paper must include the author name and full affiliation address including country. 
+											</p>
+										</li> 
+										<li class="list-item">
+											<i class="fas fa-genderless"></i>
+											<p> Use clear, legible graphics and diagrams contained within the margins. 
+											</p>
+										</li>
+										<li class="list-item">
+											<i class="fas fa-genderless"></i>
+											<p> Do not use copyrighted material without permission and proper crediting.
+											</p>
+										</li> 
+										<li class="list-item">
+											<i class="fas fa-genderless"></i>
+											<p> All pages are to be in portrait. 
+											</p>
+										</li> 
+										<li class="list-item">
+											<i class="fas fa-genderless"></i>
+											<p> References are prepared using our sample reference guidelines (available in the template package). References can only be linked if they are complete.
+											</p>
+										</li> 
+										<li class="list-item">
+											<i class="fas fa-genderless"></i>
+											<p> Embed all fonts into your manuscript PDF. 
+											</p>
+										</li>  
+									</ul>
+
+								<!-- Small Title 
+								<h4 class="h4-sm pt-20" id="trackscitic">CONFERENCE TRACKS</h4>
+
+								<!-- Text List  
+								<ul class="txt-list grey-color">
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold"> Artificial Intelligence & Machine Learning
+															</p>
+															<p class="grey-color text-justify"> Algorithm & Application, Data Mining, Neural Networks, Natural Language Processing, Recommender Systems
+															</p>
+														</li>
+
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold"> Software Engineering
+															</p>
+															<p class="grey-color text-justify">  Aspect Oriented Software Development, Visual Programming, Requirement Engineering, Domain Engineering, Architecture Design
+															</p>
+														</li>
+
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold"> Information Systems
+															</p>
+															<p class="grey-color text-justify"> Database, Information Retrieval, Web Mining, Human Computer Interface, Internet & its Application, Mobile Computing, e-Learning, e-Commerce, Ontology and Semantic Web
+															</p>
+														</li>
+
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">  Pattern & Image Processing
+
+															</p>
+															<p class="grey-color text-justify">Image and Signal Processing, Virtual Reality, Augmented Reality, Visual Computing
+															</p>
+														</li>
+
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">  IoT, Big Data & Blockchain Technology
+															</p>
+															<p class="grey-color text-justify"> Data Communications, Distributed Computing, Wireless Communications, Cloud Computing, Graph Theory
+															</p>
+														</li>
+
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">   Security & Privacy
+															</p>
+															<p class="grey-color text-justify"> Computer and Network Security, Computer Networks & Communications, Data Privacy, Information Security, Cryptography, Authentication, Encryption
+															</p>
+														</li>
+
+								</ul>	<!-- End Text List -->
+
+								<!-- <a download href="files/programbook-citic.pdf" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">
+																CITIC Program Book
+									</a> 
+
+								 <h4 class="h4-sm pt-20" id="journals">JOURNALS</h4> 
+
+								<!-- Text List 
+								 <ul class="txt-list text-justify grey-color">
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold"> International Journal of Technology (IJech) [ISSN:20869614]
+															</p>
+														</li>
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">  Journal of System and Management Sciences (JSMS) [ISSN:18166075]
+															</p>
+														</li>
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold"> Journal of Logistics, Informatics and Service Science (JLISS) [ISSN:24092665]
+															</p>
+														</li>
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">  MMU Press Journal of Informatics and Web Engineering (JIWE)
+															</p>
+														</li>
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">  Journal of Telecommunications and the Digital Economy (JTDE) [ISSN:22031693]
+															</p>
+														</li>
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">  International Journal of Information Technology and Web Engineering (IJITWE) [ISSN:15541045]
+															</p>
+														</li>
+								</ul>
+								<p class="mt-3 grey-color font-italic text-justify"> * Selected papers will be recommended for publication in the listed journals and subjected to the respective journal requirements.</p>
+								<p class="mt-3 grey-color font-italic text-justify"> * Selected papers will be recommended for publication and subjected to the respective journal requirements.</p> 
+
+
+							</div>
+						</div> <!-- end text block -->
+
+						</div>	  <!-- End row  -->
+					</div>	<!-- END TOP CONTENT -->
+
+
+				</div>     <!-- End container -->
+			</section>	<!-- END CONTENT-3 -->
+
+
+
+
+
+			<!-- CONTENT-3 / KEYNOTE 
+			============================================= -->
+			<section id="content-3" class="content-3 wide-60 bg-lightgrey content-section division pt-20">
+				<div class="container">
+
+					<!-- SECTION TITLE -->
+					<div class="row" id="keynotescitic">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-50 pt-10 text-center">
+								<!-- Title 	-->
+								<h3 class="pt-20 h3-md">KEYNOTE SPEAKERS</h3>
+								<!-- Text -->
+								<p class="p-lg">
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- BOTTOM CONTENT -->
+					<div id="c3-bottom" class="cbox-3">
+						<div class="row d-flex align-items-center">
+
+
+							<!-- IMAGE BLOCK -->
+							<div class="col-md-5 col-lg-6 m-top">
+								<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									<img class="img-fluid" src="difconimage24\Dr Maziatul citic.png" alt="content-image" width="400" height="200">
+								</div>
+							</div>
+
+
+							<!-- TEXT BLOCK -->
+							<div class="col-md-7 col-lg-6">
+								<div class="txt-block right-column pc-35 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+
+									<!-- Title -->
+									<h3 class="h3-sm"> Dr. Maizatul Akmar Ismail 
+ 	</h3>
+
+									<!-- Small Title -->
+									<h5 class="h5-xs sm-title">Associate Professor </h5>
+
+									<!-- Small Title -->
+									<h5 class="h5-xs sm-title"> University of Malaya (UM), Malaysia </h5>
+
+									<!-- Text -->
+									<p class="grey-color text-justify">
+										Dr. Maizatul Akmar Ismail is an Associate Professor at the Department of Information Systems, Faculty of Computer Science and Information Technology, University of Malaya (UM), Malaysia. She holds a Bachelor’s and Ph.D. in Computer Science from UM, and a Master’s degree from Universiti Putra Malaysia. Her work centers around Information Systems with a focus on educational technology, recommender systems, and data mining. She leads a research team exploring how data-driven insights and intelligent systems can improve learning experiences and support decision-making. Over the years, she has published extensively in conferences and journals, sharing her research with both academic and practitioner communities. Beyond research, Dr. Maizatul contributes to the academic ecosystem through editorial service as an Chief Editor of the Malaysian Journal of Computer Science (2022 – 2024). She actively participates in innovation and research exhibitions and has also been invited to serve as a judge at several local and international innovation competitions. Dr. Maizatul enjoys collaborating with industry, students, and communities. She believed that impactful research begins with real-world problems and ends with meaningful solutions that benefit society.
+	</div>
+							</div>	<!-- END TEXT BLOCK -->
+
+
+						</div>	  <!-- End row -->
+					</div>	<!-- END BOTTOM CONTENT 
+					
+					
+					
+					<!-- TOP CONTENT -->
+					<div id="c3-top" class="cbox-3 pb-50">
+						<div class="row d-flex align-items-center m-row">
+
+
+							<!-- TEXT BLOCK -->
+							<div class="col-md-7 col-lg-6 m-bottom">
+								<div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+									<!-- Title -->
+									<h3 class="h3-sm"> Prof. Dr. Uttam U. Deshpande   </h3>
+
+									<!-- Small Title -->
+									<h5 class="h5-xs sm-title"> Professor  </h5>
+
+									<!-- Small Title -->
+									<h5 class="h5-xs sm-title"> KLS Gogte Institute of Technology (GIT) , Belagavi, Karnataka, India </h5>
+
+									<!-- Text -->
+									<p class="grey-color text-justify">
+										Dr. Uttam U. Deshpande is a Professor in the Department of Electronics and Communication Engineering at KLS’s Gogte Institute of Technology, Belagavi, Karnataka. With over 17 years of academic and research experience, he specializes in Computer Vision, Image Processing, AI, Machine Learning, Embedded Systems, and IoT. He serves as the NVIDIA Embedded AI SPOC and Advisor for the IEEE Robotics and Automation Society. He earned his Ph.D. from Visvesvaraya Technological University, focusing on deep learning–based latent fingerprint identification. His work includes automated fingerprint recognition, industrial AI solutions, and cloud-enabled medical monitoring systems. Dr. Deshpande has published more than 25 high-impact papers in SCI, Scopus, and Web of Science journals and authored multiple Springer book chapters. He actively mentors research and industry projects funded by DST–Texas Instruments, NVIDIA, and KSCST, and has helped establish major AI and embedded systems labs. He is also a frequent invited speaker and reviewer in leading AI and engineering forums.
+</p>
+								</div>
+							</div>	<!-- END TEXT BLOCK 
+
+
+							<!-- IMAGE BLOCK -->
+							<div class="col-md-5 col-lg-6 m-top">
+								<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									<img class="img-fluid" src="difconimage24\Dr Uttam Citic.jpg" alt="content-image" width="400" height="200">
+									
+								</div>
+							</div>
+
+
+						</div>	  <!-- End row  -->
+					</div>	<!-- END TOP CONTENT -->
+
+
+					<!-- BOTTOM CONTENT -->
+					<div id="c3-bottom" class="cbox-3">
+						<div class="row d-flex align-items-center">
+
+
+							
+							<div class="col-md-5 col-lg-6 m-top">
+								<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									<img class="img-fluid" src="difconimage24\Dr Riasat Khan citic.png" alt="content-image" width="400" height="200">
+								</div>
+							</div>
+
+
+							
+							<div class="col-md-7 col-lg-6">
+								<div class="txt-block right-column pc-35 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+
+									 
+									<h3 class="h3-sm"> Assoc. Prof. Dr. Riasat Khan
+ 	</h3>
+
+									
+									<h5 class="h5-xs sm-title"> Associate Professor </h5>
+
+									 
+									<h5 class="h5-xs sm-title"> North South University, Dhaka, Bangladesh  </h5>
+
+									 
+									<p class="grey-color text-justify">
+										Dr. Riasat Khan is an Associate Professor in the Department of Electrical and Computer Engineering at North South University, Dhaka, Bangladesh. He received his B.Sc. in Electrical and Electronic Engineering from the Islamic University of Technology (IUT), Bangladesh, and began his academic career as a Lecturer at Green University of Bangladesh. He later earned his M.Sc. and Ph.D. in Electrical and Computer Engineering from New Mexico State University, USA, where he also served as a Graduate Teaching Assistant and received the Outstanding Teaching Assistant Award. At North South University, he served as the Undergraduate Program Coordinator (EEE/ETE) from 2023 to 2024. He is actively involved in the BAETE accreditation process and has completed BAETE Evaluator Training (Tier-1). His research interests include Artificial Intelligence, Smart Systems and IoT.
+
+
+ 
+
+Heru’s contributions to the field are well-documented, with over 30 research papers indexed by Scopus. In addition to his research, he is committed to mentoring students and young researchers, fostering the next generation of innovators in medical informatics. His interdisciplinary approach bridges engineering and public health, making his research not only technically sound but also socially impactful. 
+									</p>
+								</div>
+							</div>	<!-- END TEXT BLOCK -->
+
+
+						</div>	  <!-- End row -->
+					</div>	<!-- END BOTTOM CONTENT 
+
+					
+					<!-- SECTION TITLE - industry forum panelists 
+					<section id="content-3" class="content-3 wide-30 mb-1 pb-1 content-section division">
+						<div class="container">
+		
+
+					<div class="row" id="invitedcitic">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-50 pt-10 text-center">
+								<!-- Title 	
+								<h3 class="pt-20 h3-md">INVITED SPEAKERS</h3>
+								<!-- Text 
+								<p class="p-lg">
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- TOP CONTENT 
+					<div id="c3-top" class="cbox-3 pb-50">
+						<div class="row d-flex align-items-center m-row">
+
+
+							<!-- TEXT BLOCK 
+							<div class="col-md-7 col-lg-6 m-bottom">
+								<div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+									<!-- Title 
+									<h3 class="h3-sm"> Mr. Advent Phang  </h3>
+
+									<!-- Small Title 
+									<h5 class="h5-xs sm-title"> CTO</h5>
+
+									<!-- Small Title 
+									<h5 class="h5-xs sm-title"> HealthMetrics, Malaysia </h5>
+
+									<!-- Text 
+									<p class="grey-color text-justify">
+										Advent Phang is the co-founder and Chief Technology Officer of HealthMetrics, the award-winning end-to-end corporate healthcare solution. As a technopreneur, he also co-founded InfinitiLab, a technology agency specialising in cloud-based platform development. His passion includes coding, system architecting, and company-building. He also believes that remote work is the future of work. On a personal level, Advent is driven to improve and change the prevailing economic order using emerging technologies. He has extensive experience in the gaming, oil & gas, travel and insurance industries. His previous accolades include emerging as world champion at the prestigious global AngelHack competition in San Francisco in 2015. 
+
+									</p>
+								</div>
+							</div>	<!-- END TEXT BLOCK 
+
+
+							<!-- IMAGE BLOCK 
+							<div class="col-md-5 col-lg-6 m-top">
+								<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									<img class="img-fluid" src="difconimage24\invited citic kiv.jpg" alt="content-image" width="400" height="200">
+								</div>
+							</div>
+						</div>	  <!-- End row 
+					</div>
+					
+				</section>	<!-- END TOP CONTENT 
+
+										<!-- BOTTOM CONTENT 
+										<div id="c3-bottom" class="cbox-3">
+											<div class="row d-flex align-items-center">
+					
+					
+												<!-- IMAGE BLOCK 
+												<div class="col-md-5 col-lg-6 m-top">
+													<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+														<img class="img-fluid" src="difconimage24\invited citic 2.jpg" alt="content-image" width="400" height="200">
+													</div>
+												</div>
+					
+					
+												<!-- TEXT BLOCK 
+												<div class="col-md-7 col-lg-6">
+													<div class="txt-block right-column pc-35 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+					
+														<!-- Title 
+														<h3 class="h3-sm"> Dr. Md Alamgir Hossain </h3>
+					
+														<!-- Small Title 
+														<h5 class="h5-xs sm-title"> Senior Research Fellow </h5> -->
+					
+														<!-- Small Title 
+														<h5 class="h5-xs sm-title"> Queensland Micro-and Nano-technology Centre,
+															Griffith University, Nathan, Australia
+															</h5>
+					
+														<!-- Text 
+														<p class="grey-color text-justify">
+															Dr. Md Alamgir Hossain, a Senior Research Fellow at Griffith University, has significantly contributed to renewable 
+															energy and power systems. He established Australia's pioneering hydrogen DC microgrid lab at Griffith University. 
+															Previously, he was a Postdoc Research Associate at UNSW, developing machine learning models for renewable energy, 
+															and an Assistant Professor at DUET, Bangladesh. Dr. Hossain holds a PhD and a Master of Engineering from UNSW, specializing
+															in renewable energy systems. He has published over 110 research papers, received $1.6 million in research funding, and has an
+															H-index of 31. His work on greenhouse gas emissions has influenced policy, and he has received numerous awards, including the 
+															IEEE Senior Member rank in 2023.</p>
+													</div>
+												</div>	<!-- END TEXT BLOCK 
+					
+					
+											</div>	  <!-- End row 
+										</div>	<!-- END BOTTOM CONTENT -->
+
+<!-- TOP CONTENT 
+<div id="c3-top" class="cbox-3 pb-50">
+	<div class="row d-flex align-items-center m-row">
+
+
+		<!-- TEXT BLOCK 
+		<div class="col-md-7 col-lg-6 m-bottom">
+			<div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+				<!-- Title 
+				<h3 class="h3-sm"> Mr. Md Ismail Hossen  </h3>
+
+				<!-- Small Title 
+				<h5 class="h5-xs sm-title"> Research Scholar (PhD) </h5>
+
+				<!-- Small Title 
+				<h5 class="h5-xs sm-title">School of Information and Communication Technology
+					Griffith University, Queensland, Australia
+					 </h5>
+					 <h6 class="h5-xs sm-title"> Lecturer, Department of Computer Science, American International University-Bangladesh (AIUB), Bangladesh</h5>
+
+				<!-- Text 
+				<p class="grey-color text-justify">
+					Mr Md Ismail Hossen is a PhD candidate at the School of Information and Communication Technology, Griffith University, Australia. His research focuses on deep learning-based plant recognition, particularly addressing data scarcity challenges in few-shot learning. He has over four years of teaching experience as a Lecturer at the Department of Computer Science, American International University-Bangladesh (AIUB). Prior to his PhD, he earned his Master’s and Bachelor’s degrees from Multimedia University, Malaysia, where he was actively involved in research on smart parking and machine learning.  His research interests include machine learning, transfer learning, few-shot learning and computer vision.
+				</p>
+			</div>
+		</div>	<!-- END TEXT BLOCK 
+
+
+		<!-- IMAGE BLOCK 
+		<div class="col-md-5 col-lg-6 m-top">
+			<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+				<img class="img-fluid" src="difconimage24\invited citic 3.jpg" alt="content-image" width="400" height="200">
+			</div>
+		</div>
+	</div>	  <!-- End row 
+</div>
+
+
+				</div>     <!-- End container 
+			</section>	
+
+
+
+			<!-- CONTENT-3 / committees 
+			============================================= -->
+			<section class="content-3 wide-60 content-section division">
+				<div class="container">
+
+					<!-- SECTION TITLE -->
+					<div class="row" id="committeecitic">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-50 pt-10 text-center">
+								<h3 class="pt-20 h3-md">COMMITTEES</h3>
+								<p class="p-lg">
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- TOP CONTENT -->
+					<div id="c3-top" class="cbox-3 pb-50">
+						<div class="row d-flex align-items-top m-row">
+
+
+							<!-- TEXT BLOCK -->
+							<div class="col-md-12 col-lg-12 m-bottom">
+								 <div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+									<!-- Title -->
+									<h4 class="h4-sm">PROGRAM COMMITTEE  <div class="w-100"></div></h4>
+
+									<p class="grey-color">
+										Chair: Prof. Ts. Dr. Haw Su Cheng <br>
+										Co-chair: Assoc. Prof. Ts. Dr. Ooi Shih Yin <br>
+										Technical Chair: Dr. Goh Hui Ngo & Dr. Chong Siew Chin & Dr. Zarina Binti Che Embi <br>
+										Keynote & Industry Forum Chair: Assoc. Prof. Ts. Dr. Michael Goh Kah Ong<br>
+										Publication Chair: Dr. Palanichamy Naveen & Dr. Prabha Kumaresan <br>
+										Registration Chair: Ts. Dr. Neo Han Foon<br>
+										Publicity Chair: Ms. Amalina Binti Ibrahim
+									</p>
+								</div>
+							</div>	<!-- END TEXT BLOCK -->
+
+							<!-- TEXT BLOCK -->
+							<div class="col-md-12 col-lg-12 m-bottom">
+								 <div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+									<!-- Title -->
+									<h4 class="h4-sm">TECHNICAL PROGRAMME COMMITTEE   <div class="w-100"></div></h4>
+
+									<p class="grey-color">
+										Dr. Chin Ji-Jian (University of Plymouth, UK) <br>
+										Dr. Jay Evans (University of Edinburgh, Scotland) <br>
+										Dr. Tugba Gurgen Erdogan (Hacettepe University, Turkiye)<br>
+										Dr. T. Subha (SRM Institute of Science and Technology, India)<br>
+										Dr. K. Revathi (Panimalar Institute of Technology, India)<br>
+										Prof. Alexis Kim Jinhong (Pai Chai University, South Korea) <br>
+										Dr. Lucia D. Krisnawati (Universitas Kristen Duta Wacana, Indonesia)<br>
+										Dr. Shintami Chusnul Hidayati (Institut Teknologi Sepuluh Nopember (ITS), Surabaya, Indonesia,) <br>
+										Assoc. Prof. Dr Md Baharul Islam (American University of Malta)<br>
+										Assoc. Prof. Petra Gomez-Krämer (La Rochelle University, France) <br>
+										Prof. Dr. Seong Oun Hwang (Gachon Unversity, South Korea) <br>
+										Assoc. Prof. Dr. S. Charles Raja, (Thiagarajar College of Engineering, India) <br>
+										Prof. Dr. R. Tamilselvi (Sethu Institute of Technology, India) <br>
+										Assoc. Prof. Dr.M.Parisa Beham (Sethu Institute of Technology, India)<br>
+										Prof. Dr. Farshid Amirabdollahian (University of Hertfordshire, United Kingdom)<br>
+										Prof. Dr. Andrew Teoh (Yonsei University, Korea)<br>
+										Prof. Dr. Lee Chien Sing (Sunway University, Malaysia)<br>
+										Prof. Dr. G. Kousalya (Coimbatore Institute of Technology, India)<br>
+										Assoc. Prof. Dr. Wong Kok Seng (VinUniversity, Vietnam)<br>
+										Dr. Tan Syh Yuan (Newcastle University, UK)<br>
+										Dr. Dana Sulistyo Kusumo (Telkom University, Indonesia)<br>
+										Dr. Nungki Selviandro (Telkom University , Indonesia)<br>
+										Dr. Heru Agos Santoso (Universitas Dian Nuswantoro, Indonesia)<br>
+										Dr. Arfive Gandhi (Telkom University , Indonesia)<br>
+										Assoc. Prof. Dr. Chua Fang Fang (Multimedia University, Malaysia)<br>
+										Assoc. Prof. Dr. Ho Sin Ban (Multimedia University, Malaysia)<br>
+										Dr. Lee Chin Poo (Multimedia University, Malaysia)<br>
+										Dr. Loh Yuen Peng (Multimedia University, Malaysia)<br>
+										Dr. Dr Goh Pey Yun (Multimedia University, Malaysia)<br>
+										Dr. Chong Lee Ying (Multimedia University, Malaysia)<br>
+										Dr. Lee Fong Yee (Multimedia University, Malaysia) <br>
+										Ms. Nur Syuhaidah Binti Nor Azni (Multimedia University, Malaysia)<br>
+										Dr. Radiah Haque (Multimedia University, Malaysia)<br>
+Dr. Uzma Jafar (Multimedia University, Malaysia)<br>
+Dr. Zuriani Hayati Binti Abdullah (Multimedia University, Malaysia)<br>
+
+									</p>
+
+								</div>
+							</div>	<!-- END TEXT BLOCK -->
+
+
+
+
+
+
+						</div>	  <!-- End row -->
+					</div>	<!-- END TOP CONTENT -->
+
+				</div>     <!-- End container -->
+			</section>	<!-- END CONTENT-3 / COMITTEES-->
+
+
+
+
+			<!-- GREY BORDER
+			============================================= -->
+			<div class="gb-wrapper"><div class="container"><div class="row"><div class="col-md-12 grey-border"></div></div></div></div>
+
+
+			
+			<!-- FOOTER-1
+			============================================= -->
+			<footer id="footer-1" class="footer division">
+				<div class="container">
+
+					<!-- SECTION TITLE -->
+					<div class="row" id="contactus">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-50 pt-10 text-center">
+								<h3 class="pt-20 h3-md">CONTACT US</h3>
+								<p class="p-lg">
+									<!-- Email -->
+									<p class="foo-email"><a href="mailto:difcon@mmu.edu.my">difcon@mmu.edu.my</a></p>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- FOOTER CONTENT -->
+					<div class="row">
+
+
+						<div class="col-lg-12 col-xl-12 text-center">
+							<div>
+									<!-- <a href="https://info.flagcounter.com/CL0R"><img src="https://s01.flagcounter.com/countxl/CL0R/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a> -->
+									<a href="https://info.flagcounter.com/n6zP"><img src="https://s11.flagcounter.com/countxl/n6zP/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+							</div>
+						</div>
+					</div>	 <!-- END FOOTER CONTENT -->
+
+
+					<!-- BOTTOM FOOTER -->
+					<div class="bottom-footer grey-color">
+						<div class="row d-flex align-items-center">
+
+
+							<!-- FOOTER COPYRIGHT -->
+							<div class="col-md-6 mt-2">
+								<div class="footer-copyright">
+									<p>&copy; 2024 Universiti Telekom Sdn. Bhd. All Rights Reserved</p>
+								</div>
+							</div>
+
+
+
+						</div>  <!-- End row -->
+					</div>	<!-- END BOTTOM FOOTER -->
+
+
+				</div>	   <!-- End container -->
+			</footer>	<!-- END FOOTER-1 -->
+
+
+
+
+		</div>	<!-- END PAGE CONTENT -->
+
+
+
+
+
+		<!-- EXTERNAL SCRIPTS
+		============================================= -->
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/jquery.easing.js"></script>
+		<script src="js/jquery.appear.js"></script>
+		<script src="js/jquery.scrollto.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/contact-form.js"></script>
+		<script src="js/register-form.js"></script>
+		<script src="js/request-form.js"></script>
+		<script src="js/comment-form.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/wow.js"></script>
+
+		<!-- Custom Script -->
+		<script src="js/custom.js"></script>
+
+
+		<script>
+			new WOW().init();
+		</script>
+
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+		<!-- [if lt IE 9]>
+			<script src="js/html5shiv.js" type="text/javascript"></script>
+			<script src="js/respond.min.js" type="text/javascript"></script>
+		<![endif] -->
+
+		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
+		<!--
+		<script>
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-XXXXX-X']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		-->
+
+
+	</body>
+
+
+
+</html>

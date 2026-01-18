@@ -1,0 +1,1460 @@
+<style>/* Main dropdown menu */
+	.wsmegamenu {
+		position: relative;
+	}
+	
+	.wsmegamenu .dropdown {
+		position: relative;
+	}
+	
+	.wsmegamenu .dropdown > a {
+		position: relative;
+		padding-right: 20px;
+	}
+	
+	.wsmegamenu .dropdown-one {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		background-color: #f9f9f9;
+		min-width: 200px;
+		z-index: 1000;
+		box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	}
+	
+	.wsmegamenu .dropdown:hover > .dropdown-one {
+		display: block;
+	}
+	
+	.wsmegamenu .dropdown-one ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.wsmegamenu .dropdown-one li {
+		border-bottom: 1px solid #ddd;
+	}
+	
+	.wsmegamenu .dropdown-one li a {
+		display: block;
+		padding: 8px 16px;
+		color: #000;
+		text-decoration: none;
+	}
+	
+	.wsmegamenu .dropdown-one li a:hover {
+		background-color: #ddd;
+	}
+	</style>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="DIFCON" />
+	<meta name="keywords" content="DIFCON, MMU">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- SITE TITLE -->
+	<title>ICCM </title>
+
+	<!-- FAVICON AND TOUCH ICONS -->
+	<link rel="icon" type="image/png" sizes="32x32" href="difconimage24/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="difconimage24/favicon-16x16.png">
+
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900" rel="stylesheet">
+
+	<!-- BOOTSTRAP CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- FONT ICONS -->
+	<link href="https://use.fontawesome.com/releases/v5.11.0/css/all.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="css/flaticon.css" rel="stylesheet">
+
+	<!-- PLUGINS STYLESHEET -->
+	<link href="css/menu.css" rel="stylesheet">
+	<link id="effect" href="css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="css/owl.theme.default.min.css" rel="stylesheet">
+
+	<!-- ON SCROLL ANIMATION -->
+	<link href="css/animate.css" rel="stylesheet">
+
+	<!-- TEMPLATE CSS -->
+	<!-- <link href="css/brick-theme.css" rel="stylesheet">     -->
+	<!-- <link href="css/dimgreen-theme.css" rel="stylesheet">  -->
+	<!-- <link href="css/green-theme.css" rel="stylesheet">     -->
+	<!-- <link href="css/indigo-theme.css" rel="stylesheet">    -->
+	<!-- <link href="css/orangered-theme.css" rel="stylesheet"> -->
+	<!-- <link href="css/pink-theme.css" rel="stylesheet">      -->
+	<!-- <link href="css/red-theme.css" rel="stylesheet">       -->
+	<link href="css/royalblue-theme.css" rel="stylesheet">
+	<!-- <link href="css/skyblue-theme.css" rel="stylesheet"> -->
+	<!-- <link href="css/violet-theme.css" rel="stylesheet">    -->
+
+	<!-- RESPONSIVE CSS -->
+	<link href="css/responsive.css" rel="stylesheet">
+
+	<!-- My Custom CSS -->
+	<link href="css/mycss.css" rel="stylesheet">
+</head>
+
+
+<body>
+	<!-- PRELOADER SPINNER
+		============================================= -->
+	<!-- <div id="loader-wrapper">
+		<div id="loading">
+			<div class="cssload-loader">
+				<div class="cssload-ball cssload-ball-1"></div>
+				<div class="cssload-ball cssload-ball-2"></div>
+				<div class="cssload-ball cssload-ball-3"></div>
+				<div class="cssload-ball cssload-ball-4"></div>
+			</div>
+		</div>
+	</div> -->
+
+
+
+
+	<!-- PAGE CONTENT
+		============================================= -->
+	<div id="page" class="page">
+
+
+
+
+		<!-- HEADER
+			============================================= -->
+		<header id="header" class="header white-menu navbar-dark">
+			<div class="header-wrapper">
+
+
+				<!-- MOBILE HEADER -->
+				<div class="wsmobileheader clearfix">
+					<span class="smllogo"><img src="difconimage24\Test Web-01.png" alt="mobile-logo" /></span>
+					<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+				</div>
+
+
+				<!-- NAVIGATION MENU -->
+				<div class="wsmainfull menu clearfix">
+					<div class="wsmainwp clearfix">
+
+
+						<!-- LOGO IMAGE -->
+						<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 310 x 72 pixels) -->
+						<div class="desktoplogo"><a href="#about" class="logo-black"><img src="difconimage24\Test Web-01.png"
+									alt="header-logo"></a></div>
+						<div class="desktoplogo"><a href="#about" class="logo-white"><img src="difconimage24\Test Web-01.png"
+									alt="header-logo"></a></div>
+
+
+						<!-- MAIN MENU -->
+						<nav class="wsmenu clearfix">
+							<ul class="wsmenu-list">
+								<li aria-haspopup="true"><a href="#"> Home <span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix halfmenu">
+										<div class="container-fluid">
+											<div class="row">
+												<ul class="col-lg-12 link-list">
+													<li aria-haspopup="true"><a href="#abouticcm">About ICCM </a></li>
+								<li aria-haspopup="true"><a href="#tracksiccm"> Tracks</a></li>
+								<li aria-haspopup="true"><a href="#proceedingsiccm"> Publications </a></li>
+								<li class="dropdown">
+									<a href="#">Speaker <span class="wsarrow"></span></a>
+									<div class="dropdown-one">
+										<ul>
+								<li aria-haspopup="true"><a href="#keynotesiccm"> Keynote Speakers </a></li>
+								<li aria-haspopup="true"><a href="#industrymecon"> Industry Speakers </a></li>
+							</ul>
+						</div>
+					</li>
+								<li aria-haspopup="true"><a href="#committeeiccm"> Committee </a></li>
+								
+																			
+																	
+															
+
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>		
+
+
+
+								<li aria-haspopup="true">
+									<a href="#">Co-Located Conference <span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix halfmenu">
+										<div class="container-fluid">
+											<div class="row">
+												<ul class="col-lg-12 link-list">
+								
+													<!-- Home Section -->
+													<li class="dropdown">
+														<a href="#">Home <span class="wsarrow"></span></a>
+														<div class="dropdown-one">
+															<ul>
+																<li><a href="index.html#aboutdifcon">About DIFCON</a></li>
+																<li><a href="index.html#keynotespeakerdifcon">Keynote Speakers</a></li>
+																<li><a href="index.html#committeedifcon">Committee</a></li>
+																<li><a href="index.html#venuedifcon">Contact Us</a></li>
+															</ul>
+														</div>
+													</li>
+								
+													<!-- CITIC -->
+													<li class="dropdown">
+														<a href="#">CITIC <span class="wsarrow"></span></a>
+														<div class="dropdown-one">
+															<ul>
+																<li><a href="citic.html#aboutcitic">About CITIC</a></li>
+																<li><a href="citic.html#trackscitic">Conference Tracks</a></li>
+																<li><a href="citic.html#proceedingscitic">Publications</a></li>
+																<li><a href="citic.html#keynotescitic"> Speakers</a></li>
+																
+																<li><a href="citic.html#committeecitic">Committees</a></li>
+																<!-- <li><a href="citic.html#venuecitic">Author's Information</a></li> -->
+															</ul>
+														</div>
+													</li>
+								
+													<!-- MECON -->
+													<li class="dropdown">
+														<a href="#">MECON <span class="wsarrow"></span></a>
+														<div class="dropdown-one">
+															<ul>
+																<li><a href="mecon.html#aboutmecon">About MECON</a></li>
+																<li><a href="mecon.html#tracksmecon">Conference Tracks</a></li>
+																<li><a href="mecon.html#proceedingsmecon">Publications</a></li>
+																<li><a href="mecon.html#keynotesmecon"> Speakers</a></li>
+																
+																<li><a href="mecon.html#committeemecon">Committees</a></li>
+																<!-- <li><a href="mecon.html#venuemecon">Author's Information</a></li> -->
+															</ul>
+														</div>
+													</li>
+								
+													<!-- ICTIM -->
+													<li class="dropdown">
+														<a href="#">ICTIM <span class="wsarrow"></span></a>
+														<div class="dropdown-one">
+															<ul>
+																<li><a href="ictim.html#aboutictim">About ICTIM</a></li>
+																<li><a href="ictim.html#tracksictim">Conference Tracks</a></li>
+																<li><a href="ictim.html#proceedingsictim">Publications</a></li>
+																<li><a href="ictim.html#keynotesictim"> Speakers</a></li>
+															
+																<li><a href="ictim.html#committeeictim">Committees</a></li>
+																<!-- <li><a href="ictim.html#venueictim">Author's Information</a></li> -->
+															</ul>
+														</div>
+													</li>
+								
+													
+								
+													<!-- CLESS -->
+													<li class="dropdown">
+														<a href="#">CLESS <span class="wsarrow"></span></a>
+														<div class="dropdown-one">
+															<ul>
+																<li><a href="cless.html#aboutcless">About CLESS</a></li>
+																<li><a href="cless.html#trackscless">Conference Tracks</a></li>
+																<li><a href="cless.html#proceedingscless">Publications</a></li>
+																<li><a href="cless.html#keynotescless">Speakers</a></li>
+																
+																<li><a href="cless.html#committeecless">Committees</a></li>
+																<!-- <li><a href="cless.html#venuecless">Author's Information</a></li> -->
+															</ul>
+														</div>
+													</li>
+								
+													<!-- ICLD -->
+													<li class="dropdown">
+														<a href="#">ICLD <span class="wsarrow"></span></a>
+														<div class="dropdown-one">
+															<ul>
+																<li><a href="icld.html#abouticld">About ICLD</a></li>
+																<li><a href="icld.html#tracksicld">Conference Tracks</a></li>
+																<li><a href="icld.html#proceedingsicld">Publications</a></li>
+																<li><a href="icld.html#keynotesicld">Speakers</a></li>
+																
+																<li><a href="icld.html#committeeicld">Committees</a></li>
+																<!-- <li><a href="icld.html#venueicld">Author's Information</a></li> -->
+															</ul>
+														</div>
+													</li>
+												
+	<!-- <li class="dropdown">
+                                        <a href="#">Presentation Poster <span class="wsarrow"></span></a>
+                                         <div class="dropdown-one">
+                                            <ul>
+                                                <li><a href="Presentation Poster.html#PresentationPoster">Poster</a></li>
+                                               
+                                            </ul>
+                                        </div>
+                                      </li> -->
+
+
+
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+
+								<li><a href="publication.html"> Publication & Date</a></li>
+
+								<li><a href="Registration.html">Registration</a></li><li><a href="sponsorship.html"> Sponsorship</a></li>
+
+<li aria-haspopup="true">
+<a href="#">Archive<span class="wsarrow"></span></a>
+<div class="wsmegamenu clearfix halfmenu">
+<div class="container-fluid">
+<div class="row">
+  <ul class="col-lg-12 link-list">
+	
+
+	<li>
+		<a href="https://difcon.mmu.edu.my/2025"
+		  >DIFCON 2025</a
+		>
+	  </li>
+	<li>
+		<a href="https://difcon.mmu.edu.my/2024"
+		  >DIFCON 2024</a
+		>
+	  </li>
+	<li>
+	  <a href="https://difcon.mmu.edu.my/2023"
+		>DIFCON 2023</a
+	  >
+	</li>
+	<li>
+	  <a href="https://difcon.mmu.edu.my/2022"
+		>DIFCON 2022</a
+	  >
+	</li>
+	<li>
+	  <a href="https://drive.google.com/file/d/1NdaLGHi7zNh_mbSx0CIlxpolS910YA0l/view?usp=drive_link">DIFCON 2021</a>
+	</li>
+							</ul>
+						</nav> <!-- END MAIN MENU -->
+
+					</div>
+				</div> <!-- END NAVIGATION MENU -->
+
+
+			</div> <!-- End header-wrapper -->
+		</header> <!-- END HEADER -->
+
+
+
+		
+
+
+
+		
+			
+		<section class="content-3 wide-60 content-section division">
+			<div class="container">
+
+
+				<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+					<img class="img-fluid" src="difconimage24\2025 ICCM-logo.png" alt="content-image" style="height:300pt"> 
+
+				</div>
+
+				<div class="section-title mb-20 pt-10 text-center">
+					<!-- Title 	-->
+					<h1 class="pt-20 h3-md">5 - 7 MAY 2026, Cyberjaya Malaysia</h1>
+					<!-- Text -->
+					<p class="p-lg">
+					</p>
+				</div>
+				
+				<div id="c3-top" class="cbox-3 pb-50">
+					<div class="row d-flex align-items-top m-row">
+
+
+						
+						<div class="col-md-6 col-lg-6 m-bottom">
+
+							<div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+								
+								<!-- Title -->
+								<h3 class="h3-sm pt-20" id="abouticcm">ABOUT <div class="w-100"></div>
+								</h3>
+
+								
+								<h6 class="h6-sm">THEMES: Sustainable Creativity in the Age of AI and Multimedia Technology </h6><br>
+
+								<p class="grey-color text-justify">
+									The sixth edition of International Conference on Creative Multimedia (ICCM 2026) will take place from May 5-7, 2026, in conjunction with the Digital Futures International Congress 2026 (DIFCON 2026). DIFCON 2026 is a premier event featuring six co-located conferences. ICCM 2026 is mainly organised by the Faculty of Creative Multimedia (FCM) and the Faculty of Cinematic Arts (FCA) at Multimedia University, Malaysia with the partnership from various co-organisers and collaborators. Aligned with the 2030 SDGs, the congress and conferences will be conducted in hybrid mode, offering participants the flexibility to join either on-site or virtually.
+The conference this year centres on sustainability and conscientiousness as key themes for discussion, specifically addressing global environmental, social and governance issues. It will serve as a gathering place for researchers and practitioners across creative arts, design, Information and Communication Technology (ICT), Artificial Intelligence (AI), and other related industries. The primary aim is to amplify the voice of sustainable creativity through the integration of AI and creative multimedia technology.
+Authors are strongly encouraged to feature their creative concepts, prototypes, proofs-of-concept, and detailed innovation case studies relevant to the conference themes or tracks. This event is targeted at researchers, academicians, industry participants, undergraduates, and postgraduate students seeking fresh insights and new research ideas within the creative and multimedia industries.
+Keywords of the conference are Creativity, Media Art and Design, AI and Generative AI, Multimedia Technology, Sustainability, Creative Sustainability, Creative Industries
+	</p>
+
+
+								
+
+								<h4 class="h4-sm mb-2 pt-20" id="proceedingsiccm">PUBLICATION </h4>
+
+								<ul class="txt-list grey-color">
+
+									
+
+									 <p class="grey-color text-justify"> 
+										All tracks are grounded in creative sustainability and conscientious practices within the technologically advanced era. High-quality articles will be invited for extension and consideration for the book proposal "Sustainable Creativity in the Age of AI and Multimedia Technology" which is under evaluation for inclusion in the IEREK Interdisciplinary Book Series, published by Springer Nature (Advances in Science, Technology & Innovation (ASTI), https://link.springer.com/series/15883, Scopus Indexed). Invited authors must ensure the papers similarity rate should not exceed 10-15% per chapter and no more than 5% from any single source and any form of plagiarism or detected AI-generated content may result in the rejection of the articles from the final book submission. Other accepted papers will be invited for MYCITE journals or others, subject to meeting the individual journal's requirements.
+											
+									 
+									</p>
+									<li class="list-item">
+										<i class="fas fa-genderless"></i>
+											<p> Malaysian Journal of Learning and Instruction (MJLI) (SCOPUS Q1) </p>
+									</li>
+									<li class="list-item">
+										<i class="fas fa-genderless"></i>
+											<p> The International Journal of Creative Multimedia (IJCM), MMU Press Journal (MYCITE and MyJurnal)</p>
+									</li>
+									
+									<li class="list-item">
+										<i class="fas fa-genderless"></i>
+											<p> Advanced Research in Applied Sciences and Engineering Technology (Scopus Q2) </p>
+									</li>
+
+									
+									<li class="list-item">
+										<i class="fas fa-genderless"></i>
+											<p> Alam Cipta: International Journal on Sustainable Tropical Design Research and Practice (Scopus Q4) </p>
+									</li>
+									<!--
+									<li class="list-item">
+										<i class="fas fa-genderless"></i>
+											<p> International Journal of Advanced Research in Education and Society, indexed in MYCITE and MyJurnal </p>
+									</li>
+									<li class="list-item">
+										<i class="fas fa-genderless"></i>
+											<p> International Journal of Business and Technology Management, indexed in MYCITE and MyJurnal  </p>
+									</li>
+									<li class="list-item">
+										<i class="fas fa-genderless"></i>
+											<p> Asian Journal of Research in Education and Social Sciences, indexed in MYCITE and MyJurnal  </p>
+									</li>
+									<li class="list-item">
+										<i class="fas fa-genderless"></i>
+											<p> Other indexed on-going journal titles to be listed </p>
+									</li>
+									
+									<p class="grey-color text-justify"> 
+										Conference proceedings will be submitted by the proceedings partner for evaluation of indexing by EI (Elsevier Engineering Village Index) or SCOPUS.
+									</p> -->
+								
+										<div class="text-center justify-content-center justify-content-lg-start">
+											 <div>
+												<a download href="Files\SPringer Template-ASTI.docx" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Template</a>
+												<a download href="Files\ICCM2026 (DIFCON) paper submission_guideline.docx" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Guideline</a>
+											
+											</div> 
+										</div>
+	
+										<p class="grey-color text-justify">
+											<br>All papers must be original and not simultaneously submitted to another journal or conference. A minimum of 5 and a maximum of 10 page(s) manuscript is to be prepared according to the following template. 
+										</p> 
+									
+								</ul> 
+
+								
+								 <div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									
+									  <img class="img-fluid" src="difconimage24\asti-logo-.jpg" alt="content-image" style="height:110pt">
+									</a>
+								  </div> 
+
+
+								
+								
+							</div> 
+
+
+
+							</div> <!-- END TEXT BLOCK -->
+
+
+
+
+						<!-- TEXT BLOCK -->
+						<div class="col-md-6 col-lg-6 m-bottom">
+
+							<div class="txt-block left-column pc-35 mb-40 wow fadeInRight  m-bottom mt-40"
+								data-wow-delay="0.4s">
+
+								<!-- Small Title -->
+								<h4 class="h4-sm pt-20" id="tracksiccm">CONFERENCE TRACKS</h4>
+
+								<!-- Text List -->
+								<ul class="txt-list grey-color">
+									<li class="list-item">
+										<i class="fas fa-genderless"></i>
+										<p class="font-weight-bold"> AI, Generative AI, and Multimedia Technology for Sustainability
+										</p>
+										<p class="grey-color text-justify">
+											AI Generated Contents and Techniques, Generative Music and Composition, Generative Assets, AI-driven Tools for Creative Contents, Application of Generative Models, Human-AI Co-Creation, Computer Graphics and Techniques, Animation and Visual Effects Techniques, Digital Audio, Sound Effects and Techniques, Interactive Multimedia (AR, VR, XR, Metaverse), 2D / 3D Game Asset, Game Development, Vibe Coding.
+  
+										</p>
+									</li>
+
+									<li class="list-item">
+										<i class="fas fa-genderless"></i>
+										<p class="font-weight-bold"> Creativity, Art, and Design with Conscientiousness
+										</p>
+										<p class="grey-color text-justify">
+											Sustainable Creativity, User-Centred Design, Design for Social Change, User Experience, Interface Design, Brand Experience, Gendered Design, Interactive Design, Affective Design, Ergonomic Study, System Usability, Creative Coding, Generative Art, Interactive Installation, Experimental Media, Drone Technology, Projection Arts, Digital Creativity, Computational Creativity, Interactive Electronics, Information Design, Mobile Design and Application, Advertising Design, New Product Development, Design Workflow.
+
+										</p>
+									</li>
+
+									<li class="list-item">
+										<i class="fas fa-genderless"></i>
+										<p class="font-weight-bold"> Creative Talents: Learning and Development
+										</p>
+										<p class="grey-color text-justify">
+											AI in Education, Creative Pedagogy for Sustainability, Education Technology, Learning Analytic, Intelligent Tutoring, Personalised Learning, Smart Learning Environment, Mobile Learning, Future of Education, Talent Workforce, Art & Design Education, Creative Talents for Sustainability, Quality in Higher Education; STEM Education, Training and Development. 
+										</p>
+									</li>
+									
+									<li class="list-item">
+										<i class="fas fa-genderless"></i>
+										<p class="font-weight-bold"> Sustainable Culture, Space and Heritage Preservation
+										</p>
+										<p class="grey-color text-justify">
+											Sustainable Design, Design Collaboration, Environmental Design, Metaverse Design and Virtual Environment, Culture and Heritage Design, Architectural Design, Design for Smart City, Green Design, Design for Health, AI-Human Co-design.
+
+										</p>
+									</li>
+									
+									<li class="list-item">
+										<i class="fas fa-genderless"></i>
+										<p class="font-weight-bold"> Storytelling, Film & Animation, Media and the Creative Industries
+										</p>
+										<p class="grey-color text-justify">
+											Digital Cinematic, Motion Capture, Streaming Media, Virtual Production Process, Interactive Movie, Drone Creative Videography, Media Culture and Technology, Media and Communication, Social Media, Creative Industry, Digital Content, Digital Marketing, Future of Creative Work.
+
+										</p>
+									</li>
+									
+									<li class="list-item">
+										<i class="fas fa-genderless"></i>
+										<p class="font-weight-bold"> Responsible AI and AI Governance in Creative Spaces
+										</p>
+										<p class="grey-color text-justify">
+											Ethical Co-Creation and Human-AI Collaboration, Algorithmic Bias in Visual and Media Representation, IP and Authorship, Sustainable AI for Environment, AI Governance for Vulnerable Users, Deception and Deepfakes</p>
+									</li>
+									
+									<li class="list-item">
+										<i class="fas fa-genderless"></i>
+										<p class="font-weight-bold"> Creativity and Sustainability for Future Innovation and Application</p>
+										<p class="grey-color text-justify">
+									Circular Design and Lifecycle Thinking, Nature and Indigenous Creative Innovation, Low-Carbon Media, Sustainable Behavioural Change, Education for Sustainable Creativity, Localized Design and Production</p>
+									</li>
+									
+									
+
+									<p class="mt-3 black-color font-italic text-justify"> <b>Are you ready to embrace and revitalize new ideas in creative multimedia?</b> Join the experts, founders, researchers, academicians, artists, and many others from the creative industry in the ICCM 2025 and iNVENTX 2025 Creative Exhibition! </p>
+
+ 							
+
+								</ul> <!-- End Text List 
+
+								<a download href="files/programbook-iccm.pdf" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">
+																ICCM Program Book
+									</a>
+
+								<h4 class="h4-sm pt-20" id="journals">JOURNALS</h4> 
+
+								<!-- Text List 
+								 <ul class="txt-list text-justify grey-color">
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">  International Journal of Technology (IJech) [pISSN:20869614]
+															</p>
+														</li>
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold"> Journal of System and Management Sciences (JSMS) [ISSN:18166075]
+															</p>
+														</li>
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">  Journal of Logistics, Informatics and Service Science (JLISS) [ISSN:24092665]
+															</p>
+														</li>
+
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">  MMU Press International Journal of Management, Finance and Accounting (IJOMFA) [eISSN:27351009]
+															</p>
+														</li>
+								</ul>
+								<p class="mt-3 grey-color font-italic text-justify"> * Selected papers will be recommended for publication in the listed journals and subjected to the respective journal requirements.</p>
+
+ 							
+
+								<div class="col-lg-12 col-xl-12 text-center">
+										<img src="difconimage24/springer.jpg" alt="springer-logo" class="center-block" style="width: 250px; height: auto">
+										<img src="difconimage24/atlantis.jpg" alt="atlantis-logo"  class="center-block" style="width: 250px; height: auto">
+									</div> 
+
+								<div class="col-lg-12 justify-content-center justify-content-lg-start">
+										<div>
+											<a href="authorinfo.html#importantdates" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Author Information & Registration! </a>
+										</div>
+									</div> 
+
+							</div>
+						</div> <!-- end text block -->
+
+					</div> <!-- End row -->
+				</div> <!-- END TOP CONTENT -->
+
+
+			</div> <!-- End container -->
+		</section> <!-- END CONTENT-3 -->
+
+
+
+
+
+		<!-- CONTENT-3 / KEYNOTE 
+			============================================= 
+		<section id="content-3" class="content-3 wide-60 bg-lightgrey content-section division pt-20">
+			<div class="container">
+
+				<!-- SECTION TITLE 
+				<div class="row" id="keynotesiccm">
+					<div class="col-lg-10 offset-lg-1">
+						<div class="section-title mb-50 pt-10 text-center">
+							<!-- Title 	
+							<h3 class="pt-20 h3-md">KEYNOTE SPEAKERS</h3>
+							<!-- Text 
+							<p class="p-lg">
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- TOP CONTENT 
+					<div id="c3-top" class="cbox-3 pb-50">
+						<div class="row d-flex align-items-center m-row">
+
+
+							<!-- TEXT BLOCK 
+							<div class="col-md-7 col-lg-6 m-bottom">
+								<div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+									<!-- Title 
+									<h3 class="h3-sm"> Prof. Dr. Mohd Shafry Mohd Rahim </h3>
+
+									<!-- Small Title 
+									<h5 class="h5-xs sm-title"> Deputy Vice-Chancellor (Academic & International)</h5>
+
+									<!-- Small Title 
+									<h5 class="h5-xs sm-title"> Universiti Teknologi Malaysia (UTM) </h5>
+									<p class="grey-color text-justify">
+											Professor Dr. Mohd Shafry Mohd Rahim currently holds the distinguished position of Deputy Vice-Chancellor 
+											(Academic & International) at the Universiti Teknologi Malaysia (UTM) in Skudai, Johor, Malaysia. His global 
+											academic engagement is further exemplified by his role as an Adjunct Professor at Sohar University in Oman. Prof Shafry 
+											embarked on his academic journey with the successful completion of a Diploma in Computer Science in 1997, followed by a 
+											Bachelor of Science in Computer Science with a specialization in Computer Graphics in 1999. His academic pursuits continued 
+											at UTM, culminating in the achievement of a Master of Science in Computer Science in 2004. Notably, he earned his Ph.D. in 
+											Spatial Modelling in 2008 from the esteemed University Putra Malaysia (UPM), solidifying his expertise in the field. Currently 
+											serving as a Professor of Image Processing at the Faculty of Computing at UTM, Malaysia, Professor Shafry also holds the position 
+											of Research Fellow for Media and Game Innovation of Excellence (MaGICX) at the Institute of Human-Centred Engineering (iHuMeN), 
+											UTM. His leadership extends to spearheading Image Processing and Application Research Initiatives, showcasing his dedication to 
+											advancing research and fostering innovation. Motivated by a passion for groundbreaking inventions, Professor Shafry focuses on 
+											processing diverse image types for emerging applications, aligning with the ongoing technological revolution aimed at enhancing 
+											lives. His extensive research interests span image enhancement, feature extraction, segmentation, recognition, detection, and 
+											classification, reflecting his multifaceted expertise in the field. Additionally, he has a profound understanding of deep learning, 
+											computer graphics, computer vision, and digital media. Recognizing the importance of collaboration between academia and industry, 
+											Professor Shafry has successfully secured research funding from various sources, including the University, the Malaysian Government, 
+											Industries, and international programs such as HORIZON 2020 – EU Research and Innovation Programme. Notably, he has collaborated 
+											with Billion Prima Sdn Bhd on Scanning Technology using AI and implemented Media Technology at Thirty-Two (32) Cilik Al Fateh 
+											Kindergarten under Kumpulan Pendidikan Al Fateh Malaysia (Non-Profit Organization) to foster creative and innovative thinking in 
+											children. 
+									</p>
+								</div>
+							</div>	<!-- END TEXT BLOCK 
+
+							<!-- IMAGE BLOCK 
+							<div class="col-md-5 col-lg-6 m-top">
+								<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									<img class="img-fluid" src="difconimage24/shary_iccm_keynote.png" alt="content-image"> 
+								</div>
+							</div>
+
+
+						</div>	  <!-- End row 
+					</div>	<!-- END TOP CONTENT 
+
+				<!-- BOTTOM CONTENT 
+				<div id="c3-bottom" class="cbox-3 pt-70">
+					<div class="row d-flex align-items-center">
+
+
+						<!-- IMAGE BLOCK 
+						<div class="col-md-5 col-lg-6 m-top">
+								<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									<img class="img-fluid" src="difconimage24/iccm-keynote3-guna" alt="content-image">
+								</div>
+							</div>
+
+
+						<!-- TEXT BLOCK 
+						<div class="col-md-7 col-lg-6">
+							<div class="txt-block right-column pc-35 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+
+								<!-- Title 
+									<h3 class="h3-sm"> Prof. Gunalan Nadarajan </h3>
+
+									<!-- Small Title 
+									<h5 class="h5-xs sm-title"> Dean Emeritus</h5>
+
+									<!-- Small Title 
+									<h5 class="h5-xs sm-title"> Penny W. Stamps School of Art and Design, University of Michigan, USA) </h5>
+									<p class="grey-color text-justify">
+											Gunalan Nadarajan, an art theorist, and curator working at the intersections of art, science and technology, is Dean Emeritus 
+											and Professor at the Penny W. Stamps School of Art and Design at the University of Michigan. His publications include Ambulations 
+											(2000), Construction Site (edited; 2004) and Contemporary Art in Singapore (co-authored; 2007), Place Studies in Art, Media, 
+											Science and Technology: Historical Investigations on the Sites and Migration of Knowledge (co-edited; 2009), The Handbook of 
+											Visual Culture (co-edited; 2012) and over 100 book chapters, catalogue essays, academic articles and reviews. His writings have 
+											also been translated into 16 languages. He is on the editorial board of the book series, Technicities (Edinburgh University Press) 
+											and the journal, Cultural Politics (Duke University Press). He has curated many international exhibitions including Ambulations 
+											(Singapore, 1999), 180KG (Jogjakarta, 2002), media_city (Seoul, 2002), Negotiating Spaces (Auckland, 2004) and DenseLocal (Mexico 
+											City, 2009), Displacements (Beijing, 2014) and Mediating Asia (Taiwan,2022). He was contributing curator for Documenta XI (Kassel, 
+											Germany, 2002) and the Singapore Biennale (2006) and served on the jury of a number of international exhibitions and festivals, 
+											ISEA2004 (Helsinki / Talinn), transmediale 05 (Berlin), ISEA2006 (San Jose), Ars Electronica (2007) and FutureEverything Festival 
+											(Manchester, 2009). He was Artistic Co-Director of the Ogaki Biennale 2006, Japan and Artistic Director of ISEA2008 (International 
+											Symposium on Electronic Art) in Singapore. In 2004, he was elected a Fellow of the Royal Society of Art. He is active in the 
+											development of media arts internationally and has previously served on the Board of Directors of the Inter Society for Electronic 
+											Art, is on the Advisory Boards of the Archive of Digital Art (Austria), the New Media Caucus and was an advisor on creative 
+											programs of digital culture to the UNESCO and the Smithsonian Institution. Nadarajan also served on the International Advisory 
+											Board of the ArtScience Museum in Singapore (2014-2022). He co-founded and continues to work on a National Science Foundation 
+											funded Network for Science Engineering, Art and Design to develop and support a national network for collaborative research, 
+											education and creative practice between sciences, engineering, arts and design. He served on the National Academies of Sciences, 
+											Engineering and Medicine (USA) committee and co-authored the report, Branches from the Same Tree: The Integration of the Humanities 
+											and Arts in Sciences, Engineering and Medicine in Higher Education (2018). Nadarajan has worked on enabling conversations, 
+											initiatives and policy changes in art and design higher education in the US in various capacities including on the Board of 
+											Directors of College Art Association (2014-18), and most recently served on the Board of Directors of the National Association for 
+											Schools of Art and Design (2018-2022). Nadarajan currently serves as co-convenor of the Asia-Pacific Artistic Research Network. He 
+											has served in a variety of academic roles in teaching, academic administration and research for three decades. Prior to joining 
+											University of Michigan, he held appointments at MICA (Maryland Institute College of Art), the College of Arts and Architecture, 
+											Pennsylvania State University and the Lasalle College of the Arts, Singapore.
+									</p>
+
+							</div>
+						</div> <!-- END TEXT BLOCK 
+						
+						
+						
+						<div id="c3-top" class="cbox-3 pb-50">
+						<div class="row d-flex align-items-center m-row">
+
+
+							<!-- TEXT BLOCK 
+							<div class="col-md-7 col-lg-6 m-bottom">
+								<div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+									<!-- Title 
+									<h3 class="h3-sm"> Dr. Donna Cleveland </h3>
+
+									<!-- Small Title 
+									<h5 class="h5-xs sm-title"> Interim Dean </h5>
+
+									<!-- Small Title 
+									<h5 class="h5-xs sm-title"> School of Communication & Design, RMIT Vietnam </h5>
+									<p class="grey-color text-justify">
+										Dr. Donna Cleveland is an interdisciplinary researcher, educator, and creative technologist specializing in Material Futures, sustainable fashion, and regenerative design. As Interim Dean of the School of Communication & Design at RMIT Vietnam, she leads initiatives that explore circular design, speculative making, and the role of creative technology in sustainable futures. 
+
+										Her research examines how material innovation, bio-based textiles, and localized production models can drive sustainability within the creative industries. Through projects such as the Vietnam Design Research Studio (VDRS) and the Material Futures initiative, she has worked extensively on biomaterials, circular economies, and new material applications for fashion and design. 
+										
+										Donna has secured multiple international research grants supporting regenerative design, sustainable textiles, and craft knowledge preservation, and she presents her work globally on how creative practice can respond to the planetary polycrisis. Her approach bridges hands-on experimentation, digital fabrication, and interdisciplinary collaboration, ensuring that creative practice is not only responsive but also regenerative. 
+									</p>
+									<h5 class="h5-xs sm-title"> Keynote Description: </h5>
+									<h5 class="h5-xs sm-title">Designing for a Planetary Consciousness: Material Futures, Fashion, and Creative Practice in the Age of Polycrisis </h5>
+									<p class="grey-color text-justify">
+										We are living in an era of polycrisis, where climate change, material scarcity, and unsustainable production systems are reshaping our world. The creative industries, especially fashion, textiles, and material innovation, must move beyond sustainability toward regeneration, resilience, and systemic change. How can we rethink the materials we use, the ways we create, and the systems that govern production to work in harmony with the planet rather than against it? 
+
+This keynote explores Material Futures as a lens for planetary-conscious design, where emerging biomaterials, circular systems, and speculative making offer new pathways for the fashion and creative industries. Drawing from research in the Vietnam Design Research Studio (VDRS) and Material Futures projects, this talk will showcase bio-based textiles, digital fabrication, and localized production as tools for transforming creative practice. 
+
+Rather than simply mitigating harm, how can we design with planetary intelligence, understanding the interconnected systems of people, materials, and the environment? Through case studies in regenerative materials, circular economies, and collaborative design, this keynote challenges creative practitioners to reimagine their role as co-creators within a living, evolving world, where design is not just about solving problems but about shaping new futures. </p>
+								</div>
+							</div>
+							
+							<!-- IMAGE BLOCK 
+						<div class="col-md-5 col-lg-6 m-top">
+								<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									<img class="img-fluid" src="difconimage24\PANA3992 (1) (1).jpg" alt="content-image">
+								</div>
+							</div>
+
+
+					</div> <!-- End row 
+				</div> <!-- END BOTTOM CONTENT 
+
+				<div id="c3-bottom" class="cbox-3 pt-70">
+					<div class="row d-flex align-items-center">
+
+
+						<!-- IMAGE BLOCK 
+						<div id="c3-bottom" class="cbox-3 pt-70">
+							<div class="row d-flex align-items-center">
+
+
+						<div class="col-md-5 col-lg-6 m-top">
+							<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+								<img class="img-fluid" src="difconimage24\Dr Izani ICCM.jpeg" alt="content-image">
+							</div>
+						</div>
+
+
+					<!-- TEXT BLOCK 
+					<div class="col-md-7 col-lg-6">
+						<div class="txt-block right-column pc-35 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+
+							<!-- Title 
+								<h3 class="h3-sm"> Dr Mohamad Izani Zainal Abidin </h3>
+
+								
+
+								<!-- Small Title 
+								<h5 class="h5-xs sm-title"> Higher College of Technology, Abu Dhabi, UAE </h5>
+								<p class="grey-color text-justify">
+									Dr. Izani Zainal, with a PhD from the University of Strathclyde and degrees from Multimedia University, Malaysia, has profoundly shaped animation and generative AI. Leading MMU’s Animation Design Studio (2000–2011), he mentored founders of studios like WAU Animation and MONSTA, and as an Adobe Certified Professional, his 2D/3D animation expertise influenced creatives worldwide. Through AI4LIFE, his global initiative, he has delivered over 50 training sessions, empowering 5,000+ professionals with tools like ChatGPT and Midjourney, driving a 40% increase in AI adoption. 
+								</p>
+
+						</div>
+					</div> <!-- END TEXT BLOCK 
+				
+				
+
+					<div id="c3-top" class="cbox-3 pb-70">
+						<div class="row d-flex align-items-center m-row">
+
+
+							<!-- TEXT BLOCK 
+							<div class="col-md-7 col-lg-6 m-bottom">
+								<div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+									<!-- Title 
+									<h3 class="h3-sm"> Mr. VJ Anand </h3>
+
+									<!-- Small Title 
+									<h5 class="h5-xs sm-title"> Adjunct Professor for the Faculty of Creative Multimedia, MMU </h5>
+
+									<!-- Text 
+									<p class="grey-color text-justify">
+										From building agencies to making stuﬀ go viral‚ VJ Anand is your guy. Former Senior Vice President of Creative of Gojek ‚ Indonesia's first decacorn tech giant, and then the Regional Head of Creative and Managing Partner of VaynerMedia APAC ‚ VJ is your go-to guy if you want your brand to be the talk of the town.
+
+At Gojek, VJ helped grow an internal creative team from 10 people to a 120-strong team. He headed up the creative, social, in-app content, and activation for the Indonesian decacorn. He helped rebrand them in his last months at Gojek and created iconic branding sounds for the Indonesian giant. His last piece of work which was a music video with Rich Brian for Gojek went viral, leading to a hire by Gary Vaynerchuk to help build VaynerMedia APAC. Here, VJ came into an agency of four people and helped grow it to an agency of 221. Here, VJ has run numerous global and regional campaigns for Google, Disney+, Subway, SK-II and several other brands; his most recent global work involved conceptualizing and shooting a music video with John Legend for the SK-II brand.
+
+In his two year stint in Europe and a global role, VJ recently launched a massive olympics campaign for Visa across 6 diﬀerent countries in a mini docu-series on social and also worked with Charli XCX for a Revolut campaign with Wired Magazine. VJ has recently returned back to asia to setup his own creative consultant called ballsy. Ballsy is battling against the mundanity of the advertising industry and changing the agency game from the inside.  
+
+VJ is currently the Adjunct Professor for the Faculty of Creative Multimedia, MMU. 
+										
+									</p> 
+								</div>
+							</div>	
+
+							<!-- IMAGE BLOCK 
+							<div class="col-md-5 col-lg-6 m-top">
+								<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									<img class="img-fluid" src="difconimage24\VJ photo.jpg" alt="content-image"> <br><br>
+									
+								</div> 
+							</div> 
+						</div>	  
+					</div>	
+
+
+	<div id="c3-bottom" class="cbox-3 pt-70">
+					<div class="row d-flex align-items-center">
+
+
+						<!-- IMAGE BLOCK 
+						<div id="c3-bottom" class="cbox-3 pt-70">
+							<div class="row d-flex align-items-center">
+
+
+						<div class="col-md-5 col-lg-6 m-top">
+							<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+								<img class="img-fluid" src="difconimage24\roopesh_portrait (1).jpg" alt="content-image">
+							</div>
+						</div>
+
+
+					<!-- TEXT BLOCK 
+					<div class="col-md-7 col-lg-6">
+						<div class="txt-block right-column pc-35 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+
+							<!-- Title 
+								<h3 class="h3-sm"> Dr. Roopesh Sitharan </h3>
+
+								
+
+								<!-- Small Title 
+								<h5 class="h5-xs sm-title"> Specialist, Faculty of Creative Multimedia, Multimedia University. </h5>
+								<p class="grey-color text-justify">
+									Dr. Roopesh Sitharan is a multidisciplinary practitioner whose artistic approach incorporates a variety of inquiry methods, embracing roles as an educator, curator, researcher, and artist. His projects have spanned both national and international platforms, including significant exhibitions such as the Gwangju Biennale, ISEA, and SIGGRAPH. His writings have been featured in journals like Leonardo Electronic Almanac (LEA), CTRL+P Contemporary Art Journal, and Documenta 12. He also serves as co-convenor for APARN (Asia Pacific Artistic Research Network) and on the board of directors for NMC (New Media Caucus). Roopesh has participated in residency programs that focus on research and the critical role of art in addressing real-world issues. His current research explores the influence of non-human agents in shaping our understanding of the environment, nature, and the "other," including AI, and how these factors impact human subjectivity.</p>
+
+						</div>
+					</div> <!-- END TEXT BLOCK -->
+
+
+
+
+			</div> 
+		</section> 
+
+<!--
+
+		 <section id="content-3" class="content-3 wide-60 bg-white content-section division pt-20">
+        <div class="container">
+        <!--   SECTION TITLE  
+		<div class="row" id="keynotespeakerdifcon">
+            <div class="col-lg-10 offset-lg-1">
+              <div class="section-title mb-50 pt-10 text-center">
+               <!--  Title 	
+               <h3 class="pt-20 h3-md">CO-ORGANIZERS</h3>
+               <!--  Text 
+                <p class="p-lg"></p>
+              </div>
+            </div>
+          </div>
+			<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+						<img class="img-fluid" src="difconimage24\ICCM UTAR Logo images.jpeg" alt="content-image"> 
+           
+            <!-- <img src="difconimage24\kisspng-universidad-empresarial-siglo-21-catholic-universi-5ba35ee53db545.4262856015374333172528.png" width="500" height="245"> -->
+
+					<!--    <img class="img-fluid" src="difconimage24/tarumt.png" alt="content-image">
+						<img class="img-fluid" src="difconimage24/cud.png" alt="content-image">
+						<img class="img-fluid" src="difconimage24/utp.png" alt="content-image" style="height:100pt">
+						<img class="img-fluid" src="difconimage24/ciputra.png" alt="content-image" style="height:110pt">
+						<img class="img-fluid" src="difconimage24/pan.png" alt="content-image">
+						<img class="img-fluid" src="difconimage24/pakuan.webp" alt="content-image" style="height:110pt">
+						<img class="img-fluid" src="difconimage24/siglo.png" alt="content-image">
+						<img class="img-fluid" src="difconimage24/polytec.png" alt="content-image" style="height:110pt">  -->
+			</div>
+		  
+        </div>
+        <!-- End container -->
+      </section>
+	  
+
+
+
+		<!-- CONTENT-3 / committees 
+			============================================= -->
+		<section class="content-3 wide-60 content-section division">
+			<div class="container">
+
+				<!-- SECTION TITLE -->
+				<div class="row" id="committeeiccm">
+					<div class="col-lg-10 offset-lg-1">
+						<div class="section-title mb-50 pt-10 text-center">
+							<h3 class="pt-20 h3-md">COMMITTEES</h3>
+							<p class="p-lg">
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- TOP CONTENT -->
+				<div id="c3-top" class="cbox-3 pb-50">
+					<div class="row d-flex align-items-top m-row">
+
+
+						<!-- TEXT BLOCK -->
+						<div class="col-md-12 col-lg-12 m-bottom">
+							<div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+								<!-- Title -->
+								<h4 class="h4-sm">ORGANISING COMMITTEE<div class="w-100"></div>
+								</h4>
+
+								<p class="grey-color">
+									Conference General Chair: Prof. Ts. Dr. Koo Ah Choo  <br>
+									Conference General Co-Chair: Ts. Dr. Vimala Perumal <br>
+
+Conference Secretariat: Ms. Khairun Niza Mohammad Radzi (Head), Mr. Mohd Khairy Ishar <br>
+
+Keynote and Industry Speakers: Ms. Qistina Ruslan (Head),  Ms. Kharlal Nisha, Mr. Eddy Izuwan <br>
+
+Publicity and Social Media Marketing: Mdm. Rosnani Abdul Rahman (Head), Mr. Zharif Fikri Suandi, Ms. Hashimah Binti Abdullah, Dr. Karolina Paterek  <br>
+
+Poster Design, Programme Programme Book Design & Contents and Motion Graphics Design: Mr. Aliff Afiq Mohd Anuar (Head), Mr. Ahmad Saufi Mohammed, Mr. Rubinden Kumar, Dr. Junita Shariza Mohd Nasir, Ts. Muhammad Tamim Faruq Khairul 'Azmi  <br>
+
+Logistic and Facilities: Mr. Yuvaraj Kaliaperumal (Head), Mr. Muhammad Afiq Mohamad Nasir, Mr. Mohd Nazri Rusli, Mr. Sri Suriya Prakash, Mr. Qusyairi Zazili, Mr. Sahar Fahzan Bin Mhd. Salleh <br>
+
+Presentation Session Management (Session Chair, arrangement and  best presentation award): Ts. Dr. Heidi Tan Yeen-Ju (Head), Ms. Siti Iradah Ismail, Ms. Sharafina Binti Teh Sharifuddin  <br>
+
+Publication, Editorial, and Award Selection Committee: Prof. Ts. Dr. Koo Ah Choo (Head), Ts. Dr. Vimala Perumal, Dr. Tenku Putri Norishah Tenku Shariman, Dr. Tan Yun Yi, Dr. Zainuddin Siran  <br>
+
+Student Assistant: Mr. Muhammad Ali Malik, Mr. Ahmad Amirun Aniq Bin Ahmad Padhli. <br>
+								</p>
+
+							</div>
+						</div> <!-- END TEXT BLOCK 
+
+						<!-- TEXT BLOCK 
+						<div class="col-md-12 col-lg-12 m-bottom">
+							<div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+								<!-- Title 
+								<h4 class="h4-sm"> PROGRAMME COMMITTEE CO-CHAIRS <div class="w-100"></div>
+								</h4>
+
+								<p class="grey-color">
+									Technical Programme Committee as Co-Chair: Dr. Heidi Tan Yeen-Ju (Multimedia University)<br>
+									Technical Programme Committee as Co-Chair: Assoc. Prof. Dr. Lim Kok Yoong (RMIT Saigon South Campus)<br>
+									Technical Programme Committee as Co-Chair: Ts. Amir Shahlan Amiruddin (Multimedia University)
+								</p>
+
+							</div>
+						</div> <!-- END TEXT BLOCK -->
+						
+						<!-- TEXT BLOCK 
+						<div class="col-md-12 col-lg-12 m-bottom">
+							<div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+								<!-- Title 
+								<h4 class="h4-sm"> PROGRAMME COMMITTEE / REVIEWERS <div class="w-100"></div>
+								</h4>
+
+								<p class="grey-color">
+									Assoc. Prof. Ts. Dr. Muhammad Zaffwan bin Idris (Sultan Idris Education University)<br>
+									Prof. Dr. Peter Charles Woods (Taylor’s University, Malaysia)<br>
+									Assoc. Prof. Dr. Nurul Nisa Omar (International University of Malaya-Wales)<br>
+									Dr. Tan Yun Yi	(Universiti Sains Malaysia)<br>
+									Dr. Kwok Wai Jing (Joyce) (Xiamen University Malaysia)<br>
+									Dr. Syamsul Zahri Bin Subir (Tunku Abdul Rahman University of Management and Technology)<br>
+									Dr. Nurzihan Hassim (National University Malaysia)<br>
+									Dr. Mohd Fuad Bin Md Arif (Universiti Teknologi MARA)<br>
+									Dr. Siow May Ling (Universiti Putra Malaysia)<br>
+									Dr. Zukeri Bin Ibrahim (Universiti Malaysia Kelantan)<br>
+									Prof. Dr. Teoh Sian Hoon (Universiti Teknologi MARA)<br>
+									Dr. Nur Safinas Binti Albakry (Sultan Idris Education University)<br>
+									Dr. Siti Salwa Isa (Universiti Teknologi MARA)<br>
+									Dr. Kogilathah Segaran (Cosmopoint College)<br>
+									Dr. Hushinaidi Abdul Hamid (Universiti Utara Malaysia)<br>
+									Prof. Datuk Ts. Dr. Ahmad Rafi Bin Mohamed Eshaq (Multimedia University)<br>
+									Assoc. Prof. Dr. Hew Soon Hin (Multimedia University)<br>
+									Prof. Dr. Wong Chee Onn (Multimedia University)<br>
+									Prof. Dr. Neo Tse Kian (Multimedia University)<br>
+									Prof. Dr. Neo Mai (Multimedia University)<br>
+									Dr. Junita Shariza Mohd Nasir (Multimedia University)<br>
+									Dr. Nursuliana binti Sulaiman (Multimedia University)<br>
+									Assoc. Prof. Dr. Liew Tze Wei (Multimedia University)<br>
+									Dr. Fauzan Bin Mustaffa	 (Multimedia University)<br>
+									Dr. Sy. Nurleyana Wafa Binti Sy. Naguib Wafa (Multimedia University)<br>
+									Dr. Priyadarshini Muthukrishnan (INTI International University Malaysia)<br>
+									Ts. Dr. Vimala Perumal (Multimedia University)<br>
+									Ts. Dr Khong Chee Weng (Multimedia University)<br>
+									Prof. Madya Dr. Che Soh bin Said (Sultan Idris Education University)<br>
+									Dr. Zainudin Siran (Multimedia University)<br>
+									Ts. Dr. Jason Wong Yoke Seng (Sultan Idris Education University)<br>
+									Dr. Juhanita Jiman  (University Malaysia of Computer Science & Engineering (UNIMY))<br>
+									Dr. Edina M. Nasseri (Akademi Seni Budaya Dan Warisan Kebangsaan (ASWARA))<br>
+									Dr Cheng Kin Meng (Universiti Tunku Abdul Rahman Malaysia)<br>
+									Mr. Anis Harun (Multimedia University)<br>
+									Dr. Elyna Amir Sharji (Multimedia University)<br>
+									Assoc. Prof. Dr. Tan Choo Kim (Multimedia University)<br>
+									Prof. Dr. Chen Chwen Jen (Universiti Malaysia Sarawak)<br>
+									Dr. Roopesh Sitharan (Multimedia University)<br>
+									Assoc. Prof. Dr. Norbayah Suki (Universiti Utara Malaysia)<br>
+									Dr. Yvonne Lee Lean Ee (Multimedia University)<br>
+									Dr. Tenku Putri Norishah Tenku Shariman (Multimedia University)<br>
+									Dr. Lim Boon Kian (Multimedia University)<br>
+									Prof. Dr. Ervina Efzan Binti Mhd Noor (Multimedia University)<br>
+									Ts. John Hii (Taylor's University)<br>
+									Dr. Ts. Ang Kok Yew (Universiti Tunku Abdul Rahman)<br>
+									Assoc. Prof. Dr. Ooi Chee Pun (Multimedia University)<br>
+									Eddy Izuwan Musa (Multimedia University)<br>
+									<br>
+									International: <br>
+									Assoc. Prof. Tomohiro Fukuda (Osaka University Japan)<br>
+									Assoc. Prof. Wael Abdelhafeez M. Abdelhameed (Applied Science University Bahrain)<br>
+									Dr. Safurah Abdul Jalil (Higher Colleges of Technology, Ras Al Khaimah, United Arab Emirates) <br> 
+									Dr. Izani Zainal Abidin (Higher Colleges of Technology, Abu Dhabi, United Arab Emirates) <br>
+									Assoc. Prof. Dr. Yoko Akama (RMIT Australia)<br>
+									Dr. Mohd Hafizuddin Mohd Yusof (Bahrain Polytechnic, Kingdom of Bahrain)<br>
+									Dr. Mahmoud AbuShawali (University of Business & Technology, Saudi Arabia)<br>
+									Assoc. Prof. Dr. Ina Conradi (Nanyang Technological University)<br>
+									Dr. Nhat Tram Phan-Le (Monash University, Australia)<br>
+									Assoc. Prof. Dr. Astrid Kusumowidagdo (Universitas Ciputra, Indonesia)<br>
+									Dr. Dennis John Sumaylo (University of the Philippines, Mindanao) <br>
+									Prof. Dr. M. Saleh Uddin (Kennesaw State University, Marietta Campus Metro Atlanta, Georgia) <br>
+									Dr. Phillip G. Queroda (The Pangasinan State University-Open University Systems (PSU-OUS), Pangasinan State University, Philipines) <br>
+									Dr. Rista Ihwanny (University Multimedia Nusantara, Indonesia)<br>
+									Dr. Teddy Hendiawan (University Multimedia Nusantara, Indonesia)<br>
+									Dr.Sn. Yusup Sigit Martyastiadi (University Multimedia Nusantara, Indonesia)<br>
+									Dr. Kurnia Setiawan (Universitas Tarumanagara, Indonesia)<br>
+									Dr. Siti Nurannisaa (Universitas Tarumanagara, Indonesia)<br>
+									Dr. Aghastya Wiyoso (Universitas Tarumanagara, Indonesia)<br>
+									Riky A. Siswanto (Telkom University , Indonesia)<br>
+									Dr. Andreas Rio Adriyanto (Telkom University , Indonesia)<br>
+									Dr. Dandi yunidar (Telkom University , Indonesia)<br>
+									Dr. Wirania Swasty (Telkom University , Indonesia)<br>
+									Dr Rachel Jahja	(RMIT Vietnam)<br>
+									Associate Professor Dr. Donna Cleveland (RMIT Vietnam)<br>
+									Dr. Andrew Stiff (RMIT Vietnam)<br>
+									Dr. Renick Bell (RMIT Vietnam)<br>
+									Prof. Junghwan Sung (Soongsil University)<br>
+									Ricardo Arce (RMIT Vietnam)<br>
+									Dr. Renusha Athugala (RMIT Vietnam)<br>
+									Dr. Surendheran Kaliyaperumal (RMIT Vietnam)<br>
+									Dr. Abdul Rohman (RMIT Vietnam)<br>
+									Dr Corinna Erken (RMIT Vietnam)<br>
+								</p>
+
+							</div>
+						</div> <!-- END TEXT BLOCK -->
+
+
+					</div> <!-- End row -->
+				</div> <!-- END TOP CONTENT -->
+
+
+			</div> <!-- End container -->
+		</section> <!-- END CONTENT-3 / COMITTEES-->
+
+
+
+
+		<!-- GREY BORDER 
+			============================================= -->
+		<div class="gb-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 grey-border"></div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- FOOTER-1 
+			============================================= 
+		<footer id="footer-1" class="footer division">
+			<div class="container">
+
+				<!-- SECTION TITLE 
+				<div class="row" id="venueiccm">
+					<div class="col-lg-10 offset-lg-1">
+						<div class="section-title mb-50 pt-10 text-center">
+							<h3 class="pt-20 h3-md"> Author Guides </h3>
+								<div id="c3-top" class="cbox-3 pb-10">
+									<div class="row d-flex align-items-top m-row">
+							
+							<!-- TEXT BLOCK 
+										<div class="col-md-12 col-lg-12">
+											<div>
+
+											 <div class="txt-block left-column pc-35 mb-10 wow fadeInRight" data-wow-delay="0.4s">
+
+												<!-- Title 
+												<h5 class="h3-sm pt-20">Important Dates <div class="w-100"></div></h5>
+
+												<!-- <h5 class="h3-sm pt-20">TIMELINES <div class="w-100"></div>	</h5> -->
+
+												<!-- Code by w3codegenerator.com 
+													<div class="table-responsive">
+													 <table class="table table-light table-bordered table-striped table-borderless">
+													   <tbody style="text-align: left;">
+													      <tr>
+													         <th scope="row"> <s>15-Mar-24 (Extended to 25-Mar-24)</s></th>
+													         <td> Abstract submission </td>
+															 <td></td>
+													      </tr>
+													      <tr>
+													         <th scope="row"> <s>31-Mar-24 </s></th>
+													         <td> Abstract acceptance notification </td>
+															 <td></td>
+													      </tr>
+														  <tr>
+													         <th scope="row"> <s>15-May-24 (FIRMED Deadline)</s></th>
+															 <td> Full paper submission </td>
+															 <td> </td>
+													      </tr>
+														  <tr>
+															<th scope="row"> <s>31-May-24 </s></th>
+															<td> Paper acceptance notification </td>
+															<td></td>
+														 </tr>
+														 <tr>
+															<th scope="row"> <s>15-Jun-24 </s></th>
+															<td> Camera ready submission</td>
+															<td></td>
+														 </tr>
+															   <tr>
+															<th scope="row"> <s>07-Jun-24 </s></th>
+															<td> Early bird registration </td>
+															<td></td>
+														 </tr>
+														 <tr>
+															<th scope="row"> <s>16-Jun 2024 </s></th>
+															<td> Final date for registration </td>
+															<td></td>
+														 </tr>
+														 <tr>
+															<th scope="row"> 23-25 July 2024 </th>
+															<td> Conference date </td>
+															<td></td>
+														 </tr>
+													   </tbody>
+													</table>
+													</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-md-12 col-lg-12">
+											<div>
+
+											 <div class="txt-block left-column pc-35 mb-10 wow fadeInRight" data-wow-delay="0.4s">
+
+												<!-- Title 
+												<h5 class="h3-sm pt-20"> Fees <div class="w-100"></div></h5>
+
+												<!-- <h5 class="h3-sm pt-20">TIMELINES <div class="w-100"></div>	</h5> -->
+
+												<!-- Code by w3codegenerator.com 
+													<div class="table-responsive">
+													 <table class="table table-light table-bordered table-striped table-borderless">
+													   <tbody style="text-align: left;">
+													      <tr>
+													         <th scope="row" style="width: 350px;">Normal </th>
+													         <td> USD500 </td>
+															 <td></td>
+													      </tr>
+													      <tr>
+													         <th scope="row" style="width: 350px;"> Student </th>
+													         <td> USD480 </td>
+															 <td></td>
+													      </tr>
+														  <tr>
+													         <th scope="row" style="width: 350px;"> Early bird (1 June 2024) </th>
+															 <td> USD450 </td>
+															 <td> </td>
+													      </tr>
+													   </tbody>
+													</table>
+													</div>
+											</div>
+										</div>
+									</div>
+									</div>
+									</div>
+
+					
+			  						<ul class="txt-list grey-color">
+													
+													<!-- <h5 class="h3-sm" >COMING SOON</h5> -->
+													
+													<!-- <p class="grey-color text-justify">
+														Abstract submission 
+													</p>	 
+													
+													<div class="text-center justify-content-center justify-content-lg-start">
+														<div>
+															<a href="https://forms.office.com/r/f8rQhUg2wx" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Abstract Submission</a>
+															<a href="https://edas.info/newPaper.php?c=31884" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Full Paper Submission</a>
+															<a download href="files/iccm_cfp.jpeg" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">	Call for Paper </a>
+															<a download href="files/iccm_scitepress_temp.docx" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">
+																Paper Template
+															</a>
+															<br /><br />
+															<a href="https://forms.office.com/r/uYBQciU9Gm" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Registration Link</a>
+														
+														<a href="https://www.mmu-cnergy.com/difcon2024" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">EarlyBird_DIFCON24</a>
+														</div>
+													</div>
+													<p style="text-align: center;padding-right: 0px;padding-left: 0px;"> **Early bird coupon: valid until 6th June 2024 ONLY! (Only 1 coupon can be used per transaction)
+
+									</ul>
+									
+													
+										<p class="grey-color text-justify" style="padding-left:40px;padding-right:40px">
+																All papers must be ORIGINAL and not simultaneously submitted to another journal or conference. All papers are to be prepared according to the template required by the conference 
+																proceedings (SCITEPRESS). <br>
+																The full papers should about 5500 - 7000 words (or a 12-page limit), formatted according to the given template, including abstract, references, tables, graphs, and appendices. 
+																Authors are kindly requested to produce and provide the paper without any reference to any of the authors’ information (including the authors’ personal details, the 
+																acknowledgments or reference that may disclose the authors’ identity). All references listed MUST be cited in the text.  <br> 
+																Kindly download the template <a href="files/iccm_scitepress_temp.docx" style="font-weight:bold"> HERE </a>. 
+																Authors are to supply illustrations of an appropriate quality and authors are to obtain all the necessary copyright permissions of these illustrations. For more information 
+																on publication ethics, kindly refer to additional guides: <a style="font-weight:bold" href="https://www.scitepress.org/EthicsOfPublication.aspx">SCITEPRESS</a> <br/>
+																IEEE Computer Society Malaysia Chapter is keen to award two best papers (Computing related paper) under ICCM 2024.  
+
+										</p>
+										
+										<div class="img-block">
+											<img class="img-fluid" src="difconimage24/ieee_com_soc_logo.png" alt="content-image" style="width:50%">
+										</div>
+										
+										<div class="col-md-12 col-lg-12">
+																			 
+											<h5 class="h3-sm pt-20"> Review Process <div class="w-100"></div></h5>
+
+												<p class="grey-color text-justify" style="padding-left:40px;padding-right:40px">
+													Manuscripts submitted must undergo peer review by at least two reviewers before a final decision is made regarding their 
+													acceptance or rejection for the conference. For papers that are accepted, authors are required to address all comments 
+													made by the reviewers in their final manuscript, and submit a list of revisions to the Technical Programme Committee. 
+													The Programme Committee and reviewers consist of experienced researchers and scholars, both internationally and locally, 
+													who are invited based on their area of expertise. 
+												</p>
+											</div>
+									
+													
+							<h5 class="h3-sm pt-20">Venue <div class="w-100"></div></h5>
+							<p class="fas fa-map-marker-alt"> Virtual </p>
+						</div>
+					</div>
+				</div>
+
+		
+			<!-- FOOTER-1
+			============================================= -->
+			<footer id="footer-1" class="footer division">
+				<div class="container">
+
+					<!-- SECTION TITLE -->
+					<div class="row" id="contactus">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-50 pt-10 text-center">
+								<h3 class="pt-20 h3-md">CONTACT US</h3>
+								<p class="p-lg">
+									<!-- Email -->
+									<p class="foo-email"><a href="mailto:difcon@mmu.edu.my">difcon@mmu.edu.my</a></p>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- FOOTER CONTENT -->
+					<div class="row">
+
+
+						<div class="col-lg-12 col-xl-12 text-center">
+							<div>
+									<!-- <a href="https://info.flagcounter.com/CL0R"><img src="https://s01.flagcounter.com/countxl/CL0R/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a> -->
+									<a href="https://info.flagcounter.com/n6zP"><img src="https://s11.flagcounter.com/countxl/n6zP/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+							</div>
+						</div>
+					</div>	 <!-- END FOOTER CONTENT -->
+
+
+					<!-- BOTTOM FOOTER -->
+					<div class="bottom-footer grey-color">
+						<div class="row d-flex align-items-center">
+
+
+							<!-- FOOTER COPYRIGHT -->
+							<div class="col-md-6 mt-2">
+								<div class="footer-copyright">
+									<p>&copy; 2024 Universiti Telekom Sdn. Bhd. All Rights Reserved</p>
+								</div>
+							</div>
+
+
+
+						</div>  <!-- End row -->
+					</div>	<!-- END BOTTOM FOOTER -->
+
+
+				</div>	   <!-- End container -->
+			</footer>	<!-- END FOOTER-1 -->
+
+
+
+
+		</div>	<!-- END PAGE CONTENT -->
+
+
+
+
+
+	<!-- EXTERNAL SCRIPTS
+		============================================= -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	<script src="js/jquery.scrollto.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/contact-form.js"></script>
+	<script src="js/register-form.js"></script>
+	<script src="js/request-form.js"></script>
+	<script src="js/comment-form.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/wow.js"></script>
+
+	<!-- Custom Script -->
+	<script src="js/custom.js"></script>
+
+
+	<script>
+		new WOW().init();
+	</script>
+
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+	<!-- [if lt IE 9]>
+			<script src="js/html5shiv.js" type="text/javascript"></script>
+			<script src="js/respond.min.js" type="text/javascript"></script>
+		<![endif] -->
+
+	<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
+	<!--
+		<script>
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-XXXXX-X']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		-->
+
+
+</body>
+
+
+
+</html>

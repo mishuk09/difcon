@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+
+
+
+  
+  <style>
+	/* Step by step styling */
+	.step-by-step-guide {
+	  border-left: 3px solid #0277BD;
+	  padding-left: 30px;
+	  margin-left: 15px;
+	}
+	
+	.step-row {
+	  position: relative;
+	  padding-bottom: 40px;
+	}
+	
+	.step-number {
+	  position: absolute;
+	  left: -43px;
+	  top: 0;
+	  width: 36px;
+	  height: 36px;
+	  background: #0277BD;
+	  color: white;
+	  border-radius: 50%;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  font-weight: bold;
+	  font-size: 18px;
+	}
+	
+	.step-content {
+	  background: #e9e3e3;
+	  padding: 25px;
+	  border-radius: 8px;
+	  border: 1px solid #eee;
+	  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+	}
+	
+	.step-actions {
+	  display: flex;
+	  flex-wrap: wrap;
+	  align-items: center;
+	  gap: 15px;
+	  margin: 25px 0;
+	}
+	
+	.step-buttons {
+	  display: flex;
+	  flex-wrap: wrap;
+	  gap: 12px;
+	  flex-grow: 1;
+	}
+	
+	.step-download {
+	  margin-left: auto;
+	}
+	
+	/* Button Styles */
+	.btn {
+	  display: inline-flex;
+	  align-items: center;
+	  justify-content: center;
+	  padding: 10px 20px;
+	  border-radius: 6px;
+	  font-weight: 600;
+	  text-align: center;
+	  white-space: nowrap;
+	  transition: all 0.3s ease;
+	  border: none;
+	  cursor: pointer;
+	}
+	
+	.btn i {
+	  margin-right: 8px;
+	  font-size: 16px;
+	}
+	
+	.btn-browser {
+	  color: rgb(42, 119, 29);
+	  min-width: 180px;
+	}
+	
+	.btn-chrome { 
+	  background-color: #4285F4;
+	  box-shadow: 0 3px 0 #3367D6;
+	}
+	.btn-chrome:hover { background-color: #3367D6; }
+	
+	.btn-firefox { 
+	  background-color: #FF7139;
+	  box-shadow: 0 3px 0 #E65C2E;
+	}
+	.btn-firefox:hover { background-color: #E65C2E; }
+	
+	.btn-edge { 
+	  background-color: #0078D7;
+	  box-shadow: 0 3px 0 #106EBE;
+	}
+	.btn-edge:hover { background-color: #106EBE; }
+	
+	.btn-incognito { 
+	  background-color: #673AB7;
+	  color: rgb(42, 119, 29);
+	  box-shadow: 0 3px 0 #5E35B1;
+	}
+	.btn-incognito:hover { background-color: #5E35B1; }
+	
+	.btn-shortcut {
+	  background-color: #FF9800;
+	  color: rgb(42, 119, 29);
+	  box-shadow: 0 3px 0 #F57C00;
+	}
+	.btn-shortcut:hover { background-color: #F57C00; }
+	
+	.btn-confmanage { 
+	  background-color: #4CAF50;
+	  color: rgb(42, 119, 29);
+	  box-shadow: 0 3px 0 #43A047;
+	  min-width: 200px;
+	}
+	.btn-confmanage:hover { background-color: #43A047; }
+	
+	.btn-tutorial {
+	  background-color: #607D8B;
+	  color: rgb(42, 119, 29);
+	  box-shadow: 0 3px 0 #546E7A;
+	}
+	.btn-tutorial:hover { background-color: #546E7A; }
+	
+	.btn-pdf { 
+	  background-color: #F44336;
+	  color: rgb(42, 119, 29);
+	  box-shadow: 0 3px 0 #E53935;
+	  min-width: 220px;
+	}
+	.btn-pdf:hover { background-color: #E53935; }
+	
+	.instructions-box {
+	  background: white;
+	  padding: 20px;
+	  border-radius: 6px;
+	  border-left: 4px solid #0277BD;
+	  margin-top: 20px;
+	  display: none;
+	  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+	}
+	
+	@media (max-width: 768px) {
+	  .step-by-step-guide {
+		padding-left: 20px;
+		margin-left: 5px;
+		border-left-width: 2px;
+	  }
+	  .step-number {
+		left: -33px;
+		width: 32px;
+		height: 32px;
+		font-size: 16px;
+	  }
+	  .step-actions {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 12px;
+	  }
+	  .step-buttons {
+		width: 100%;
+		flex-direction: column;
+	  }
+	  .step-download {
+		margin-left: 0;
+		margin-top: 10px;
+		width: 100%;
+	  }
+	  .btn {
+		width: 100%;
+		padding: 12px 15px;
+	  }
+	}
+  </style>
+  
+  <script>
+	function showInstructions(browser) {
+	  const instructions = {
+		chrome: `
+		  <h5><i class="fab fa-chrome"></i> Chrome Cache Clearing</h5>
+		  <ol>
+			<li>Click the three dots (⋮) in the top-right corner</li>
+			<li>Select <strong>More tools > Clear browsing data</strong></li>
+			<li>Choose time range: <strong>All time</strong></li>
+			<li>Check <strong>Cached images and files</strong></li>
+			<li>Click <strong>Clear data</strong> button</li>
+		  </ol>
+		  <div class="text-center mt-3">
+			<a href="files/chrome-cache-visual.pdf" class="btn btn-pdf btn-sm" download>
+			  <i class="fas fa-file-pdf"></i> Download Visual Guide
+			</a>
+		  </div>
+		`,
+		firefox: `
+		  <h5><i class="fab fa-firefox"></i> Firefox Cache Clearing</h5>
+		  <ol>
+			<li>Click the three lines (≡) in the top-right corner</li>
+			<li>Select <strong>Settings</strong></li>
+			<li>Go to <strong>Privacy & Security</strong> panel</li>
+			<li>Under "Cookies and Site Data", click <strong>Clear Data</strong></li>
+			<li>Check <strong>Cached Web Content</strong> and click <strong>Clear</strong></li>
+		  </ol>
+		`,
+		edge: `
+		  <h5><i class="fab fa-edge"></i> Edge Cache Clearing</h5>
+		  <ol>
+			<li>Click the three dots (...) in the top-right corner</li>
+			<li>Select <strong>Settings</strong></li>
+			<li>Under "Clear browsing data", click <strong>Choose what to clear</strong></li>
+			<li>Check <strong>Cached images and files</strong></li>
+			<li>Click <strong>Clear now</strong></li>
+		  </ol>
+		`
+	  };
+	  
+	  const box = document.getElementById('clear-cache-instructions');
+	  box.innerHTML = instructions[browser];
+	  box.style.display = 'block';
+	}
+	
+	function showIncognitoInstructions() {
+	  const box = document.getElementById('incognito-instructions');
+	  box.innerHTML = `
+		<h5><i class="fas fa-user-secret"></i> Incognito/Private Mode Instructions</h5>
+		<div class="row">
+		  <div class="col-md-6">
+			<h6>Windows/Linux Shortcuts:</h6>
+			<ul class="fa-ul">
+			  <li><span class="fa-li"><i class="fab fa-chrome"></i></span> Chrome: <code>Ctrl+Shift+N</code></li>
+			  <li><span class="fa-li"><i class="fab fa-firefox"></i></span> Firefox: <code>Ctrl+Shift+P</code></li>
+			  <li><span class="fa-li"><i class="fab fa-edge"></i></span> Edge: <code>Ctrl+Shift+N</code></li>
+			</ul>
+		  </div>
+		  <div class="col-md-6">
+			<h6>Mac Shortcuts:</h6>
+			<ul class="fa-ul">
+			  <li><span class="fa-li"><i class="fab fa-chrome"></i></span> Chrome: <code>⌘+Shift+N</code></li>
+			  <li><span class="fa-li"><i class="fab fa-firefox"></i></span> Firefox: <code>⌘+Shift+P</code></li>
+			  <li><span class="fa-li"><i class="fab fa-edge"></i></span> Edge: <code>⌘+Shift+N</code></li>
+			</ul>
+		  </div>
+		</div>
+		<div class="mt-3 text-center">
+		  <a href="files/incognito-visual.pdf" class="btn btn-pdf btn-sm" download>
+			<i class="fas fa-file-pdf"></i> Download Visual Guide
+		  </a>
+		</div>
+	  `;
+	  box.style.display = 'block';
+	}
+  </script>
+
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="description" content="DIFCON"/>
+		<meta name="keywords" content="DIFCON, MMU">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  		<!-- SITE TITLE -->
+		<title>PUBLICATIONS & DATES </title>
+
+		<!-- FAVICON AND TOUCH ICONS -->
+		<link rel="icon" type="image/png" sizes="32x32" href="difconimage/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="difconimage/favicon-16x16.png">
+
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900" rel="stylesheet">
+
+		<!-- BOOTSTRAP CSS -->
+							<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- FONT ICONS -->
+		<link href="https://use.fontawesome.com/releases/v5.11.0/css/all.css" rel="stylesheet" crossorigin="anonymous">
+		<link href="css/flaticon.css" rel="stylesheet">
+
+		<!-- PLUGINS STYLESHEET -->
+		<link href="css/menu.css" rel="stylesheet">
+		<link id="effect" href="css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
+		<link href="css/magnific-popup.css" rel="stylesheet">
+		<link href="css/owl.carousel.min.css" rel="stylesheet">
+		<link href="css/owl.theme.default.min.css" rel="stylesheet">
+
+		<!-- ON SCROLL ANIMATION -->
+		<link href="css/animate.css" rel="stylesheet">
+
+		<!-- TEMPLATE CSS -->
+		<!-- <link href="css/brick-theme.css" rel="stylesheet">     -->
+	    <!-- <link href="css/dimgreen-theme.css" rel="stylesheet">  -->
+	    <!-- <link href="css/green-theme.css" rel="stylesheet">     -->
+	    <!-- <link href="css/indigo-theme.css" rel="stylesheet">    -->
+	    <!-- <link href="css/orangered-theme.css" rel="stylesheet"> -->
+	    <!-- <link href="css/pink-theme.css" rel="stylesheet">      -->
+	    <!-- <link href="css/red-theme.css" rel="stylesheet">       -->
+	    <link href="css/royalblue-theme.css" rel="stylesheet">
+	    <!-- <link href="css/skyblue-theme.css" rel="stylesheet"> -->
+	    <!-- <link href="css/violet-theme.css" rel="stylesheet">    -->
+
+		<!-- RESPONSIVE CSS -->
+		<link href="css/responsive.css" rel="stylesheet">
+
+		<!-- My Custom CSS -->
+		<link href="css/mycss.css" rel="stylesheet">
+	</head>
+
+
+	<body>
+		<!-- PRELOADER SPINNER
+		============================================= -->
+		<!-- <div id="loader-wrapper">
+			<div id="loading">
+				<div class="cssload-loader">
+					<div class="cssload-ball cssload-ball-1"></div>
+					<div class="cssload-ball cssload-ball-2"></div>
+					<div class="cssload-ball cssload-ball-3"></div>
+					<div class="cssload-ball cssload-ball-4"></div>
+				</div>
+			</div>
+		</div> -->
+
+
+
+
+		<!-- PAGE CONTENT
+		============================================= -->
+		<div id="page" class="page">
+
+
+
+
+			<!-- HEADER
+			============================================= -->
+			<header id="header" class="header white-menu navbar-dark">
+				<div class="header-wrapper">
+
+
+					<!-- MOBILE HEADER -->
+				    <div class="wsmobileheader clearfix">
+				    	<span class="smllogo"><img src="difconimage24\Test Web-01.png"  alt="mobile-logo"/></span>
+				    	<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+				 	</div>
+
+
+				 	<!-- NAVIGATION MENU -->
+				  	<div class="wsmainfull menu clearfix">
+	    				<div class="wsmainwp clearfix">
+
+
+	    					<!-- LOGO IMAGE -->
+	    					<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 310 x 72 pixels) -->
+	    					<div class="desktoplogo"><a href="#about" class="logo-black"><img src="difconimage24/Test Web.png" alt="header-logo"></a></div>
+	    					<div class="desktoplogo"><a href="#about" class="logo-white"><img src="difconimage24/Test Web.png" alt="header-logo"></a></div>
+
+
+	    					<!-- MAIN MENU -->
+	    					<!-- MAIN MENU -->
+	      					<nav class="wsmenu clearfix">
+	        					<ul class="wsmenu-list">
+
+							    		<!-- <li class="nl-simple" aria-haspopup="true"><a href="#cfp">Call for Paper </a></li> -->
+										<!-- <li><a href="#committees"> Committees</a></li> -->
+
+										<li><a href="index.html"> Home </a></li>
+
+										<li aria-haspopup="true"><a href="#">Co-Located Conf. <span class="wsarrow"></span></a>
+											<div class="wsmegamenu clearfix halfmenu">
+														<div class="container-fluid">
+															<div class="row">
+																<ul class="col-lg-12 link-list">
+																		<!-- <li><a href="index.html">HOME (DIFCON)</a></li> -->
+																		<li>
+																		<a href="citic.html">CITIC (International Conference on Computer, Information Technology and Intelligent Computing)</a>
+																		<!-- <div class="sub-dropdown">
+																			<div class="sub-dropdown-content">
+																				<a href="#citic-sub-1">CITIC Sub-1</a>
+																				<a href="#citic-sub-2">CITIC Sub-2</a>
+																				<a href="#citic-sub-3">CITIC Sub-3</a>
+																			</div>
+																		</div> -->
+																		</li>
+																		<li>
+																		<li><a href="mecon.html">MECON (Multimedia University Engineering Conference)</a></li>
+																		<li><a href="ictim.html">ICTIM (International Conference on Technology and Innovation Management)</a></li>
+																		<li><a href="iccm.html">ICCM (International Conference on Creative Multimedia)</a></li>
+																		<li><a href="cless.html">CLESS (International Conference on Communication, Language, Education and Social Sciences)</a></li>
+																		<li><a href="icld.html">ICLD (International Conference On Law And Digitalisation)</a></li>
+																</ul>
+															</div>
+														</div>
+											</div>
+										</li>
+
+										<li><a href="publication.html"> Publication & Dates</a></li>
+
+										<li><a href="Registration.html"> Registration</a></li>
+
+							    		<li><a href="sponsorship.html"> Sponsorship</a></li>
+
+										<li aria-haspopup="true"><a href="#">Archive<span class="wsarrow"></span></a>
+											<div class="wsmegamenu clearfix halfmenu">
+														<div class="container-fluid">
+															<div class="row">
+																<ul class="col-lg-12 link-list">
+																	<li>
+		<a href="https://difcon.mmu.edu.my/2025"
+		  >DIFCON 2025</as
+		>
+	  </li><li><a href="https://difcon.mmu.edu.my/2024">DIFCON 2024</a></li>
+																	<li><a href="https://difcon.mmu.edu.my/2023">DIFCON 2023</a></li>
+																		<li><a href="https://difcon.mmu.edu.my/2022">DIFCON 2022</a></li>
+																		<li><a href="files\DIFCON 2021- conference proceedings(1).pdf">DIFCON 2021</a></li>
+																</ul>
+															</div>
+														</div>
+											</div>
+										</li>
+										
+	        					</ul>
+	        				</nav>	<!-- END MAIN MENU -->
+
+	    				</div>
+	    			</div>	<!-- END NAVIGATION MENU -->
+
+
+				</div>     <!-- End header-wrapper -->
+			</header>	<!-- END HEADER -->
+
+						      <!-- HERO-6 
+			============================================= -->
+           
+ <!-- HERO-6
+			============================================= -->
+		 <section id="hero-6" class="hero-section division">
+				<div class="container">
+				  <!-- HERO CONTENT -->
+				  <div class="row d-flex align-items-center">
+					<img
+					  src="difconimage24\DIFCON_finale (3).png"
+					  alt="difcon-logo"
+					  style="max-width: 100%; height: auto; opacity: 0.8"
+					/>
+
+          </div>
+					<div class="row" id="keynotescitic">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-20 pt-10 text-center">
+								<!-- Title 	-->
+								<h3 class="pt-20 h3-md">5 - 7 MAY 2026, Multimedia University Cyberjaya Malaysia</h3>
+								<!-- Text -->
+								<p class="p-lg">
+								</p>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <!-- END HERO CONTENT -->
+				</div>
+				<!-- End container -->
+			  </section>
+		  
+						  <!-- <h5 ="black-color text-justify">
+							
+							
+							  All accepted and presented papers will be published in the proceedings, which will be submitted for indexing consideration in Scopus. Selected papers will be invited to submit extended version for publication in various collaborating journals.
+						  <!-- <a download href="files/programbook-difcon.pdf" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1"> 
+																		  
+											  <h5>
+											  <!-- -->
+						</div>
+						<div class="text-center justify-content-center justify-content-lg-start">
+						  <!-- <div>
+							   Existing Download CFP Button 
+							  <a href="files\CFP DIFCON2025 (External).pdf" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Download CFP</a>
+							  
+									  </div>
+
+									  <div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+										
+										<a href="https://example.com/link2">
+										  <img class="img-fluid" src="difconimage24/publication mecon 2025 2.jpeg" alt="content-image" style="height:110pt">
+										</a>
+										<a href="https://example.com/link3">
+										  <img class="img-fluid" src="difconimage24/AIP procceding.png" alt="content-image" style="height:110pt">
+										</a>
+									  </div> -->
+									  
+				
+					  </div>
+					  </div>
+					  <!-- END HERO TEXT 
+					</div>
+					<!-- END HERO CONTENT 
+				
+				
+				
+				</div>
+
+				<!-- End container -->
+			  </section>
+
+ <section class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+
+      <div class="p-4  rounded-3">
+        
+<h3 class="h3-sm pt-10 text-center">
+				   Publication & Indexing
+				  <div class="w-100"></div>
+				</h3>
+        <p class="text-muted lh-lg mt-10 mb-4">
+          All accepted and presented papers will be published as conference
+          proceedings, book chapters, or journal papers, and will be indexed in
+          <strong>Scopus</strong>, <strong>Web of Science (WoS)</strong>, or
+          <strong>MyCite</strong>, subject to meeting the requirements of the
+          respective indexing bodies.
+        </p>
+
+        <p class="text-muted lh-lg">
+          Selected proceedings or book chapters will be invited to submit an
+          <strong>extended version</strong> for publication in various
+          collaborating journals.
+        </p>
+
+        <div class="d-flex align-items-center justify-content-center gap-3 mt-4">
+          <a
+            href="https://drive.google.com/file/d/1s0ickkxbKKCD6oWo7HCEhdixcFW2t_uW/view"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            Download CFP
+          </a>
+
+         
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+       <section id="content-3" class="content-3 wide-60 bg-lightgrey content-section division pt-20">
+        <div class="container">
+        <!--   SECTION TITLE  -->
+          <div class="row" id="keynotespeakerdifcon">
+            <div class="col-lg-10 offset-lg-1">
+              <div class="section-title mb-50 pt-10 text-center">
+               <!--  Title 	-->
+               <h3 class="pt-20 h3-md">PUBLICATIONN PARTNERS</h3>
+               <!--  Text -->
+                <p class="p-lg"></p>
+              </div>
+            </div>
+          </div>
+		<!-- Example using Bootstrap’s grid system -->
+    <!-- Example using Bootstrap’s grid system -->
+<div class="container">
+  
+  <!-- Four logos grid -->
+  <div class="row text-center mb-4">
+   
+    <!-- Image 1 -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <img src="/difconimage24/AIP procceding.png" alt="Logo 1" class="img-fluid" style="max-height: 150px;">
+    </div>
+
+    <!-- Image 2 -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <img src="/difconimage24/asti-logo-.jpg" alt="Logo 2" class="img-fluid" style="max-height: 150px;">
+    </div>
+
+    <!-- Image 3 -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <img src="/difconimage24/asnet.png" alt="Logo 3" class="img-fluid" style="max-height: 150px;">
+    </div>
+
+    <!-- Image 4 -->
+    <div class="col-md-6 col-lg-3 mb-3">
+      <img src="/difconimage24/bonview.png" alt="Logo 4" class="img-fluid" style="max-height: 150px;">
+    </div>
+
+  </div>
+
+</div>
+ 
+      
+      </div>
+    </div>
+    
+
+		  
+        </div>
+        <!-- End container -->
+      </section>
+
+
+<!--cONTENT 3A-->
+<section id="cfp" class="content-3 wide-60 bg-lightgrey content-section division">
+	<div class="container">
+	  <!-- TOP CONTENT -->
+	  <div id="c3-top" class="cbox-3 pb-50">
+		<div class="row d-flex align-items-top m-row">
+		  <!-- TEXT BLOCK -->
+		  <div class="col-md-12 col-lg-12 m-bottom">
+			<div>
+			  <div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+				<!-- Title -->
+				<h3 class="h3-sm pt-20 text-center">
+				  ABSTRACTS SUBMISSION
+				  <div class="w-100"></div>
+				</h3>
+			  </div>
+  
+			  <div class="text-center justify-content-center justify-content-lg-start">
+				 <div>
+					<a href="https://forms.office.com/r/QDYjVr8MSE" 
+					   target="_blank" 
+					   class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">SUBMIT HERE</a>
+					  
+				</div> 
+			</div>
+		
+			
+			  
+				<!-- End row -->
+			  </div>
+			  <!-- END SERVICES-2 WRAPPER -->
+			</div>
+		  </div>
+		  <!-- END TEXT BLOCK -->
+		</div>
+		<!-- End row -->
+	  </div>
+	  <!-- END TOP CONTENT -->
+	</div>
+	<!-- End container -->
+  </section>
+  <!-- END CONTENT-3 -->
+
+
+
+<!-- CONTENT-3 -->
+<section id="cfp" class="content-3 wide-60 content-section division pt-20">
+	<div class="container">
+	  <!-- TOP CONTENT -->
+	  <div id="c3-top" class="cbox-3 pb-50">
+		<div class="row d-flex align-items-top m-row">
+		  <!-- TEXT BLOCK -->
+		  <div class="col-md-12 col-lg-12 m-bottom">
+			<div>
+			  <div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+				<!-- Title -->
+				<h3 class="h3-sm pt-20 text-center">
+				  FULL PAPER SUBMISSION
+				  <div class="w-100"></div>
+				</h3>
+			  </div>
+	
+			  <!-- SERVICES-2 WRAPPER -->
+			  <div class="col-md-12 col-lg-12 sbox-2-wrapper text-center h-100">
+				<div class="row h-100 justify-content-center align-items-top">
+  
+				  <!-- SERVICE BOX: CITIC -->
+				  <div class="col-sm-2 col-lg-2" onclick="window.location.assign('https://edas.info/N34727');" style="cursor: pointer;">
+					<div class="sbox-2 wow fadeInUp" data-wow-delay="0.6s">
+					  <div class="box-line"></div>
+					  <div class="sbox-2-ico">
+						<i aria-hidden="true" class="fas fa-server fa-3x"></i>
+					  </div>
+					  <h6 class="h6-lg">CITIC</h6>
+					  <p class="grey-color">
+						International Conference on Computer, Information Technology and Intelligent Computing
+					  </p>
+					</div>
+				  </div>
+				  
+				  <!-- SERVICE BOX: MECON -->
+				  <div class="col-sm-2 col-lg-2" onclick="window.location.assign('https://edas.info/N34732');" style="cursor: pointer;">
+					<div class="sbox-2 wow fadeInUp" data-wow-delay="0.6s">
+					  <div class="box-line"></div>
+					  <div class="sbox-2-ico">
+						<i aria-hidden="true" class="fas fa-space-shuttle fa-3x"></i>
+					  </div>
+					  <h6 class="h6-lg">MECON</h6>
+					  <p class="grey-color">
+						Multimedia University Engineering Conference
+					  </p>
+					</div>
+				  </div>
+  
+				  <!-- SERVICE BOX: ICTIM -->
+				  <div class="col-sm-2 col-lg-2" onclick="window.location.assign('https://edas.info/N34731');" style="cursor: pointer;">
+					<div class="sbox-2 wow fadeInUp" data-wow-delay="0.6s">
+					  <div class="box-line"></div>
+					  <div class="sbox-2-ico">
+						<i aria-hidden="true" class="fas fa-laptop fa-3x"></i>
+					  </div>
+					  <h6 class="h6-lg">ICTIM</h6>
+					  <p class="grey-color">
+						International Conference on Technology and Innovation Management
+					  </p>
+					</div>
+				  </div>
+  
+				  <!-- SERVICE BOX: ICCM -->
+				  <div class="col-sm-2 col-lg-2" onclick="window.location.assign('https://edas.info/N34729');" style="cursor: pointer;">
+					<div class="sbox-2 wow fadeInUp" data-wow-delay="0.6s">
+					  <div class="box-line"></div>
+					  <div class="sbox-2-ico">
+						<i aria-hidden="true" class="fas fa-paint-brush fa-3x"></i>
+					  </div>
+					  <h6 class="h6-lg">ICCM</h6>
+					  <p class="grey-color">
+						International Conference on Creative Multimedia
+					  </p>
+					</div>
+				  </div>
+  
+				  <!-- SERVICE BOX: CLESS -->
+				  <div class="col-sm-2 col-lg-2" onclick="window.location.assign('https://edas.info/N34728');" style="cursor: pointer;">
+					<div class="sbox-2 wow fadeInUp" data-wow-delay="0.6s">
+					  <div class="box-line"></div>
+					  <div class="sbox-2-ico">
+						<i aria-hidden="true" class="fas fa-language fa-3x"></i>
+					  </div>
+					  <h6 class="h6-lg">CLESS</h6>
+					  <p class="grey-color">
+						International Conference on Communication, Language, Education and Social Sciences
+					  </p>
+					</div>
+				  </div>
+  
+				  <!-- SERVICE BOX: ICLD -->
+				  <div class="col-sm-2 col-lg-2" onclick="window.location.assign('https://edas.info/N34730');" style="cursor: pointer;">
+					<div class="sbox-2 wow fadeInUp" data-wow-delay="0.6s">
+					  <div class="box-line"></div>
+					  <div class="sbox-2-ico">
+						<i aria-hidden="true" class="fas fa-balance-scale fa-3x"></i>
+					  </div>
+					  <h6 class="h6-lg">ICLD</h6>
+					  <p class="grey-color">
+						International Conference on Law and Digitalisation
+					  </p>
+					</div>
+				  </div>
+  
+				</div>
+				<!-- End row -->
+				
+				<!-- TEMPLATE DOWNLOAD BUTTONS -->
+				<!-- NEW PDF GUIDELINE BUTTONS -->
+  
+			  </div>
+			  <!-- END SERVICES-2 WRAPPER -->
+			</div>
+		  </div>
+		  <!-- END TEXT BLOCK -->
+		</div>
+		<!-- End row -->
+	  </div>
+	  <!-- END TOP CONTENT -->
+	</div>
+	<!-- End container -->
+  </section>
+  <!-- END CONTENT-3 -->
+
+
+
+
+
+ <!-- CLEAR INSTRUCTIONS FOR CONFMANAGE ACCESS  -->
+<!-- <section id="confmanage-steps" class="content-3 wide-60 content-section division pt-20 pb-40">
+	<div class="container">
+	  <div class="row d-flex align-items-center">
+		<div class="col-md-12">
+		  <div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+			<h3 class="h3-sm pt-20 text-center">
+			  PAPER SUBMISSION GUIDE
+			</h3>
+			 
+			<div class="step-by-step-guide mt-40">
+			  
+			  STEP 1: Clear Cache 
+			  <div class="step-row">
+				<div class="step-number">1</div>
+				<div class="step-content">
+				  <h4 class="h4-xs">Clear Browser Cache</h4>
+				  <p class="grey-color">Start with a clean browser session to avoid technical issues</p>
+				  
+				  <div class="step-actions">
+					<div class="step-buttons">
+					  <button class="btn btn-browser btn-chrome" onclick="showInstructions('chrome')">
+						<i class="fab fa-chrome"></i> Chrome Instructions
+					  </button>
+					  <button class="btn btn-browser btn-firefox" onclick="showInstructions('firefox')">
+						<i class="fab fa-firefox"></i> Firefox Instructions
+					  </button>
+					  <button class="btn btn-browser btn-edge" onclick="showInstructions('edge')">
+						<i class="fab fa-edge"></i> Edge Instructions
+					  </button>
+					</div>
+					
+					<div class="step-download">
+					  <a href="files/Cache.pdf" class="btn btn-pdf" download>
+						<i class="fas fa-file-pdf"></i> Download Full Guide (PDF)
+					  </a>
+					</div>
+				  </div>
+				  
+				  <div id="clear-cache-instructions" class="instructions-box"></div>
+				</div>
+			  </div>
+			  
+			   STEP 2: Incognito Mode 
+			  <div class="step-row">
+				<div class="step-number">2</div>
+				<div class="step-content">
+				  <h4 class="h4-xs">Use Incognito/Private Mode</h4>
+				  <p class="grey-color">Ensure no extensions interfere with your submission</p>
+				  
+				  <div class="step-actions">
+					<div class="step-buttons">
+					  <button class="btn btn-incognito" onclick="showIncognitoInstructions()">
+						<i class="fas fa-user-secret"></i> Show Incognito Instructions
+					  </button>
+					 
+					</div>
+					
+					<div class="step-download">
+					  <a href="files/Incognito.pdf" class="btn btn-pdf" download>
+						<i class="fas fa-file-pdf"></i> Download Full Guide (PDF)
+					  </a>
+					</div>
+				  </div>
+				  
+				  <div id="incognito-instructions" class="instructions-box"></div>
+				</div>
+			  </div>
+			  
+			   STEP 3: ConfManage Access 
+			  <div class="step-row">
+				<div class="step-number">3</div>
+				<div class="step-content">
+				  <h4 class="h4-xs">Access Submission System</h4>
+				  <p class="grey-color">Login to ConfManage to submit your paper</p>
+				  
+				  <div class="step-actions">
+					<div class="step-buttons">
+					  <a href="https://confmanage.com/Account/Login?id=73" class="btn btn-confmanage" target="_blank">
+						<i class="fas fa-sign-in-alt"></i> Go to ConfManage Now
+					  </a>
+					 
+					</div>
+					
+					<div class="step-download">
+					  <a href="files/Confmanage process.pdf" class="btn btn-pdf" download>
+						<i class="fas fa-file-pdf"></i> Download Full Guide (PDF)
+					  </a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+</section> -->
+
+
+
+
+
+
+
+
+
+						<!-- CONTENT-3 / important date 
+						============================================= -->
+						<section id="importantdates" class="content-3 wide-30 bg-lightgrey mb-1 pb-1 content-section division">
+							<div class="container">
+								<!-- TOP CONTENT -->
+								<div id="c3-top" class="cbox-3 pb-10">
+									<div class="row d-flex align-items-top m-row">
+										<!-- TEXT BLOCK -->
+										<div class="col-md-12 col-lg-12">
+											<div>
+											 <div class="txt-block left-column pc-35 mb-10 wow fadeInRight" data-wow-delay="0.4s">
+												<!-- Title -->
+												  <h3 class="h3-sm pt-20 text-center">
+													IMPORTANT DATES
+													<div class="w-100"></div>
+												  </h3>
+												</div>
+												<!-- <h5 class="h3-sm pt-20">TIMELINES <div class="w-100"></div>	</h5> -->
+
+												<!-- Code by w3codegenerator.com -->
+													<div class="table-responsive">
+													 <table class="table table-light table-bordered table-striped table-borderless">
+													   <tbody>
+													     <tr>
+															<th scope="row">Abstract Submission</th>
+															<td  >
+																<del>24 December 2025</del>
+															</td>
+															<td>13 January 2026</td>
+															</tr>
+
+													      <tr>
+													         <th scope="row"> Abstract acceptance notification  </th>
+													         <td><del> 7 January 2026</del> </td>
+															 <td>15 January 2026</td>
+													      </tr>
+														  <tr>
+													         <th scope="row">  Full paper/Poster submission </th>
+															 <td> 4 February 2026  </td>
+															 
+															 <td> </td>
+													      </tr>
+														  <tr>
+															<th scope="row"> Paper/Poster acceptance notification  </th>
+															<td>4 March 2026 </td>
+															<td></td>
+														 </tr>
+														 <tr>
+															<th scope="row"> Camera ready submission  </th>
+															<td>  1 April 2026</td>
+															<td></td>
+														 </tr>
+															   <tr>
+															<th scope="row"> Early bird registration deadline </th>
+															<td> 18 March 2026 </td>
+															<td></td>
+														 </tr>
+														 <tr>
+															<th scope="row"> Registration deadline  </th>
+															<td>  1 April 2026 </td>
+															<td></td>
+														 </tr>
+														 <tr>
+															<th scope="row"> Conference date </th>
+															<td> 5 - 7 May 2026  </td>
+															<td></td>
+														 </tr>
+													   </tbody>
+													</table>
+													</div>
+											</div>
+										</div>
+									</div>
+									</div>	 
+								</div>	 
+							</div>    
+						</section>	 
+
+
+						<!-- CONTENT-3 / important date
+						============================================= 
+						<section id="Accomodation" class="content-3 wide-30 mb-1 pb-1 content-section division">
+							<div class="container">
+
+								 TOP CONTENT 
+								<div id="c3-top" class="cbox-3 pb-10">
+									<div class="row d-flex align-items-top m-row">
+
+
+										<!-- TEXT BLOCK 
+										<div class="col-md-12 col-lg-12">
+											<div>
+
+											 <div class="txt-block left-column pc-35 mb-10 wow fadeInRight" data-wow-delay="0.4s">
+
+												<!-- Title 
+												<h3 class="h3-sm pt-20">Accomodation & Tourist Spot <div class="w-100"></div> </h3>
+									
+												<!-- Text List 
+												<ul class="txt-list grey-color">
+													
+													<!-- <h5 class="h3-sm" >COMING SOON</h5> 
+													
+													<p class="grey-color text-justify">
+														All accepted papers will be published in indexed journals (subject to meeting individual journals requirement) or proceedings. 
+													</p>	
+													
+													<div class="text-center justify-content-center justify-content-lg-start">
+														<div>
+															<a href="https://forms.office.com/r/f8rQhUg2wx" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Submit your abstract here</a>
+															<a href="files/difcon_cfp.png" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">
+																Call for Paper
+															</a>
+														</div>
+													</div>
+				
+
+												</ul>	
+												<ul class="txt-list grey-color">
+													
+													<!-- <h5 class="h3-sm" >COMING SOON</h5> 
+													
+													<p class="grey-color text-justify">
+														Full paper submission: 
+													</p>	
+													
+													<div class="text-center justify-content-center justify-content-lg-start">
+														<div>
+															<a href="https://edas.info/newPaper.php?c=31882" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1"> CITIC </a>
+														<!-- </div>
+														<div> 
+															<a href="https://edas.info/newPaper.php?c=31887" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1"> MECON </a>
+														<!-- </div>
+														<div> 
+															<a href="https://edas.info/newPaper.php?c=31886" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1"> ICTIM </a>
+														<!-- </div>
+														<div> 
+															<a href="https://edas.info/newPaper.php?c=31883" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1"> CLESS </a>
+														<!-- </div>
+														<div> 
+															<a href="https://edas.info/newPaper.php?c=31884" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1"> ICCM </a>
+														<!-- </div>
+														<div> 
+															<a href="https://edas.info/newPaper.php?c=31885" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1"> ICLD </a>
+														</div>
+													</div>
+				
+
+												</ul>	
+
+											</div>
+										</div>
+									</div>
+
+
+									</div>	  <!-- End row 
+								</div>	<!-- END TOP CONTENT 
+
+								
+							</div>     <!-- End container 
+						</section>	<!-- END CONTENT-3 /important date  -->
+			
+			
+
+			<!-- GREY BORDER
+			============================================= 
+			<div class="gb-wrapper"><div class="container"><div class="row"><div class="col-md-12 grey-border"></div></div></div></div>
+
+
+			
+			<!-- FOOTER-1
+			============================================= -->
+			<footer id="footer-1" class="footer division">
+				<div class="container">
+
+					<!-- SECTION TITLE -->
+					<div class="row" id="contactus">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-50 pt-10 text-center">
+								<h3 class="pt-20 h3-md">CONTACT US</h3>
+								<p class="p-lg">
+									<!-- Email -->
+									<p class="foo-email"><a href="mailto:difcon@mmu.edu.my">difcon@mmu.edu.my</a></p>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- FOOTER CONTENT -->
+					<div class="row">
+
+
+						<div class="col-lg-12 col-xl-12 text-center">
+							<div>
+									<!-- <a href="https://info.flagcounter.com/CL0R"><img src="https://s01.flagcounter.com/countxl/CL0R/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a> -->
+									<a href="https://info.flagcounter.com/n6zP"><img src="https://s11.flagcounter.com/countxl/n6zP/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+							</div>
+						</div>
+					</div>	 <!-- END FOOTER CONTENT -->
+
+
+					<!-- BOTTOM FOOTER -->
+					<div class="bottom-footer grey-color">
+						<div class="row d-flex align-items-center">
+
+
+							<!-- FOOTER COPYRIGHT -->
+							<div class="col-md-6 mt-2">
+								<div class="footer-copyright">
+									<p>&copy; 2024 Universiti Telekom Sdn. Bhd. All Rights Reserved</p>
+								</div>
+							</div>
+
+
+
+						</div>  <!-- End row -->
+					</div>	<!-- END BOTTOM FOOTER -->
+
+
+				</div>	   <!-- End container -->
+			</footer>	<!-- END FOOTER-1 -->
+
+
+
+
+		</div>	<!-- END PAGE CONTENT -->
+
+
+
+
+
+		<!-- EXTERNAL SCRIPTS
+		============================================= -->
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/jquery.easing.js"></script>
+		<script src="js/jquery.appear.js"></script>
+		<script src="js/jquery.scrollto.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/contact-form.js"></script>
+		<script src="js/register-form.js"></script>
+		<script src="js/request-form.js"></script>
+		<script src="js/comment-form.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/wow.js"></script>
+
+		<!-- Custom Script -->
+		<script src="js/custom.js"></script>
+
+
+		<script>
+			new WOW().init();
+		</script>
+
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+		<!-- [if lt IE 9]>
+			<script src="js/html5shiv.js" type="text/javascript"></script>
+			<script src="js/respond.min.js" type="text/javascript"></script>
+		<![endif] -->
+
+		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
+		<!--
+		<script>
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-XXXXX-X']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		-->
+
+
+	</body>
+
+
+
+</html>

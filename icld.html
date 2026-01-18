@@ -1,0 +1,1389 @@
+<style>
+  /* Main dropdown menu */
+  .wsmegamenu {
+      position: relative;
+  }
+
+  .wsmegamenu .dropdown {
+      position: relative;
+  }
+
+  .wsmegamenu .dropdown > a {
+      position: relative;
+      padding-right: 20px;
+  }
+
+  .wsmegamenu .dropdown-one {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      z-index: 1000;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .wsmegamenu .dropdown:hover > .dropdown-one {
+      display: block;
+  }
+
+  .wsmegamenu .dropdown-one ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  .wsmegamenu .dropdown-one li {
+      border-bottom: 1px solid #ddd;
+  }
+
+  .wsmegamenu .dropdown-one li a {
+      display: block;
+      padding: 8px 16px;
+      color: #000;
+      text-decoration: none;
+  }
+
+  .wsmegamenu .dropdown-one li a:hover {
+      background-color: #ddd;
+  }
+</style>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="description" content="DIFCON"/>
+		<meta name="keywords" content="DIFCON, MMU">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  		<!-- SITE TITLE -->
+		<title>ICLD </title>
+
+		<!-- FAVICON AND TOUCH ICONS -->
+		<link rel="icon" type="image/png" sizes="32x32" href="difconimage24/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="difconimage24/favicon-16x16.png">
+
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900" rel="stylesheet">
+
+		<!-- BOOTSTRAP CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- FONT ICONS -->
+		<link href="https://use.fontawesome.com/releases/v5.11.0/css/all.css" rel="stylesheet" crossorigin="anonymous">
+		<link href="css/flaticon.css" rel="stylesheet">
+
+		<!-- PLUGINS STYLESHEET -->
+		<link href="css/menu.css" rel="stylesheet">
+		<link id="effect" href="css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
+		<link href="css/magnific-popup.css" rel="stylesheet">
+		<link href="css/owl.carousel.min.css" rel="stylesheet">
+		<link href="css/owl.theme.default.min.css" rel="stylesheet">
+
+		<!-- ON SCROLL ANIMATION -->
+		<link href="css/animate.css" rel="stylesheet">
+
+		<!-- TEMPLATE CSS -->
+		<!-- <link href="css/brick-theme.css" rel="stylesheet">     -->
+	    <!-- <link href="css/dimgreen-theme.css" rel="stylesheet">  -->
+	    <!-- <link href="css/green-theme.css" rel="stylesheet">     -->
+	    <!-- <link href="css/indigo-theme.css" rel="stylesheet">    -->
+	    <!-- <link href="css/orangered-theme.css" rel="stylesheet"> -->
+	    <!-- <link href="css/pink-theme.css" rel="stylesheet">      -->
+	    <!-- <link href="css/red-theme.css" rel="stylesheet">       -->
+	    <link href="css/royalblue-theme.css" rel="stylesheet">
+	    <!-- <link href="css/skyblue-theme.css" rel="stylesheet"> -->
+	    <!-- <link href="css/violet-theme.css" rel="stylesheet">    -->
+
+		<!-- RESPONSIVE CSS -->
+		<link href="css/responsive.css" rel="stylesheet">
+
+		<!-- My Custom CSS -->
+		<link href="css/mycss.css" rel="stylesheet">
+	</head>
+
+
+	<body>
+		<!-- PRELOADER SPINNER
+		============================================= -->
+		<!-- <div id="loader-wrapper">
+			<div id="loading">
+				<div class="cssload-loader">
+					<div class="cssload-ball cssload-ball-1"></div>
+					<div class="cssload-ball cssload-ball-2"></div>
+					<div class="cssload-ball cssload-ball-3"></div>
+					<div class="cssload-ball cssload-ball-4"></div>
+				</div>
+			</div>
+		</div> -->
+
+
+
+
+		<!-- PAGE CONTENT
+		============================================= -->
+		<div id="page" class="page">
+
+
+
+
+			<!-- HEADER
+			============================================= -->
+			<header id="header" class="header white-menu navbar-dark">
+				<div class="header-wrapper">
+
+
+					<!-- MOBILE HEADER -->
+				    <div class="wsmobileheader clearfix">
+				    	<span class="smllogo"><img src="difconimage24\Test Web-01.png"  alt="mobile-logo"/></span>
+				    	<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+				 	</div>
+
+
+				 	<!-- NAVIGATION MENU -->
+				  	<div class="wsmainfull menu clearfix">
+	    				<div class="wsmainwp clearfix">
+
+
+	    					<!-- LOGO IMAGE -->
+	    					<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 310 x 72 pixels) -->
+	    					<div class="desktoplogo"><a href="#about" class="logo-black"><img src="difconimage24\Test Web-01.png" alt="header-logo"></a></div>
+	    					<div class="desktoplogo"><a href="#about" class="logo-white"><img src="difconimage24\Test Web-01.png" alt="header-logo"></a></div>
+
+
+	    					<!-- MAIN MENU -->
+							<nav class="wsmenu clearfix">
+	        					<ul class="wsmenu-list">
+									<li aria-haspopup="true"><a href="#"> Home <span class="wsarrow"></span></a>
+										<div class="wsmegamenu clearfix halfmenu">
+											<div class="container-fluid">
+												<div class="row">
+													<ul class="col-lg-12 link-list">
+									<li aria-haspopup="true"><a href="#abouticld">About ICLD </a></li>
+									<li aria-haspopup="true"><a href="#tracksicld"> Tracks</a></li>
+									<li aria-haspopup="true"><a href="#proceedingsicld"> Publications </a></li>
+									<li aria-haspopup="true"><a href="#keynotesicld"> Keynote Speakers </a></li>					
+									<li aria-haspopup="true"><a href="#committeesicld"> Committee </a></li>
+									<!-- <li aria-haspopup="true"><a href="#venueicld"> Author's Info </a></li> -->
+	        					
+																		
+																
+
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>				
+
+
+									<li aria-haspopup="true">
+										<a href="#">Co-Located Conference <span class="wsarrow"></span></a>
+										<div class="wsmegamenu clearfix halfmenu">
+											<div class="container-fluid">
+												<div class="row">
+													<ul class="col-lg-12 link-list">
+									
+														<!-- Home Section -->
+														<li class="dropdown">
+															<a href="#">Home <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="index.html#aboutdifcon">About DIFCON</a></li>
+																	<li><a href="index.html#keynotespeakerdifcon">Keynote Speakers</a></li>
+																	<li><a href="index.html#committeedifcon">Committee</a></li>
+																	<li><a href="index.html#venuedifcon">Contact Us</a></li>
+																</ul>
+															</div>
+														</li>
+									
+														<!-- CITIC -->
+														<li class="dropdown">
+															<a href="#">CITIC <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="citic.html#aboutcitic">About CITIC</a></li>
+																	<li><a href="citic.html#trackscitic">Conference Tracks</a></li>
+																	<li><a href="citic.html#proceedingscitic">Publications</a></li>
+																	<li><a href="citic.html#keynotescitic">Speakers</a></li>
+																	
+																	<li><a href="citic.html#committeecitic">Committees</a></li>
+																	<!-- <li><a href="citic.html#venuecitic">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+									
+														<!-- MECON -->
+														<li class="dropdown">
+															<a href="#">MECON <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="mecon.html#aboutmecon">About MECON</a></li>
+																	<li><a href="mecon.html#tracksmecon">Conference Tracks</a></li>
+																	<li><a href="mecon.html#proceedingsmecon">Publications</a></li>
+																	<li><a href="mecon.html#keynotesmecon">Speakers</a></li>
+																	
+																	<li><a href="mecon.html#committeemecon">Committees</a></li>
+																	<!-- <li><a href="mecon.html#venuemecon">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+									
+														<!-- ICTIM -->
+														<li class="dropdown">
+															<a href="#">ICTIM <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="ictim.html#aboutictim">About ICTIM</a></li>
+																	<li><a href="ictim.html#tracksictim">Conference Tracks</a></li>
+																	<li><a href="ictim.html#proceedingsictim">Publications</a></li>
+																	<li><a href="ictim.html#keynotesictim">Speakers</a></li>
+																
+																	<li><a href="ictim.html#committeeictim">Committees</a></li>
+																	<!-- <li><a href="ictim.html#venueictim">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+									
+														<!-- ICCM -->
+														<li class="dropdown">
+															<a href="#">ICCM <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="iccm.html#abouticcm">About ICCM</a></li>
+																	<li><a href="iccm.html#tracksiccm">Conference Tracks</a></li>
+																	<li><a href="iccm.html#proceedingsiccm">Publications</a></li>
+																	<li><a href="iccm.html#keynotesiccm"> Speakers</a></li>
+																	
+																	<li><a href="iccm.html#committeeiccm">Committees</a></li>
+																	<!-- <li><a href="iccm.html#venueiccm">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+									
+														<!-- CLESS -->
+														<li class="dropdown">
+															<a href="#">CLESS <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="cless.html#aboutcless">About CLESS</a></li>
+																	<li><a href="cless.html#trackscless">Conference Tracks</a></li>
+																	<li><a href="cless.html#proceedingscless">Publications</a></li>
+																	<li><a href="cless.html#keynotescless"> Speakers</a></li>
+																	
+																	<li><a href="cless.html#committeecless">Committees</a></li>
+																	<!-- <li><a href="cless.html#venuecless">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+									
+														<!-- ICLD -->
+														<li class="dropdown">
+															<a href="#">ICLD <span class="wsarrow"></span></a>
+															<div class="dropdown-one">
+																<ul>
+																	<li><a href="icld.html#abouticld">About ICLD</a></li>
+																	<li><a href="icld.html#tracksicld">Conference Tracks</a></li>
+																	<li><a href="icld.html#proceedingsicld">Publications</a></li>
+																	<li><a href="icld.html#keynotesicld"> Speakers</a></li>
+																	
+																	<li><a href="icld.html#committeeicld">Committees</a></li>
+																	<!-- <li><a href="icld.html#venueicld">Author's Information</a></li> -->
+																</ul>
+															</div>
+														</li>
+													
+
+	<!-- <li class="dropdown">
+                                        <a href="#">Presentation Poster <span class="wsarrow"></span></a>
+                                         <div class="dropdown-one">
+                                            <ul>
+                                                <li><a href="Presentation Poster.html#PresentationPoster">Poster</a></li>
+                                               
+                                            </ul>
+                                        </div>
+                                      </li> -->
+
+
+
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+
+									<li><a href="publication.html"> Publication & Date</a></li>
+
+										<li><a href="Registration.html">Registration</a></li><li><a href="sponsorship.html"> Sponsorship</a></li>
+<li aria-haspopup="true">
+<a href="#">Archive<span class="wsarrow"></span></a>
+<div class="wsmegamenu clearfix halfmenu">
+<div class="container-fluid">
+<div class="row">
+  <ul class="col-lg-12 link-list">
+
+<li>
+		<a href="https://difcon.mmu.edu.my/2025"
+		  >DIFCON 2025</a
+		>
+	  </li>
+
+
+	<li>
+		<a href="https://difcon.mmu.edu.my/2024"
+		  >DIFCON 2024</a
+		>
+	  </li>
+	
+	
+	<li>
+	  <a href="https://difcon.mmu.edu.my/2023"
+		>DIFCON 2023</a
+	  >
+	</li>
+	<li>
+	  <a href="https://difcon.mmu.edu.my/2022"
+		>DIFCON 2022</a
+	  >
+	</li>
+	<li>
+	  <a href="https://drive.google.com/file/d/1NdaLGHi7zNh_mbSx0CIlxpolS910YA0l/view?usp=drive_link">DIFCON 2021</a>
+	</li>				
+										</ul>
+	        				</nav>	<!-- END MAIN MENU -->
+
+	    				</div>
+	    			</div>	<!-- END NAVIGATION MENU -->
+
+
+				</div>     <!-- End header-wrapper -->
+			</header>	<!-- END HEADER -->
+
+
+
+
+		<!-- HERO-6
+			============================================= 
+			<section id="hero-6" class="hero-section division">
+				<div class="container">
+				  <!-- HERO CONTENT 
+				  <div class="row d-flex align-items-center">
+					<img
+					  src="difconimage24\Latest Logo Difcon.jpeg"
+					  alt="difcon-logo"
+					  style="max-width: 100%; height: auto; opacity: 0.8"
+					/>
+					<div class="row" id="keynotescitic">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-20 pt-10 text-center">
+								<!-- Title 	
+								<h3 class="pt-20 h3-md">21 - 23 JULY 2025, Multimedia University      Cyberjaya Malaysia</h3>
+								<!-- Text 
+								<p class="p-lg">
+								</p>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <!-- END HERO CONTENT 
+				</div>
+				<!-- End container 
+			  </section>
+
+
+
+
+			<!-- CONTENT-3
+			============================================= -->
+			<section class="content-3 wide-60 content-section division">
+				<div class="container">
+
+					<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+						<img class="img-fluid" src="difconimage24\2025 ICLD-Logo.png" alt="content-image" style="height:300pt"> 
+	
+					</div>
+	
+					<div class="section-title mb-20 pt-10 text-center">
+						<!-- Title 	-->
+						<h1 class="pt-20 h3-md">5 - 7 MAY 2026, Cyberjaya Malaysia</h1>
+						<!-- Text -->
+						<p class="p-lg">
+						</p>
+					</div>
+					<!-- TOP CONTENT -->
+					<div id="c3-top" class="cbox-3 pb-50">
+						<div class="row d-flex align-items-top m-row">
+
+
+							<!-- TEXT BLOCK -->
+							<div class="col-md-6 col-lg-6 m-bottom">
+
+								 <div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+									<!-- Title -->
+									<h3 class="h3-sm pt-20" id="abouticld">ABOUT  <div class="w-100"></div></h3>
+
+									
+									<h6 class="h6-sm"> THEMES: COMING SOON	</h6>
+
+									<p class="grey-color text-justify">
+										The Faculty of Law, Multimedia University will hold the 6th International Conference on Law and Digitalization 2026 (ICLD 2026) on 5-7 May 2026 (Hybrid Conference). ICLD2026 will be part of the bigger Digital Future Congress (DIFCON2026). ICLD2026 aims to provide a platform for both local and international academics, practitioners, policymakers, researchers, and students to meet, share ideas and knowledge in law and contemporary legal issues through paper presentations. It also encourages academic linkages between the academicians and the researchers from all areas of law and other related disciplines. Thus, ICLD 2026 promotes future co-operation among intellectuals on interdisciplinary law and society.</p>
+
+									<h4 class="h4-sm mb-2 pt-20" id="proceedingsicld">PUBLICATIONS </h4>
+
+									<!-- Text List 
+									<ul class="txt-list grey-color">
+										
+										<h5 class="h3-sm" >COMING SOON</h5>  -->
+										
+										 <p class="grey-color text-justify">
+											All accepted and presented papers will be published in collaborating journals according to technical program committee and reviewers’ recommendations.
+ 											<div class="text-center justify-content-center justify-content-lg-start">
+												<ul class="grey-color text-justify ">
+													<li>1.Malaysian Journal of Syariah and Law (SCOPUS/  MyCite)
+											<li>2.Global Journal Al-Thaqafah (SCOPUS/ MyCite)
+											<li>3.Asian Journal of Law and Governance (MyCite)</li></li>
+											</li>
+												</ul>
+											<div>
+												<a download href="files\Full Paper Template.docx" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Template</a>
+												<a download href="files\submission_guideline.docx" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Guideline</a>
+											
+											</div>
+										</div>   
+	
+									 	 <!-- <p class="grey-color text-justify">
+											<br>All papers must be original and not simultaneously submitted to another journal or conference. A minimum of 5 and a maximum of 10 page(s) manuscript is to be prepared according to the following template. 
+										</p>  
+									</ul>	 					
+ 
+									 <div class="col-lg-12 col-xl-12 text-center">
+										<img src="difconimage24/springer.jpg" alt="springer-logo" class="center-block" style="width: 250px; height: auto">
+										<img src="difconimage24/atlantis.jpg" alt="atlantis-logo"  class="center-block" style="width: 250px; height: auto">
+									</div>   
+
+									<div class="col-lg-12 justify-content-center justify-content-lg-start">
+										<div>
+											<a href="authorinfo.html#importantdates" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Author Information & Registration! </a>
+										</div>
+									</div>    -->
+								</div>
+								
+							  <div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									<a href="https://semarakilmu.com.my/main/journal/?mgc_52=53/scopus">
+									  <!-- <img class="img-fluid" src="difconimage24/semarak-ilmu-header-logo.png" alt="content-image" style="height:110pt"> -->
+									</a>
+								  </div> 
+
+
+							</div>	<!-- END TEXT BLOCK  -->
+
+
+
+
+							<!-- TEXT BLOCK -->
+							<div class="col-md-6 col-lg-6 m-bottom">
+
+									<div class="txt-block left-column pc-35 mb-40 wow fadeInRight  m-bottom mt-40" data-wow-delay="0.4s">
+
+								<!-- Small Title -->
+								<h4 class="h4-sm pt-20" id="tracksicld">CONFERENCE TRACKS</h4>
+
+								<!-- Text List -->
+								<ul class="txt-list grey-color">
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold"> Alternative Dispute Resolution
+								              </p>
+								               <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold"> Constitutional Law 
+								              </p>
+								              <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold"> Competition Law
+								              </p>
+								              <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">  Corporate Law
+								              </p>
+								              <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">  Civil Law Procedure
+								              </p>
+								               <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">   Criminal Law and Criminology
+								              </p>
+								              <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+											
+											<li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">   Consumer Law 
+								              </p>
+								              <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">   Entertainment Law
+								              </p>
+								              <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">   Family Law
+								              </p>
+								              <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">   Fintech Law
+								              </p>
+								               <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">    Islamic, Shariah, Halal Law 
+								              </p>
+								              <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">  Intellectual Property Law
+								              </p>
+								               <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">   Medical Law
+								              </p>
+								              <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">   Healthcare and Public Health Law
+								              </p>
+								               <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">   Law and Education
+								              </p>
+								              <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">   Law and Employment
+								              </p>
+								              <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">   Law and Technology
+								              </p>
+								              <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">   Law of Evidence
+								              </p>
+								               <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+								            <li class="list-item">
+								              <i class="fas fa-genderless"></i>
+								              <p class="font-weight-bold">   Legal Aspects of the Digital Economy
+								              </p>
+								              <p class="grey-color text-justify">
+								              </p> 
+								            </li>
+
+											<li class="list-item">
+												<i class="fas fa-genderless"></i>
+												<p class="font-weight-bold">   Legal regulation of data circulation
+												</p>
+												<p class="grey-color text-justify">
+												</p> 
+											  </li>
+
+											  <li class="list-item">
+												<i class="fas fa-genderless"></i>
+												<p class="font-weight-bold">   Ensuring human rights in the digital world, including identification (correlation of  
+
+													a person with his digital image)
+												</p>
+												<p class="grey-color text-justify">
+												</p> 
+											  </li>
+
+											  <li class="list-item">
+												<i class="fas fa-genderless"></i>
+												<p class="font-weight-bold">   Creating new legal institutions aimed at the formation of an environment of trust, etc
+												</p>
+												<p class="grey-color text-justify">
+												</p> 
+											  </li>
+
+											  <li class="list-item">
+												<i class="fas fa-genderless"></i>
+												<p class="font-weight-bold">  The Legal Profession
+												</p>
+												<p class="grey-color text-justify">
+												</p> 
+											  </li>
+
+											  <li class="list-item">
+												<i class="fas fa-genderless"></i>
+												<p class="font-weight-bold">   Sports Law
+												</p>
+												<p class="grey-color text-justify">
+												</p> 
+											  </li>
+											
+											
+								</ul>	<!-- End Text List 
+
+								<a download href="files/programbook-icld.pdf" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">
+																ICLD Program Book
+									</a>   
+
+								<h4 class="h4-sm pt-20" id="journals">JOURNALS</h4> 
+
+								<!-- Text List 
+								<ul class="text-justify txt-list grey-color"> 
+														 <li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold"> Journal of legal studies (UUM)
+															</p>
+														</li> 
+														 <li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">  UUM Journal of legal studies - awaiting confirmation
+															</p>
+														</li>
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">  IIUM Law Journal- awaiting confirmation
+															</p>
+														</li>
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">  Pertanika Journal of Social Sciences & Humanities- awaiting confirmation
+															</p>
+														</li> 
+														<li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">  Journal of System & Management Sciences
+															</p>
+														</li> 
+														 <li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">  International Journal of Technology (IJTECH)
+															</p>
+														</li> 
+														 <li class="list-item">
+															<i class="fas fa-genderless"></i>
+															<p class="font-weight-bold">  MMU Press- Asian Journal of Law and Policy (AJLP)
+															</p>
+														</li> 
+								 </ul> 
+								<!-- <p class="mt-3 grey-color font-italic text-justify"> All accepted and presented papers will be published in the conference proceedings which will be submitted for indexing consideration in Scopus.  Selected papers will be invited for publication as extended versions in various collaborating journals (Scopus indexed). </p> 
+
+
+							</div>       -->
+						</div> <!-- end text block  -->
+
+						</div>	  <!-- End row -->
+					</div>	<!-- END TOP CONTENT -->
+
+
+				</div>     <!-- End container -->
+			</section>	<!-- END CONTENT-3 -->
+
+
+
+
+
+			<!-- CONTENT-3 / KEYNOTE  
+			=============================================   
+			<section id="content-3" class="content-3 wide-60 bg-lightgrey content-section division pt-20">
+				<div class="container">
+
+					<!-- SECTION TITLE 
+					<div class="row" id="keynotesicld">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-50 pt-10 text-center">
+								<!-- Title 	
+								<h3 class="pt-20 h3-md">KEYNOTE SPEAKERS</h3>
+								<!-- Text 
+								<p class="p-lg">
+								</p>
+							</div>
+						</div>
+					</div>
+
+				<!-- TOP CONTENT 
+					<div id="c3-top" class="cbox-3 pb-50">
+						<div class="row d-flex align-items-center m-row">
+
+
+							<!-- TEXT BLOCK 
+							<div class="col-md-7 col-lg-6 m-bottom">
+								<div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+									<!-- Title 
+									<h3 class="h3-sm"> Prof. Dr. Zuhairah Ariff Binti Abd Ghadas </h3>
+
+									<!-- Small Title 
+									<h5 class="h5-xs sm-title"> Deputy Vice Chancellor(Academic & International) </h5>
+
+									<h6 class="h5-xs sm-title">UNIVERSITI SULTAN ZAINAL ABIDIN (UNISZA)KUALA NERUS, TERENGGANU DARUL IMAN </h6>
+
+
+									
+					
+									<!-- Text 
+									<p class="grey-color text-justify">
+										
+
+									</p>
+								</div>
+							</div>	<!-- END TEXT BLOCK -->
+
+							<!-- IMAGE BLOCK 
+							<div class="col-md-5 col-lg-6 m-top">
+								<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									<img class="img-fluid" src="difconimage24\ICLD Keynote 2025.jpeg" alt="content-image">
+								</div>
+							</div>
+
+
+						</div>	  <!-- End row 
+					</div>	<!-- END TOP CONTENT -->
+
+				<!-- BOTTOM CONTENT 
+				<div id="c3-bottom" class="cbox-3 pt-70">
+					<div class="row d-flex align-items-center">
+
+						<!-- IMAGE BLOCK 
+						<div class="col-md-5 col-lg-6 m-top">
+								<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									<img class="img-fluid" src="difconimage24/joseph_icld_keynote.png" alt="content-image">
+								</div>
+							</div> 
+
+
+						<!-- TEXT BLOCK 
+						<div class="col-md-7 col-lg-6">
+							<div class="txt-block right-column pc-35 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+
+								<h3 class="h3-sm">Mr Joseph S</h3> 
+								
+								<h5 class="h5-xs sm-title"> Director </h5>
+								
+								 <h5 class="h5-xs sm-title"> Director of Studies for the Online LLM in International Business Law </h5>
+								 
+									<p class="grey-color text-justify">
+										I am currently the Director of Studies for the Online LLM in International Business Law. In this role, I provide 
+										academic leadership and collaborate with Kaplan Open Learning colleagues to design and deliver modules for the program.
+										My research interests straddle the intersection of regulation, technology and the law, with particular focus on privacy 
+										and data protection and related public policy challenges. I am also actively involved with Industry and Public Sector: <br />
+										Member of Institute of Electrical and Electronics Engineers Working Group on Ethical Alignment Design: provide expert advice 
+										on regulatory and data protection matters. <br> Expert Panel Member of IEEE Working Group on Standards for Protection of 
+										Children’s Personal Data: provide expert advice on online child safety and technical challenges. <br/> Expert Panel Member for 
+										Information Commissioner Office/LSE Project on Children’s Personal Data and the General Data Protection Regulation 2016: 
+										ongoing advice on measures. <br/>Member of the NHS AI Hub and Working Group on Patient Data. <br/>The Module LAW 341: Privacy 
+										Surveillance and Social Media. <br/> The Module LAW 342: The Regulation of Emerging Technologies: Law, Ethics and Governance.
+	
+									</p>
+
+							</div>
+						</div> <!-- END TEXT BLOCK
+
+
+					</div> <!-- End row 
+				</div> <!-- END BOTTOM CONTENT 
+				
+				
+					<!-- TOP CONTENT 
+					<div id="c3-top" class="cbox-3 pb-50">
+						<div class="row d-flex align-items-center m-row">
+
+
+							<!-- TEXT BLOCK 
+							<div class="col-md-7 col-lg-6 m-bottom">
+								<div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+									<!-- Title 
+									<h3 class="h3-sm"> Prof. Andrej Savin </h3>
+
+									<!-- Small Title 
+									<h5 class="h5-xs sm-title"> Professor  </h5>
+
+									<!-- Small Title 
+									<h5 class="h5-xs sm-title"> Director Of Cbs Law </h5>
+
+									<!-- Text 
+									<p class="grey-color text-justify">
+										Andrej Savin's main research interests lie in internet regulation, IT Law, law & management and law & strategy. 
+										In particular, he looks at how the EU formulates IT policy and how EU regulation influences business models and 
+										company strategies. His research projects include a DFF-funded project on smart homes and data and a EU-funded FP7 
+										project on the privacy of user-generated networks as well as a number of EU SMART projects on digital economy. Andrej 
+										Savin also works on law and management in the legal environment, in particular with focus on the interplay between 
+										law, ethics, business and society in the digital world.
+
+									</p>
+								</div>
+							</div>	<!-- END TEXT BLOCK 
+
+
+							<!-- IMAGE BLOCK 
+							<div class="col-md-5 col-lg-6 m-top">
+								<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									<img class="img-fluid" src="difconimage24/andrej_icld_keynote.png" alt="content-image">
+								</div>
+							</div>
+
+
+						</div>	  <!-- End row  
+					</div>	<!-- END TOP CONTENT 
+				
+				
+					<!-- BOTTOM CONTENT 
+				<div id="c3-bottom" class="cbox-3 pt-70">
+					<div class="row d-flex align-items-center">
+
+
+						<!-- IMAGE BLOCK 
+						<div class="col-md-5 col-lg-6 m-top">
+								<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									<img class="img-fluid" src="difconimage24/cheong_icld_keynote.png" alt="content-image">
+								</div>
+							</div> 
+
+
+						<!-- TEXT BLOCK 
+						<div class="col-md-7 col-lg-6">
+							<div class="txt-block right-column pc-35 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+
+								<h3 class="h3-sm">Assoc. Prof. Dr. Cheong May Fong</h3> 
+								
+								<h5 class="h5-xs sm-title"> Associate Professor </h5>
+								
+								 <h5 class="h5-xs sm-title"> School of Private and Commercial Law, Faculty of Law and Justice, UNSW Sydney </h5>
+								 
+									<p class="grey-color text-justify">
+										Dr Cheong is an Associate Professor in the School of Private and Commercial Law, Faculty of Law and Justice, UNSW 
+										Sydney. Her main research areas are contract law, commercial law, consumer law, unfair contracts, remedies, 
+										restitution/unjust enrichment, and comparative Asian law. Her other research interest is competition law particularly 
+										on the legal and regulatory frameworks of competition law regimes in ASEAN member states. Dr Cheong’s current research 
+										interest includes smart contracts and artificial intelligence, and she is currently co-supervising a PhD candidate on 
+										smart contracts. She has taught a wide range of subjects including principles of private law, contracts, consumer 
+										protection, economic torts, and unfair contracts. Dr Cheong is also an Adjunct Professor at the Faculty of Law, 
+										Multimedia University Malaysia and was formerly Deputy Head of School, Thomas More Law School, Australian Catholic 
+										University. She was also formerly a Professor and Dean at the Faculty of Law, University of Malaya, and had previously 
+										practiced as a commercial litigation lawyer at Kuala Lumpur, Malaysia after being admitted as an Advocate & Solicitor 
+										of the High Court of Malaya. Dr Cheong is author of Australian Contract Law: Principles and Cases (Lawbook Co, 2020) 
+										and Contract Law in Malaysia (Sweet & Maxwell Asia, 2010). She is co-author with Yin Harn Lee, of Civil Remedies 
+										(Sweet & Maxwell Asia, 2nd ed, 2016) and with Rafiah Salim, of Evidence Law in Malaysia and Singapore: Cases and 
+										Commentary (Lexis Nexis Malaysia, 2013). She has contributed to chapters in the Studies in the Contract Laws of Asia 
+										series published by Oxford University Press, and to chapters on competition law in The Regionalisation of Competition 
+										Law and Policy within the ASEAN Economic Community (Cambridge University Press, 2018) and in the Research Handbook on 
+										Asian Competition Law (Edward Elgar, 2020). Her articles on contract and consumer law have been published in the 
+										Oxford University Commonwealth Law Journal, Journal of Contract Law, and Competition and Consumer Law Journal. She has 
+										also published on gender issues in the Journal of Law and Society, and Feminist Legal Studies.  
+	
+									</p>
+
+							</div>
+						</div> <!-- END TEXT BLOCK 
+
+
+					</div> <!-- End row 
+				</div> <!-- END BOTTOM CONTENT 
+				
+				
+				<!-- TOP CONTENT
+					<div id="c3-top" class="cbox-3 pb-50">
+						<div class="row d-flex align-items-center m-row">
+
+
+							<!-- TEXT BLOCK 
+							<div class="col-md-7 col-lg-6 m-bottom">
+								<div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+									<!-- Title 
+									<h3 class="h3-sm"> Pn. Mediha Mahmood </h3>
+
+									<!-- Small Title 
+									<h5 class="h5-xs sm-title"> Chief Executive Officer  </h5>
+
+									<!-- Small Title 
+									<h5 class="h5-xs sm-title"> CEO of the Communications and Multimedia Content Forum (CMCF) </h5>
+
+									<!-- Text 
+									<p class="grey-color text-justify">
+										Mediha Mahmood is a legal and regulatory professional with cumulative 20 years of post-qualified experience in top 
+										legal firms and public listed companies, including as Legal Counsel in the General Counsel's Office at 
+										PricewaterhouseCoopers Malaysia, Head of the Content and Advisory Unit at Astro's Regulatory, IP Protection and 
+										Industry Affairs department, and Head of Legal at AirAsia Digital. Adept at navigating regulatory landscapes, shaping 
+										policies and managing strategic collaborations, she has established a solid reputation as an efficient tactical 
+										communicator. Mediha is currently the CEO of the Communications and Multimedia Content Forum (CMCF), having joined the 
+										organization as the Executive Director in February 2021. Since taking up the leadership role at CMCF, she has 
+										spearheaded its complete rebranding and led the revamp of the Content Code, with nationwide involvement of industry 
+										players, policy-makers, and members of the public. She recently led efforts with international Online Curated Content 
+										(OCC) service providers in publishing 'The OCC Guidelines', designed as a supportive tool for all OCC service 
+										providers in Malaysia. Mediha holds an LL.B (Hons) degree in Law from the International Islamic University of Malaysia 
+										and initially chartered her career path as a legal practitioner; at the firm of Messrs. Shearn Delamore & Co. in the 
+										Corporate & Commercial Department. She subsequently continued practicing law at Messrs. Zul Rafique & Partners, in the 
+										Litigation and Disputes Resolution Department where she gained additional experience in arbitration and mediation. 
+										While being a member of the Malaysian Bar Council, Mediha actively volunteered at the Legal Aid Centre in Kuala Lumpur, 
+										providing legal services to the underprivileged and unrepresented detainees in prison. Mediha was a recipient of the 
+										2023 MIA Impact Circle Stellar CxO Award, and is a seasoned public speaker and certified trainer, adept at tailoring 
+										her communication style to diverse global audiences, including industry practitioners and the general public. 
+										Additionally, she serves as an independent consultant on industry matters, specializing in Malaysia's regulatory 
+										standards, content laws, and regulations.
+
+									</p>
+								</div>
+							</div>	<!-- END TEXT BLOCK 
+
+							<!-- IMAGE BLOCK 
+							<div class="col-md-5 col-lg-6 m-top">
+								<div class="img-block right-column pc-25 mb-40 wow fadeInLeft" data-wow-delay="0.4s">
+									<img class="img-fluid" src="difconimage24/mediha_icld_keynote.jpg" alt="content-image">
+								</div>
+							</div>
+
+
+						</div>	  <!-- End row 
+					</div>	<!-- END TOP CONTENT 
+
+				</div>     <!-- End container 
+			</section>	<!-- END CONTENT-3 / KEYNOTE -->
+
+
+
+			<!-- CONTENT-3 / committees 
+			=============================================   -->
+			<section class="content-3 wide-60 content-section division">
+				<div class="container">
+
+					<!-- SECTION TITLE -->
+					<div class="row" id="committeesicld">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-50 pt-10 text-center">
+								<h3 class="pt-20 h3-md">COMMITTEES</h3>
+								<p class="p-lg">
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- TOP CONTENT -->
+					<div id="c3-top" class="cbox-3 pb-50">
+						<div class="row d-flex align-items-top m-row">
+
+
+							<!-- TEXT BLOCK -->
+							<div class="col-md-12 col-lg-12 m-bottom">
+								 <div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+
+									<!-- Title -->
+									<h4 class="h4-sm">PROGRAM COMMITTEE  <div class="w-100"></div></h4>
+
+									<p class="grey-color">
+										Chair: Asst. Prof. Dr Yang Chik Adam  <br>
+										Co-Chair: Mr. Justin Johari Bin Azman <br>
+										Secretary: Ms. Nadiah Syazwani Binti Nordin  <br>
+										Technical Program Chair: Mr. Muhammad Asyraf Fitri Bin Mohd Afindi <br>
+										Technical Program Co-Chair: Ms. Scarlett Yong Mei Chern <br>
+										Keynote and Session Chair: Dr Nur Amalina binti Abdul Ghani  <br>
+										Publicity Chair: Ms. Nur Najiha Binti Jamil  <br>
+										Financial & Registration Chair: TBC <br>
+
+										<!-- Financial Chair: -->
+									</p>
+
+								</div>
+							</div>	<!-- END TEXT BLOCK -->
+
+							<!-- TEXT BLOCK 
+							<div class="col-md-12 col-lg-12 m-bottom">
+								 <div class="txt-block left-column pc-35 mb-40 wow fadeInRight" data-wow-delay="0.4s">
+									<h4 class="h4-sm">TECHNICAL PROGRAMME COMMITTEE   <div class="w-100"></div></h4>
+									<p class="grey-color">
+										Prof. Dr. Abdul Mohaimin Bin Noordin Ayus (Multimedia University, Malaysia)<br>
+										Prof. Dr. Kartina A Choong (Multimedia University, Malaysia)<br>
+										Associate Professor Dr. Khong Wye Keen  (Multimedia University, Malaysia)<br>
+										Associate Professor Dr. Manique Apsara Ephranella Cooray (Multimedia University, Malaysia) <br>
+										Dr. CJ Gletus Matthew A/L CN Jacob (Multimedia University, Malaysia)<br>
+										Dr. Eliya Hamizah binti Halim (Multimedia University, Malaysia)<br>
+										Dr. Olivia Tan Swee Leng (Multimedia University, Malaysia)<br>
+										Asst. Prof. Dr. Hasbollah Bin Mat Saad (UCSI University, Malaysia) <br>
+										Prof. Dr. Nuraisyah Chua Abdullah  (Universiti Teknologi MARA, Malaysia) <br>
+										Associate Professor Dr. Sheela a/p Jayabala Krishnan (Universiti Teknologi MARA, Malaysia) <br>
+										Dr. Muhammad Umar Bin Abdul Razak (Universiti Teknologi MARA, Malaysia) <br>
+										Dr. Che Audah Bt Hassan (Universiti Teknologi MARA, Malaysia)<br>
+										Dr. Nadzriah Binti Ahmad (Universiti Teknologi MARA, Malaysia)<br>
+										Dr. Ikmal Hisham Bin Md. Tah (Universiti Teknologi MARA, Malaysia)<br>
+										Assoc. Prof. Dr. Sonny Zulhuda (International Islamic Univerrsity Malaysia)  <br>
+										Dr. Hafidz Hakimi bin Haron (Universiti Utara Malaysia)<br>
+										Mr. Joseph Savirimuthu LL.B, LL.M. (Senior Lecturer in Law, Liverpool Law School, University of Liverpool)<br>
+										Mr. Justin Johari Bin Azman  (Multimedia University, Malaysia)<br>
+										Mr. Tay Eng Siang (Multimedia University, Malaysia)<br>
+										Dr. Hawa Binti Rahmat (Multimedia University, Malaysia)<br>
+										Dr. Sareen Kaur Bhar  (Multimedia University, Malaysia)<br>
+									</p>
+								</div>
+							</div>
+
+							<!-- END TEXT BLOCK 
+
+
+						</div>	  <!-- End row 
+					</div>	<!-- END TOP CONTENT 
+
+
+				</div>     <!-- End container 
+			</section>	<!-- END CONTENT-3 / COMITTEES-->
+
+
+
+
+			<!-- GREY BORDER
+			============================================= 
+			<div class="gb-wrapper"><div class="container"><div class="row"><div class="col-md-12 grey-border"></div></div></div></div>
+
+
+		<!-- FOOTER-1
+			============================================= 
+		<footer id="footer-1" class="footer division">
+			<div class="container">
+
+				<!-- SECTION TITLE 
+				<div class="row" id="venueicld">
+					<div class="col-lg-10 offset-lg-1">
+						<div class="section-title mb-50 pt-10 text-center">
+							<h3 class="pt-20 h3-md">Author's Information </h3>
+								<div id="c3-top" class="cbox-3 pb-10">
+									<div class="row d-flex align-items-top m-row">
+							
+							<!-- TEXT BLOCK 
+										<div class="col-md-12 col-lg-12">
+											<div>
+
+											 <div class="txt-block left-column pc-35 mb-10 wow fadeInRight" data-wow-delay="0.4s">
+
+												<!-- Title 
+												<h5 class="h3-sm pt-20">Important Dates <div class="w-100"></div></h5>
+
+												<!-- <h5 class="h3-sm pt-20">TIMELINES <div class="w-100"></div>	</h5> -->
+
+												<!-- Code by w3codegenerator.com 
+													<div class="table-responsive">
+													 <table class="table table-light table-bordered table-striped table-borderless">
+													   <tbody style="text-align: left;">
+													      <tr>
+													         <th scope="row"> <s>15-Mar-24 (Extended to 25-Mar-24)</s></th>
+													         <td> Abstract submission </td>
+															 <td></td>
+													      </tr>
+													      <tr>
+													         <th scope="row"> <s>31-Mar-24 </s></th>
+													         <td> Abstract acceptance notification </td>
+															 <td></td>
+													      </tr>
+														  <tr>
+													         <th scope="row"> <s>15-May-24 (FIRMED Deadline)</s></th>
+															 <td> Full paper submission </td>
+															 <td> </td>
+													      </tr>
+														  <tr>
+															<th scope="row"> <s>31-May-24 </s></th>
+															<td> Paper acceptance notification </td>
+															<td></td>
+														 </tr>
+														 <tr>
+															<th scope="row"> <s>15-Jun-24 </s></th>
+															<td> Camera ready submission</td>
+															<td></td>
+														 </tr>
+															   <tr>
+															<th scope="row"> <s>07-Jun-24 </s></th>
+															<td> Early bird registration </td>
+															<td></td>
+														 </tr>
+														 <tr>
+															<th scope="row"> <s>16-Jun 2024 </s></th>
+															<td> Final date for registration </td>
+															<td></td>
+														 </tr>
+														 <tr>
+															<th scope="row"> 23-25 July 2024 </th>
+															<td> Conference date </td>
+															<td></td>
+														 </tr>
+													   </tbody>
+													</table>
+													</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-md-12 col-lg-12">
+											<div>
+
+											 <div class="txt-block left-column pc-35 mb-10 wow fadeInRight" data-wow-delay="0.4s">
+
+												<!-- Title 
+												<h5 class="h3-sm pt-20"> Fees <div class="w-100"></div></h5>
+
+												<!-- <h5 class="h3-sm pt-20">TIMELINES <div class="w-100"></div>	</h5> -->
+
+												<!-- Code by w3codegenerator.com 
+													<div class="table-responsive">
+													 <table class="table table-light table-bordered table-striped table-borderless">
+													   <tbody style="text-align: left;">
+													      <tr>
+													         <th scope="row" style="width: 264px;">Normal </th>
+													         <td> USD500 </td>
+															 <td></td>
+													      </tr>
+													      <tr>
+													         <th scope="row" style="width: 264px;"> Student </th>
+													         <td> USD480 </td>
+															 <td></td>
+													      </tr>
+														  <tr>
+													         <th scope="row" style="width: 264px;"> Early bird (1 June 2024) </th>
+															 <td> USD450 </td>
+															 <td> </td>
+													      </tr>
+													   </tbody>
+													</table>
+													</div>
+											</div>
+										</div>
+									</div>
+									</div>
+									</div>
+
+					
+			  						<ul class="txt-list grey-color">
+													
+													<!-- <h5 class="h3-sm" >COMING SOON</h5> -->
+													
+										<!-- <p class="grey-color text-justify">
+														Abstract submission 
+													</p>	 
+													
+													<div class="text-center justify-content-center justify-content-lg-start">
+														<div>
+															<a href="https://forms.office.com/r/f8rQhUg2wx" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Abstract Submission</a>
+															<a href="https://edas.info/newPaper.php?c=31885" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Full Paper Submission</a>
+															<a download href="files/icld_cfp.png" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">
+																Call for Paper
+															</a>
+															<a href="https://forms.office.com/r/uYBQciU9Gm" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">Registration Link</a>
+															<br /><br />
+														<a href="https://www.mmu-cnergy.com/difcon2024" target="_blank" class="btn btn-primary align-items-center line-height-1 btn-5 text-3 letter-spacing-n1">EarlyBird_DIFCON24</a>
+														</div>
+													</div>
+													<p style="text-align: center;padding-right: 0px;padding-left: 0px;"> **Early bird coupon: valid until 6th June 2024 ONLY! (Only 1 coupon can be used per transaction)
+
+									</ul>   
+													
+							<h5 class="h3-sm pt-20">Venue <div class="w-100"></div></h5h>
+							<p class="fas fa-map-marker-alt"> Virtual </p>  -->
+						</div>
+					</div>
+				</div>  
+
+<section class="content-3 wide-60 content-section division">
+				<div class="container">
+
+					
+
+
+
+
+
+
+
+	<!--FOOTER1
+			============================================= -->
+			<footer id="footer-1" class="footer division">
+				<div class="container">
+
+					<!-- SECTION TITLE -->
+					<div class="row" id="contactus">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section-title mb-50 pt-10 text-center">
+								<h3 class="pt-20 h3-md">CONTACT US</h3>
+								<p class="p-lg">
+									<!-- Email -->
+									<p class="foo-email"><a href="mailto:difcon@mmu.edu.my">difcon@mmu.edu.my</a></p>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- FOOTER CONTENT -->
+					<div class="row">
+
+
+						<div class="col-lg-12 col-xl-12 text-center">
+							<div>
+									<!-- <a href="https://info.flagcounter.com/CL0R"><img src="https://s01.flagcounter.com/countxl/CL0R/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a> -->
+									<a href="https://info.flagcounter.com/n6zP"><img src="https://s11.flagcounter.com/countxl/n6zP/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+							</div>
+						</div>
+					</div>	 <!-- END FOOTER CONTENT -->
+
+
+					<!-- BOTTOM FOOTER -->
+					<div class="bottom-footer grey-color">
+						<div class="row d-flex align-items-center">
+
+
+							<!-- FOOTER COPYRIGHT -->
+							<div class="col-md-6 mt-2">
+								<div class="footer-copyright">
+									<p>&copy; 2024 Universiti Telekom Sdn. Bhd. All Rights Reserved</p>
+								</div>
+							</div>
+
+
+
+						</div>  <!-- End row -->
+					</div>	<!-- END BOTTOM FOOTER -->
+
+
+				</div>	   <!-- End container -->
+			</footer>	<!-- END FOOTER-1 -->
+
+
+
+
+		</div>	<!-- END PAGE CONTENT -->
+
+
+
+
+
+		<!-- EXTERNAL SCRIPTS
+		============================================= -->
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/jquery.easing.js"></script>
+		<script src="js/jquery.appear.js"></script>
+		<script src="js/jquery.scrollto.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/contact-form.js"></script>
+		<script src="js/register-form.js"></script>
+		<script src="js/request-form.js"></script>
+		<script src="js/comment-form.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/wow.js"></script>
+
+		<!-- Custom Script -->
+		<script src="js/custom.js"></script>
+
+
+		<script>
+			new WOW().init();
+		</script>
+
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+		<!-- [if lt IE 9]>
+			<script src="js/html5shiv.js" type="text/javascript"></script>
+			<script src="js/respond.min.js" type="text/javascript"></script>
+		<![endif] -->
+
+		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
+		<!--
+		<script>
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-XXXXX-X']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		-->
+
+
+	</body>
+
+
+
+</html>
